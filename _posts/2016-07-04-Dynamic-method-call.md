@@ -1,4 +1,4 @@
-Reducing for-loops is a great way to maintain readability and maintain code modularity. <!--more--> Here is a trick were we use closure blocks to encapsulate the method call. The for loop is the same but the method call is different. ==This approach is great when you need the code within the for-loop to be the same but you want to have the code within different methods to be different.==
+Reducing for-loops is a great way to maintain readability and maintain code modularity. <!--more--> Here is a trick were we use closure blocks to encapsulate the method call. The for loop is the same but the method call is different. This approach is great when you need the code within the for-loop to be the same but you want to have the code within different methods to be different. 
 
 ```swift
 import Foundation
