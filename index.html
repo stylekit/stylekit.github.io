@@ -9,6 +9,11 @@ layout: default
       {% for post in paginator.posts %}
         <div class="post py3">
           <p class="post-meta">{{ post.date | date: site.date_format }}</p>
+<<<<<<< HEAD
+          <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ post.title | capitalize }}</h3></a>
+          <p class="post-summary">
+            {{ post.excerpt | strip_html }} 
+=======
           <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
           <p class="post-summary">
             {% if post.summary %}
@@ -16,6 +21,7 @@ layout: default
             {% else %}
               {{ post.excerpt }}
             {% endif %}
+>>>>>>> origin/master
           </p>
         </div>
       {% endfor %}
@@ -23,6 +29,10 @@ layout: default
 
     {% include pagination.html %}
   {% else %}
+<<<<<<< HEAD
+    <h1 class='center'>Coming soon...</h3>
+=======
     <h1 class='center'>{{ site.text.index.coming_soon }}</h3>
+>>>>>>> origin/master
   {% endif %}
 </div>
