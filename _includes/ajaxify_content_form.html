@@ -7,11 +7,7 @@
     sendButton.addEventListener('click', function(event){
       event.preventDefault();
 
-<<<<<<< HEAD
       sendButton.innerHTML = 'sending..';
-=======
-      sendButton.innerHTML = '{{ site.text.contact.ajax.sending }}';
->>>>>>> origin/master
 
       var xhr = new XMLHttpRequest();
       xhr.open('POST', '//formspree.io/{{ site.email }}', true);
@@ -24,17 +20,10 @@
 
       xhr.onloadend = function (res) {
         if (res.target.status === 200){
-<<<<<<< HEAD
           sendButton.innerHTML = 'Message sent!';
         }
         else {
           sendButton.innerHTML = 'Error!';
-=======
-          sendButton.innerHTML = '{{ site.text.contact.ajax.sent }}';
-        }
-        else {
-          sendButton.innerHTML = '{{ site.text.contact.ajax.error }}';
->>>>>>> origin/master
         }
       }
     });
