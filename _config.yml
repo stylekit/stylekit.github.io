@@ -1,0 +1,87 @@
+# Site settings
+title:       StyleKit
+email:       stylekit@outlook.com
+author:      Eonist
+description: "OpenSource UI framework for OSX."
+baseurl:     ""
+url:         "http://stylekit.org/"
+date_format: "%b %-d, %Y"
+excerpt_separator: <!--more-->  #global excerpt separator for the blog posts
+
+#Layout
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"
+      
+# Google services
+google_analytics: UA-72022029-1
+google_verification:
+
+# Optional features
+animated:             true
+show_related_posts:   false
+show_post_footers:    false
+show_social_icons:    false
+ajaxify_contact_form: false
+
+# Disqus post comments
+# (leave blank to disable Disqus)
+disqus_shortname: stylekit
+
+# Facebook Comments plugin
+# (leave blank to disable Facebook Comments, otherwise set it to true)
+facebook_comments:
+facebook_appid:
+facebook_comments_number: 10
+
+# Social icons
+github_username: eonist
+bitbucket_username:
+stackoverflow_id: GitSyncApp
+twitter_username: stylekit_org
+google_plus_id:
+linkedin_username:
+angellist_username:
+medium_id: stylekit
+bitcoin_url:
+paypal_url:
+flattr_button:
+
+# Post sharing icons
+show_sharing_icons: false
+share_text: 'Share this post!'
+# Change to 'true' to enable individual icons
+share_facebook: false
+share_twitter: true
+share_googleplus: false
+share_linkedin: false
+share_digg: false
+share_tumblr: false
+share_reddit: false
+share_stumbleupon: false
+share_hackernews: false
+
+# Build settings
+markdown: kramdown
+kramdown: 
+  input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
+
+#markdown: redcarpet
+#markdown_ext:  markdown,mkdown,mkdn,mkd,md
+
+#redcarpet:
+# extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks","hard_wrap","highlight","footnotes"]
+
+
+paginate:     50 #THis is the amount of pages viewable on the front page
+gems:
+  - jekyll-paginate
+  #- jekyll-sitemap
+# https://github.com/jekyll/jekyll/issues/2938
+exclude: [vendor]
+permalink: /blog/:year/:month/:day/:title/ # pretty urls
+
