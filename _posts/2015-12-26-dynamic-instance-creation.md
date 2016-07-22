@@ -1,5 +1,5 @@
-**NOTE:** it does require that each class extends the same protocol and that they have similar init method<!--more--> 
-
+**NOTE:** it does require that each class extends the same protocol and that they have similar init method<!--more-->   
+**NOTE:** required prefix in the init is so that instances can be created via factory design patterns
 ```swift
 class A:IA{required init(){}}
 protocol IA{init()}
