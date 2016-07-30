@@ -23,4 +23,4 @@ extension IStyle{
 ```
 
 
-Thats it. Now you have default values in swift protocols.
+Thats it. Now you have default values in swift protocols. (Do some tests in playground to verify if this works in all cases)
