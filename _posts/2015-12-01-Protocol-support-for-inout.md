@@ -16,9 +16,9 @@ let b = B()
 
 ```
  
-1. Use Method overloading (which can duplicate your code and make it congenitally harder to read, even if you refactor)  
+1. Use Method overloading (which can duplicate your code and make it cognitively harder to read, even if you refactor)  
 2. Not use inout (this is what you should do)  
-3. Or you can do this: (which is code smell deluxe and not recomended)  
+3. Or you can do this: (which is code smell deluxe and not recommended)  
 
 ==Note to future self==: I think you can get away with casting variables as long as you attach them to a variable. THeir sub values should remain changeable when using modifier methods
 ```swift
