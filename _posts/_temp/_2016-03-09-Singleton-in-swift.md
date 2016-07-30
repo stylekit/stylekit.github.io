@@ -2,15 +2,11 @@
 
 ```swift
 class SingletonA {
-
     static let sharedInstance = SingletonA()
-
     init() {
         println("AAA");
     }
-
 }
-
 
 class TheOneAndOnlyKraken {
     static let sharedInstance = TheOneAndOnlyKraken()
