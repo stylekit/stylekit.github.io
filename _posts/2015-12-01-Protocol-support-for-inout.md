@@ -30,6 +30,7 @@ extension IPositional{
 }
 class A:IPositional{
     var position:CGPoint = CGPoint()
+    var someString:String = "default"
     func setPosition(position:CGPoint){
         self.position = position
     }
@@ -38,8 +39,10 @@ func test(inout positional:IPositional){
     positional.setPosition(CGPointMake(10,10))
 }
 var a = A()
+a.someString = "new value"
 test(&a.positional)
 a.position//(10.0, 10.0)
+a.someString//new value /*<--this proves that the a instance is the original*/
 ```
 **Conclusion:**   
 The benefit of doing it this way: Is that you can now have one "inout method" for all classes that implements IPositional 
