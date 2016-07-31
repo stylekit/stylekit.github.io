@@ -24,6 +24,9 @@ it also seems you can down cast an array if the array extends the class at some 
 **NOTE:**  
 if you use flatMap instead of map you remove all nil values in that array
 
+**NOTE:**
+It seems using .map is the only way to downcast an array. And it seems to not 
+
 ```swift
 let list:Array<NSXMLElement> = xml.children as! Array<NSXMLElement>//xml.children returns an array with NSXMLNode items But NSXMLNode extends NSXMLElement, so it will work
 ```
