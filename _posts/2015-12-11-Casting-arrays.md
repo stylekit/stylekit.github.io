@@ -30,3 +30,27 @@ It seems using .map is the only way to downcast an array. And it seems to not cr
 ```swift
 let list:Array<NSXMLElement> = xml.children as! Array<NSXMLElement>//xml.children returns an array with NSXMLNode items But NSXMLNode extends NSXMLElement, so it will work
 ```
+
+
+Map example: 
+
+```swift
+class A:B{
+    var value:String = "default"
+    init(_ value:String){
+        self.value = value
+    }
+}
+class B{
+    var someNum:CGFloat = 1
+    init(){
+        
+    }
+}
+var arr1:Array<A> = [A("a"),A("b"),A("c")]
+
+let arr2:Array<B> = arr1.map { $0 as B }//arr1 as! [A]//
+arr2
+
+//Further testing should be done to verify if the original refrences are intact
+```
