@@ -275,7 +275,7 @@ Now the problem is a bit harder if you have nested children and say a btn 4 step
 One could even imagine implementing true enter and exit methods that rely on path hitTesting not trackingArea hitTest. (it would first use trackingArea then if its inside resort to path hitTesting, optimization) this will require further mangling of the code, its possible though. a few extra line of code. 
 
 - [ ] Implement IInteractiveView 
-- [x] ==try to make the enter / exit events fail==. Aka not receiving the out call. Make a fat movement with the mouse. It cant fail or else you may get stuck buttons. To solve stuck buttons there are option available. See legacy code. 
+- [x] ==try to make the enter / exit events fail==. Aka not receiving the out call. Make a fast movement with the mouse. It cant fail or else you may get stuck buttons. To solve stuck buttons there are option available. See legacy code. 
 - [x] google mouseEnter on custom paths
 - [ ] read the exact enter and exit description on the apple site. maybe they only work on trackingArea
 - [x] ~~google non rect trackingArea tracking~~, you already have this solved.
