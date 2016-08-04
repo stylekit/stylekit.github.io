@@ -22,6 +22,7 @@ array.indexOf in swift only allows Equatables<!--more--> But not all classes are
     
     /**
      * Returns the index of the first obj that matches the @param item in the @param arr
+     * NOTE: this is for comparing references not values
      */
     func indexOf(arr:Array<AnyObject>,_ item:AnyObject)-> Int{
         for var i = 0; i < arr.count; ++i{
