@@ -21,7 +21,7 @@ NSText doesn't like being subclassed. It asks you to implement every method it h
 
 ## Observations:
 
-1. NSTextField doesn't support the enter key for newlines (you probably have to use NSText for that)
+1. NSTextField doesn't support the enter key for newlines (you probably have to use NSText for that) (there is a property named: lineBreakMode in the NSMutableParagraphStyle class)
 
 ## Tasks:
 - [ ] do the NSView hitTest hierarchy test
