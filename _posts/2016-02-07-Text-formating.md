@@ -111,3 +111,8 @@ TextFormat:
  */
  
 ```
+
+
+More paragraphStyle goodies: 
+
+https://www.objc.io/issues/9-strings/string-rendering/
