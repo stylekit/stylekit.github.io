@@ -161,6 +161,7 @@ So a caveat with this approach is that you have to call the onEvent() to dispatc
 
 - Immediate is implemented as an ad-hock in the InteractiveView class. Immediate is also automatically set on event init. The same variable as origin is used.
 
+
 ## Tasks:
 - [ ] Remember to add describable to the Event class, use extension to add this functionality
 - [ ] Test if you can wrap Timer events this way. You need that for "the-finale-Symphony-gif-animation-of-StyleKit"
