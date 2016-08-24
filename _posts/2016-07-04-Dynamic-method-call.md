@@ -1,4 +1,4 @@
-Reducing for-loops is a great way to maintain readability and maintain code modularity. Methods like map, flatMap, filter and reduce are awesome building blocks for **functional programing in swift**, but you can also build your own custom methods that do similar things. <!--more--> Here is a trick were we use closure blocks to encapsulate the method call. The for-loop is the same but the method call inside the loop is what you want it to be. This approach is a great way to avoid multiple for loops that do fairly the same thing. All you do is pass the for-loop the method you want it to perform. In this example we pass it **2 different methods** "isActive" and "isFocused": 
+Reducing for-loops is a great way to maintain readability and maintain code modularity. Methods like map, flatMap, filter and reduce are awesome building blocks for **functional programing in swift**, but you can also build your own custom methods that do similar things. <!--more--> Here is a trick were we use closure blocks to encapsulate the method call. The for-loop is the same but the method call inside the loop is what you want it to be. This approach is a great way to avoid multiple for loops that do fairly the same thing. All you do is pass the for-loop the method you want it to perform. In this example we pass it **2 different methods** "action1" and "action2": 
 
 ```swift
 import Foundation
@@ -38,6 +38,9 @@ let b:Brick = Brick(false,true,"b")
 let c:Brick = Brick(true,true,"c")
 let bricks = [a,b,c]
 
-print(Utils.performAction(bricks, {$0.isActive()})!.name)//a
-print(Utils.performAction(bricks, {$0.isFocused()})!.name)//b
+let action1:(Brick)->Bool = {$0.isActive()}
+let action2:(Brick)->Bool = {$0.isFocused()}
+
+print(Utils.performAction(bricks, action1)!.name)//a
+print(Utils.performAction(bricks, action2)!.name)//b
 ```
