@@ -12,11 +12,13 @@ And then instead of looping over style.selectors you loop over elementQuerrySele
 
 You could create a hash table based on the num of selectors in a style. Because if a style has more selctors than the element -> then its not within scope and will not be used. This way you can decrease lookup-time. 
 
-**and also the last selector must match the last selector in element.selectors**
+**And also the last selector must match the last selector in element.selectors**
 
-element selectors: 
+**element selectors: **
 
+```
 Window Button#custom Text#buttonText
+```
 
 **Style Selector:**
 
