@@ -54,3 +54,4 @@ so basically the the cache styles should be like this -> cache.styles:[(IStyle,I
 - [ ] More struct classes will speed things up probably. Style could be struct maybe? 
 - [ ] Use Enum instead of constants?
 - [ ] consider to build selector.last hashtable that would speed things up even further
+- [ ] Figure out why copying values is faster than changing them. 
