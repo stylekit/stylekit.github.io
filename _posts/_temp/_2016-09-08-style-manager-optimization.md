@@ -14,6 +14,8 @@ You could create a hash table based on the num of selectors in a style. Because 
 
 And also the last element.selector must match the last element.selectors so we could create a hash table. The exception is the values that can inherit. (we could make a different system for these values)
 
+
+
 **element selectors: **
 
 ```
@@ -42,3 +44,10 @@ if (cache.styles.count > 0) {
 ```
 The cache system should also move the most popular queries to the top of the array list
 so basically the the cache styles should be like this -> cache.styles:[(IStyle,Int)] (<--using duplets where int is the popularity count)
+
+
+- [ ] build the cache system
+- [ ] build the selector-count hashtable system
+- [ ] Test if speed goes up after implementing these two optimization efforts
+- [ ] More struct classes will speed things up probably. Style could be struct maybe? 
+- [ ] Use Enum instead of constants?
