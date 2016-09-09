@@ -35,14 +35,30 @@ Window (partly applies, font etc)
 
  
 ```swift
-let absolute-element-selector-address = ElementParser.stackString(button) 
-if (cache.styles.count > 0) {
-	cache.styles.forEach{
-		if(absolute-element-selector-address == SelectorParser.string($0.selectors)){
-			return $0
-		}
-	}
-}
+//cache idea:
+cache.recentlyUsed = []
+
+//cache.style()
+
+//you ask StyleResolver.style for the style. which has
+//cache then queries the 10 last used styles it has in cache.styles
+	//if cache.styles doesn't have the absolute style. 
+		//style = StyleResolver.resolveStyle()
+		//let idx = -1
+		//for i < .count{
+			//if($0.address == absolute-style-address){
+				//idx = i
+		//if(idx != -1)//already exists in cache
+			ArrayModifier.indexSwap(.recentlyUsed,idx)//move to front
+		//else//does not exist in cache
+			//if(recentlyUsed.count > 9){
+				//recently.popLast()
+			//recently.unshift((style,address))//add to front
+				
+
+//let absolute-element-selector-address = ElementParser.stackString(button) 
+//let address = SelectorParser.string($0.selectors)
+
 ```
 The cache system should also move the most popular queries to the top of the array list
 so basically the the cache styles should be like this -> cache.styles:[(IStyle,Int)] (<--using duplets where int is the popularity count)
