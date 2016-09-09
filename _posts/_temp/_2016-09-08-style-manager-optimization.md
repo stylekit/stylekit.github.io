@@ -48,6 +48,7 @@ cache.recentlyUsed = []
 		//for i < .count{
 			//if($0.address == absolute-style-address){
 				//idx = i
+				//break
 		//if(idx != -1)//already exists in cache
 			ArrayModifier.indexSwap(.recentlyUsed,idx)//move to front
 		//else//does not exist in cache
@@ -64,7 +65,8 @@ The cache system should also move the most popular queries to the top of the arr
 so basically the the cache styles should be like this -> cache.styles:[(IStyle,Int)] (<--using duplets where int is the popularity count)
 
 
-- [ ] build the cache system (its easy)
+- [x] build the recently queries cache system (its easy) 
+- [ ] build the cahce system that is based on popularity
 - [ ] build the selector-count hashtable system (its easy too)
 - [ ] Test if speed goes up after implementing these two optimization efforts (use a timer before and after)
 - [ ] More struct classes will speed things up probably. Style could be struct maybe? 
