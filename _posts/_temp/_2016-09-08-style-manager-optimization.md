@@ -48,9 +48,9 @@ The cache system should also move the most popular queries to the top of the arr
 so basically the the cache styles should be like this -> cache.styles:[(IStyle,Int)] (<--using duplets where int is the popularity count)
 
 
-- [ ] build the cache system
-- [ ] build the selector-count hashtable system
-- [ ] Test if speed goes up after implementing these two optimization efforts
+- [ ] build the cache system (its easy)
+- [ ] build the selector-count hashtable system (its easy too)
+- [ ] Test if speed goes up after implementing these two optimization efforts (use a timer before and after)
 - [ ] More struct classes will speed things up probably. Style could be struct maybe? 
 - [ ] Use Enum instead of constants?
 - [ ] consider to build selector.last hashtable that would speed things up even further
