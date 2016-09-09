@@ -35,7 +35,7 @@ Window (partly applies, font etc)
 
  
 ```swift
-//cache idea:
+//cache idea (sudo code):
 cache.recentlyUsed = []
 
 //cache.style()
