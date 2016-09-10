@@ -62,12 +62,34 @@ cache.recentlyUsed = []
 
 ```
 The cache system should also move the most popular queries to the top of the array list
-so basically the the cache styles should be like this -> cache.styles:[(IStyle,Int)] (<--using duplets where int is the popularity count)
+so basically the the cache styles should be like this -> cache.styles:[(IStyle,Int)] (<--using duplets where int is the popularity count) (popularity is good for repeating calls to styleResolver. like on hover etc)
+
+```swift
+StyleManger.getStyles(elementSelectors.count)
+
+var maxSelectorCount:Int?
+var minSelectorCount:Int?
+var hashedStyles:Dictionary<selectorCount,[IStyle]>
+//[]?
+/*
+ * NOTE: the hashedStyles are sorted on selectorCount from 1 and upwards
+ */
+func getStyles(selectorCount:Int)-> [IStyle]{
+    var styles:[IStyle]
+    for i = selectorCount; count < maxSelectorCount; i++;{
+        if let value = hashedStyles[i.string]{
+            styles += value
+        }
+    }
+    return styles
+}
+```
+
 
 
 - [x] build the recently queries cache system (its easy) 
 - [ ] build the selector-count hashtable system (its easy too)
-- [ ] build the cahce system that is based on popularity
+- [ ] build the cache system that is based on popularity
 - [x] Test if speed goes up after implementing these two optimization efforts (use a timer before and after)
 - [ ] More struct classes will speed things up probably. Style could be struct maybe? 
 - [ ] Use Enum instead of constants?
