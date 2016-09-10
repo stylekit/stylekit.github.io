@@ -66,9 +66,9 @@ so basically the the cache styles should be like this -> cache.styles:[(IStyle,I
 
 
 - [x] build the recently queries cache system (its easy) 
-- [ ] build the cahce system that is based on popularity
 - [ ] build the selector-count hashtable system (its easy too)
-- [ ] Test if speed goes up after implementing these two optimization efforts (use a timer before and after)
+- [ ] build the cahce system that is based on popularity
+- [x] Test if speed goes up after implementing these two optimization efforts (use a timer before and after)
 - [ ] More struct classes will speed things up probably. Style could be struct maybe? 
 - [ ] Use Enum instead of constants?
 - [ ] consider to build selector.last hashtable that would speed things up even further
