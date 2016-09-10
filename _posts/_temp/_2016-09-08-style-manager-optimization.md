@@ -120,3 +120,38 @@ let result = groupby([Style(),Style(),Style()], f: { $0.selectors.count })
 - [ ] Use Enum instead of constants?
 - [ ] consider to build selector.last hashtable that would speed things up even further
 - [ ] Figure out why copying values is faster than changing them. 
+
+ //test how many element selector addresses are similar
+        
+        //then do the last selector optimization that doesnt work with inheritage. 
+        
+        //find which variable inherite, can these be added to its own array, so that one array is at least optimized.
+        
+        
+```swift
+//new idea:
+//a selector has: element,id,state,class
+
+//getStyles[element,id,state,class]->[IStyle]
+
+//Window#customWin TextButton Text#title//<--4 selectors
+//
+
+//getStyles(selector)//<--basically the last Selector entity so Button#custom for instance is an selector entity
+
+func getStyles(selector:Selector)->IStyle{
+    var styles:[IStyle] = []
+    styles += stylesByElement[selector.element]
+    styles += stylesByID[selector.id]
+    styles += stylesByClassId[selector.classId]
+    styles += stylesByState[selector.state]
+}
+
+//Window
+    //TextButton
+        //Text
+//TextButton
+//Text
+//#customWin
+
+```
