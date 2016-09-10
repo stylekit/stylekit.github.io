@@ -174,3 +174,7 @@ func hashStyle(style:IStyle){
 //#customWin
 
 ```
+
+//shaving off 1 sec of 6 secs, isnt going to cut it. research how other css engines work so well.
+//make style into struct
+//research why struct is faster or slower
