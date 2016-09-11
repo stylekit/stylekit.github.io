@@ -197,7 +197,12 @@ func hashStyle(style:IStyle){
 ```
 
 ```swift
-class Style{
+protocol ISelector{
+    var element:String{get set}
+    var id:String{get set}
+    
+}
+class Selector:ISelector{
     var element:String
     var id:String
     init(element:String,_ id:String){
@@ -205,4 +210,18 @@ class Style{
         self.id = id
     }
 }
+protocol IStyle{
+    var selectors:[ISelector]{get set}
+    var properties:[(name:String,value:Any)]
+}
+class Style:IStyle{
+    var selectors:[ISelector]
+    var properties:[(String,Any)]
+    init(selectors:[ISelector],properties:[(String,Any)]){
+        self.selectors = selectors
+        self.properties = properties
+    }
+}
+
+let a:IStyle = Style("")
 ```
