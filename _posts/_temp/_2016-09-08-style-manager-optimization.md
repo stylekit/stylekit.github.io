@@ -209,6 +209,8 @@ func hashStyle(style:IStyle){
                 //use these style properties
                 
 //tree structure is also faster to traverse when appending a new style and expanding the style at the same time. IT can derive and apply properties as it traverses the tree, and probably fast, because it can disregard a lot of avenues
+
+
 ```
 
 ```swift
