@@ -187,13 +187,28 @@ func hashStyle(style:IStyle){
 
 
 //Window#Custom Button#special:over Text
-    //fill:red;    
+    //fill:red; 
+//Button Text
+    //fill:pink;
 //Text
     //fill:blue;
     //line:green;//<--insert line:Green in the above style. 
     
     
+//existing styles derive properties from every new style that are added.
+//and finally the added style try to derive from every existing style
+
+//can we store the styles in tree structures?
+//Window#custom List Button#special:over Text#title
     
+//Branch.element == Window//true
+    //branch.element == List //false
+    //else
+        //branch.element == button //true
+            //branch.text == Text
+                //use these style properties
+                
+//tree structure is also faster to traverse when appending a new style and expanding the style at the same time. IT can derive and apply properties as it traverses the tree
 ```
 
 ```swift
@@ -230,3 +245,4 @@ let b:IStyle = Style([Selector("Window","custom"),Selector("Button","special"),S
 ```
 
 //The fastest way is of course to comprise the styles and then save them in an xml File for the next run. and then just reload all the styles with direct addressing, then if there is a change in the css, re-comprise the styles again.
+//you also need to continue to save absolute addresses for styles. onHover etc
