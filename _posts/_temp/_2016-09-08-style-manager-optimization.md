@@ -187,7 +187,7 @@ func hashStyle(style:IStyle){
 
 
 //Window#Custom Button#special:over Text
-    fill:red;    
+    //fill:red;    
 //Text
     //fill:blue;
     //line:green;//<--insert line:Green in the above style. 
@@ -229,4 +229,4 @@ let b:IStyle = Style([Selector("Window","custom"),Selector("Button","special"),S
 
 ```
 
-//The fastest way is of course to comprise the styles and then save them in an xml File for the next run. and then just reload all the styles with direct addressing
+//The fastest way is of course to comprise the styles and then save them in an xml File for the next run. and then just reload all the styles with direct addressing, then if there is a change in the css, re-comprise the styles again.
