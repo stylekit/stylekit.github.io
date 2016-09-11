@@ -223,5 +223,10 @@ class Style:IStyle{
     }
 }
 
-let a:IStyle = Style("")
+let a:IStyle = Style([Selector("Text")],[("fill","blue"),("line","green")])
+let b:IStyle = Style([Selector("Window","custom"),Selector("Button","special"),Selector("Text")],[("fill","red")])
+
+
 ```
+
+//The fastest way is of course to comprise the styles and then save them in an xml File for the next run. and then just reload all the styles with direct addressing
