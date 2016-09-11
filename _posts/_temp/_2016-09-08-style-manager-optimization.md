@@ -178,3 +178,31 @@ func hashStyle(style:IStyle){
 //shaving off 1 sec of 6 secs, isnt going to cut it. research how other css engines work so well.
 //make style into struct
 //research why struct is faster or slower
+
+```swift
+//Another idea would be to flatten the styles when making them:
+//try the idea with simple classes. A style with only Element for instance
+//write tree structures down on post-its -> see if you can figure something out
+
+
+
+//Window#Custom Button#special:over Text
+    fill:red;    
+//Text
+    //fill:blue;
+    //line:green;//<--insert line:Green in the above style. 
+    
+    
+    
+```
+
+```swift
+class Style{
+    var element:String
+    var id:String
+    init(element:String,_ id:String){
+        self.selement = element
+        self.id = id
+    }
+}
+```
