@@ -24,6 +24,12 @@ it also seems you can down cast an array if the array extends the class at some 
 **NOTE:**  
 if you use flatMap instead of map you remove all nil values in that array
 
+```swift
+let a:[String?] = ["a",nil,"b",nil]
+let b:[String] = a.flatMap{$0}//you can also do map{$0!}<--flat map flattens nested arrays, in that case use map
+Swift.print(b)//["a", "b"]
+```
+
 **NOTE:**
 It seems using .map is the only way to downcast an array. And it seems to not create copies but real references
 
