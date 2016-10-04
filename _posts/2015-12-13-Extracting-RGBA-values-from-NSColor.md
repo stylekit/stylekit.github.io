@@ -1,4 +1,4 @@
-<!--more--> 
+Extracting RGBA values from NSColor<!--more--> 
 ```swift
 let nsColor:NSColor = NSColor.redColor()
 let ciColor:CIColor = CIColor(color: nsColor)!
