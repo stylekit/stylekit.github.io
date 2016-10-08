@@ -13,3 +13,30 @@ So a Reflection library was built in swift. And an UnWrapping library. There wer
 The Reflection and UnWrapping library was written as an universal library that can work on any class. Some classes needs to have custom code to work and this can be accomplished through extensions: 
 
 https://github.com/eonist/swift-utils
+
+**Reflection and UnWrapping Example code:** 
+
+```swift
+/**
+ * NOTE: we use 32 bit RGBA values when storing color data (This also stores the alpha value)
+ */
+let temp = Temp(NSColor.redColor())
+let xml = Reflection.toXML(temp)
+print(xml.XMLString)//Output: <Temp><color type="NSColor">FFFF0000</color></Temp>
+let newInstance = Temp.unWrap(xml)!
+print(newInstance.color.hexString)//FF0000
+
+class Temp{
+    var color:NSColor
+    init(_ color:NSColor){
+        self.color = color
+    }
+}
+extension Temp:UnWrappable{
+    static func unWrap<T>(xml:XML) -> T? {
+        let color:NSColor? = unWrap(xml,"color")
+        return Temp(color!) as? T
+    }
+}
+
+```
