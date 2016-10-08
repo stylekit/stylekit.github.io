@@ -17,6 +17,7 @@ The Reflection and UnWrapping library was written as an universal library that c
 ```swift
 /**
  * NOTE: we use 32 bit RGBA values when storing color data (This also stores the alpha value)
+ * NOTE: XML is used as the storage syntax. JSON could be used but there would be minimal differences.
  */
 let temp = Temp(NSColor.redColor())
 let xml = Reflection.toXML(temp)
