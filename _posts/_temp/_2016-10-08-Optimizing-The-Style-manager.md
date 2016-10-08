@@ -1,6 +1,6 @@
-Caching css styles<!--more-->. So parsing .css files takes between 5-10seconds on a 4-core 2010 MacBook Pro. To make it faster one could re-write the css parsing engine that uses RegExp. Or even using a speedier open-source css parsing engine from someone else. But then quick fixes would be hard to do. Or adding new features etc.   
+parsing .css files takes between 5-10secs on a 4-core 2010 MacBook Pro. To make it faster <!--more--> one could re-write the css parsing engine that uses RegExp. Or even using a speedier open-source css parsing engine from someone else. But then quick fixes would be hard to do. Or adding new features etc.   
 
-Another option was to cache the styles after they were rendered. And then if no .css file changed in the subsequent runs, the pre rendered cached styles would be used. 
+Another option was to cache the styles after they were rendered. And then if no .css file changed in the subsequent runs, the pre rendered cached styles would be used. The result of the optimization efforts proved to be worthwhile. The loading of A window packed with GUI elements now loads bellow 1 sec. Which really is imperceptible. Loading regular interfaces will be near instant. 
 
 ## To accomplish this a couple of things was needed: 
 
@@ -40,4 +40,4 @@ extension Temp:UnWrappable{
 
 ```
 
-The Reflection and UnWrapping code can be found here: https://github.com/eonist/swift-utils
+The Reflection and UnWrapping library can be found here: https://github.com/eonist/swift-utils
