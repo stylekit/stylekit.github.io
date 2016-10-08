@@ -20,10 +20,10 @@ The Reflection and UnWrapping library was written as an universal library that c
  * NOTE: XML is used as the storage syntax. JSON could be used but there was no apparent benefit so XML it is
  */
 let temp = Temp(NSColor.redColor())
-let xml = Reflection.toXML(temp)
+let xml = Reflection.toXML(temp)/*Reflection*/
 print(xml.XMLString)//Output: <Temp><color type="NSColor">FFFF0000</color></Temp>
-let newInstance = Temp.unWrap(xml)!
-print(newInstance.color.hexString)//FF0000
+let newInstance = Temp.unWrap(xml)!/*UnWrapping*/
+print(newInstance.color.hexString)//Output: FF0000
 
 class Temp{
     var color:NSColor
