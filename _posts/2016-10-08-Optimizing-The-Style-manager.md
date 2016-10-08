@@ -8,7 +8,7 @@ Another option would be to cache the styles after they were rendered. And then i
 2. Rebuild the styles from a storage (UnWrapping)  
 3. Check if any .css files had been modified since last run  
 
-A Reflection library was built in swift. And an UnWrapping library. There were a few open-source project that could Reflect and UnWrap. But some would only support structs while others wouldn't work with CGColor etc. So Building new libraries was justified. Also Reflection and UnWrapping is pretty complicated with swift as Swift is a "statically-typed-language" and so there needs to be a level of custom code to most custom classes. Unlike Dynamically-typed-languages were you can automate all reflection and unwrapping.   
+A Reflection library was built in swift. And an UnWrapping library. There were a few open-source project that could Reflect and UnWrap. But some would only support structs while others wouldn't work with CGColor etc. So Building new libraries was justified. Also Reflection and UnWrapping is pretty complicated with swift as Swift is a "statically-typed-language" and so there needs to be a level of custom reflection/unwrapping code to most custom classes. Unlike Dynamically-typed-languages were you can automate all reflection and unwrapping.   
 
 The Reflection and UnWrapping library was written as an universal library that can work on any class. Some classes needs to have custom code to work and this can be accomplished through extensions: 
 
