@@ -1,4 +1,4 @@
-parsing .css files takes between 5-10secs on a 4-core 2013 MacBook Pro Retina. To make it faster <!--more--> one could re-write the css parsing engine that uses RegExp. Or even using a speedier open-source css parsing engine from someone else. But then adding new features or quickly fix bugs would be hard to accomplish.  
+parsing all the macOS Sierra GUI styles takes between 5-10secs on a 4-core 2013 MacBook Pro Retina. To make it faster <!--more--> one could re-write the css parsing engine that uses RegExp. Or even using a speedier open-source css parsing engine from someone else. But then adding new features or quickly fix bugs would be hard to accomplish.  
 
 Another option would be to cache the styles after they were rendered. And then if no .css file changed in the subsequent runs, the pre rendered cached styles would be used. In this scenario loading a window packed with GUI elements would load bellow 1 sec. Which is imperceptible. Opening up additional GUI elements would be instant.  
 
