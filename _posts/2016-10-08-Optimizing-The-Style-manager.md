@@ -43,3 +43,7 @@ extension Temp:UnWrappable{
 The Reflection and UnWrapping library can be found here: [https://github.com/eonist/swift-utils](https://github.com/eonist/swift-utils) 
 
 Also Thanks to John Sundell. For helping me understanding Reflection better, be sure to check out his awesome UnBox and Wrap libraries in swift: [https://github.com/johnsundell ](https://github.com/johnsundell ) 
+
+## Tasks:
+
+- [ ] store xml nodes that are empty, or arrays that has no items. 6000 lines of xml is a bit excessive. But it was fast!, so the task will be done later
