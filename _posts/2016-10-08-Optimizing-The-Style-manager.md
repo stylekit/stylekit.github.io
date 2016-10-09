@@ -1,6 +1,6 @@
 parsing all the macOS Sierra GUI styles takes between 5-10secs on a 4-core 2013 MacBook Pro Retina. To make it faster <!--more--> one could re-write the current CSS parsing engine that uses RegExp. Or even using a speedier open-source css parsing engine from someone else. But then adding new features or quickly fixing bugs would be hard to accomplish.  
 
-Another option would be to cache the styles after they were rendered. And then if no .css file changed in the subsequent runs, the pre rendered cached styles would be used. In this scenario loading a window packed with GUI elements would load bellow 1 sec. Which is imperceptible. Opening up additional GUI elements would be instant.  
+Another option would be to cache the styles after they were rendered. And then if no .css file changed in the subsequent runs, the pre rendered cached styles would be used. In this scenario loading a window with hundreds of GUI elements would load bellow 1 sec. Which is imperceptible. Opening up additional GUI elements would be instant. The Style data retrieval system it self takes: 0.13sec for hundreds of GUI elements. This was achieved through the use of something called the "tail-trick" which is a system that caches the end items in style selectors and compares these first, when querying for a style. This could be optimized further by looking into Tree-databases and array sorting/parsing methods. At the movement its fast enough.    
 
 ## To accomplish this a couple of things was needed: 
 
