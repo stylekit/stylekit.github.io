@@ -135,7 +135,7 @@ Foundation Game Design ==(has Bouncing and gravity chapters)== http://www.amazon
 
 
 ## CPU Threading  
-- I depth analysis of the state of UI CPU Threading: http://chat.stackoverflow.com/rooms/104337/opengl-on-macos-x-and-threading pdf copy [here]([UI CPU Threading]) 
+- I depth analysis of the state of UI CPU Threading: http://chat.stackoverflow.com/rooms/104337/opengl-on-macos-x-and-threading pdf copy [here](https://dl.dropboxusercontent.com/u/2559476/open GL animation and swift – Conversation in OpenGL on MacOS X and Threading.pdf) 
   
 <!--Links, this section wont be visible to the readers-->
 [Listening for progress callbacks]:http://stackoverflow.com/questions/18827973/core-animation-progress-callback?lq=1
