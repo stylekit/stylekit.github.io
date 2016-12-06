@@ -12,6 +12,6 @@ http://apple.stackexchange.com/a/140361/179041
 
 here is an app icon i created in Illustrator:  
 
-<img width="512" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/gitsync_logo_2016_blue_1024.png">
+<img width="314" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/gitsync_logo_2016_blue.png">
 
 Now you have the .icns file that can be added to your xcode project. 
