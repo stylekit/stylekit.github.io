@@ -46,3 +46,5 @@ extension Temp:UnWrappable{
 	</someDict>
 </Temp>
 ```
+
+Storing key and value in separate nodes is important because key can have different types and value can have nested nodes. Aka complex content. As can key when I think about it, as long as it extends the Hashable protocol
