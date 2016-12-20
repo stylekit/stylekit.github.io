@@ -1,4 +1,4 @@
-Reflection and UnWrapping support <!--more--> 
+Reflection and UnWrapping now has Dictionary support <!--more--> 
 
 ### Swift code:
 
@@ -47,4 +47,4 @@ extension Temp:UnWrappable{
 </Temp>
 ```
 
-Storing key and value in separate nodes is important because key can have different types and value can have nested nodes. Aka complex content. As can key when I think about it, as long as it extends the Hashable protocol
+Storing key and value in separate nodes is important because key can have different types and value can have nested nodes. Aka complex content. As can key when I think about it, as long as it extends the Hashable protocol.
