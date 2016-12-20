@@ -1,6 +1,6 @@
 Reflection and UnWrapping now has Dictionary support <!--more--> 
 
-### Swift code:
+### Swift example:
 
 ```swift
 let temp:Temp = Temp([0:"test",3:"testing",5:"more testing"])//create a dict
@@ -9,7 +9,7 @@ Swift.print(xml.XMLString)//print the xml
 
 let newInstance:Temp = Temp.unWrap(xml)!//unwrap the xml to dict
 newInstance.someDict.forEach{
-    Swift.print("key: \($0.0) value: \($0.1)")
+    Swift.print("key: \($0.0) value: \($0.1)")//print key,value
 }
 
 class Temp{
@@ -26,7 +26,7 @@ extension Temp:UnWrappable{
 }
 ```
 
-### XML output
+### XML output:
 
 ```xml
 <Temp>
@@ -47,4 +47,5 @@ extension Temp:UnWrappable{
 </Temp>
 ```
 
+### Note:
 Storing key and value in separate nodes is important because key can have different types and value can have nested nodes. Aka complex content. As can key when I think about it, as long as it extends the Hashable protocol.
