@@ -7,3 +7,4 @@ FDD for short <!--more-->
 - Collaboration friendly
 - Opensource project often encourage feature branches when asked for pull requests
 - Easier to reason with than abstract fixes etc. 
+- If you need to fix a bug in a complicated segment of code, its easier if one fix it while adding a feature, as one tend dive deeper into the code if one attempts to reshape it.
