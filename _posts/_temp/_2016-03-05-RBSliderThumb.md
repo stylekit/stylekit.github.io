@@ -16,8 +16,8 @@
 
 8. this will make it easier to implement directly an also to implement legacy code for page resize support
 
-9. create an Internatl Thumb class
-10. it should resize and setposition of its own skin for given overshoot values. 
+9. create an Internal Thumb class
+10. it should resize and setPosition of its own skin for given overshoot values. 
 11. so -0,25 top overshoot then resize its own height to height-(height*abs(topOvershot))
 12. do the same with the bottomOvershot but also offset the skin.y value with the same amount
 13. do a isolated button test with this scenario first.
