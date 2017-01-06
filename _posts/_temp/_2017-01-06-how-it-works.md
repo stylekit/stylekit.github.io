@@ -23,7 +23,7 @@ Button{
 ```
 <img width="350" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/skin_layers.png">
 
-Graphic has 2 parts:
+Each Graphic has 2 parts:
 
 <img width="298" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/graphics_parts.png">
 
@@ -34,3 +34,7 @@ Graphic has 2 parts:
 The state is just a string that changes over time when the user interacts with the Element. Can be overDownCheckedFocused etc. then the Element is styled accordingly, by looking for a style that matches this combination of states.
 
 <img width="264" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/state_types.png">
+
+# Style.
+
+A style has Selectors, StyleProperties 1. A StyleProperty contains all the graphics attributes that can style a Skin 2. A Selector contains the address of which Element should be styled
