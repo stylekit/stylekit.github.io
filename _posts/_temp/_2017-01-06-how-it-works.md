@@ -1,6 +1,9 @@
-An overview of how Element works: <!--more--> 
+Element consists of 3 parts: <!--more--> 
 
-
+1.  [Skin](#)
+2.  [State](#)
+3.  [Style](#)
+    
 
 <img width="440" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Element_parts.png">
 
