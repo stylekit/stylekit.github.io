@@ -35,6 +35,7 @@ Pop is the framework that Facebook uses to power the animations in their app Pap
 - swift + NSOpenGlView + CVDisplayLink example that seemingly works: http://stackoverflow.com/questions/25981553/cvdisplaylink-with-swift although i'm unable to get it working. 
 - This is article is important: http://stackoverflow.com/questions/9442657/draw-from-a-separate-thread-with-nsopengllayer/11437833#11437833
 - This convo is important: http://chat.stackoverflow.com/rooms/104337/opengl-on-macos-x-and-threading Thanks again Mecki for your guidance. 
+- Swift 3 CVDisplayLink: [here](https://3d.bk.tudelft.nl/ken/en/2016/11/05/swift-3-and-opengl.html) 
 ##CADisplayLink (IOS)
 
 
