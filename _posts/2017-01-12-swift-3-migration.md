@@ -80,7 +80,9 @@ extension Bool{
 ## CGPath:
 
 public CGPath methods must be converted manually:  
-``CGPathAddPath(self, nil, path)`` is now: ``self.add(path)`` etc  
+- ``CGPathAddPath(self, nil, path)`` is now: ``self.add(path)`` etc  
+- ``CGAffineTransformIdentiy`` is now: ``CGAffineTransform()``
+  
         
 
 ## Final notes:
