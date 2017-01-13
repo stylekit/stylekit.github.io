@@ -82,11 +82,14 @@ extension Bool{
 public CGPath methods must be converted manually:  
 - ``CGPathAddPath(self, nil, path)`` is now: ``self.add(path)`` etc  
 - ``CGAffineTransformIdentiy`` is now: ``CGAffineTransform()``
-  
+- ``CGPathAddCurveToPoint(cp1,cp2,point)`` is now: ``path.addCurve(point,cp1,cp2)`` 👈 Notice that point has changed place. 
+
+
 ## CGRect:
 CGRect seems to be a struct now (aka value type) and some methods are removed as a result, But you can get them back:  
 ``CGRect().offsetInPlace()`` 👈 has been removed. Solution is to make an extension that implements the functionality again.
-        
+
+
 
 ## Final notes:
 - If you download the latest XCode via MacOS appStore, it will update your old XCode. A better solution is to find the direct link via apple.com and download it manually. This way you can have two versions of XCode on your computer. It's important to have 2 versions of XCode when you migrate, so that if you get into trouble during the migration you can always revert and try to figure out what worked in your previous swift 2.0 code. 
