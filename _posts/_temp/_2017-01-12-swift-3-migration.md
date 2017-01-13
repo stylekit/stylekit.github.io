@@ -3,6 +3,10 @@ Migration insights <!--more-->
 
 ## Range
 Range in swift 3 has been totally re-designed. 🙈
+We now have 2 Main Range types: Range and CountableRange.
+Apples motivation for seperating these types was:
+1. Make a light-weight range type that only holds 2 Ints (start and end)
+2. Make a heavy-weight range type that holds a copy of the original Collection type (aka Array)
 
 ## For-loop
 
