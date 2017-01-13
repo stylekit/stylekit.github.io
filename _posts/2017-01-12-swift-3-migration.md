@@ -57,3 +57,22 @@ public func %% (left:CGFloat, right:CGFloat) -> CGFloat {
 }
 ```
 
+## Boolean:
+
+```swift
+/**
+ * Swift 3 removed the possibility to cast CGFloat to Bool. This method brings back this functionality.
+ * JUSTIFICATION: Most other languages allow this functionality, and is familiar to the user the alternative is verbose code. Which makes code congnitivly harder to read.
+ * NOTE: Bool(Int(1)) still works nativly
+ * EXAMPLE: (expected results from other languages)
+ * Bool(CGFloat(0))//false
+ * Bool(CGFloat(-2))//true
+ * Bool(CGFloat(20))//true
+ * Bool(CGFloat.nan)//true
+ */
+extension Bool{
+    init(_ value:CGFloat) {
+        self.init(value != 0)
+    }
+}
+```
