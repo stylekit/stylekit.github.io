@@ -1,14 +1,15 @@
-Migration insights <!--more--> After migrating 30.000 lines swift 2.2 into swift 3.0 code. 
+After manually migrating 30.000 lines swift 2.2 into swift 3.0 code. <!--more--> Here are some insights:
 
 
 ## Range:
-Range in swift 3 has been totally re-designed. 🙈
+Range in swift 3 has been totally re-designed. 🙈  
 We now have 2 Main Range types: Range and CountableRange.
 Apples motivation for seperating these types was:
 1. Make a light-weight range type that only holds 2 Ints (start and end)
-2. Make a heavy-weight range type that holds a copy of the original Collection type (aka Array)
+2. Make a heavy-weight range type that holds a copy of the original Collection type (aka Array)  
+  
+**Important:** If you want to create extensions for Range you now have to make extensions for: Both types as they don't inherit a common protocol  
 
-**Important:** If you want to create extensions for Range you now have to make extensions for: Both types as they don't inherit a common protocol
 **Important:** Previously the generic item type for ranges was Element in swift 3 this is called Bound
 
 ## For-loop:
@@ -26,13 +27,14 @@ The one c-style for-loop to rule them all is gone, now we have 7 different to ta
 ## NSView:
 
 ``drawLayer(layer:CALayer, inContext ctx: CGContext)`` 👈 This has vanished with out a trace to work around build it your self or? 
+  
 ``actionForLayer(layer:CALayer, forKey event: String) -> CAAction?`` 👈 Also gone, Solution: build it your self or?
 
 **Important:** Seems these methods are apart of Metal now. So instead of extending NSView we now: ``Import MetalKit`` and ``CustomView:MTKView`` 
 
 ## Modulo:
 
-Bring back the simple modulo syntax in swift 3:
+**Bring back the simple modulo syntax in swift 3:**
 
 This syntax was actually suggested on Apples official swift mailing list here but for some reason they opted for a less elegant syntax.
 
