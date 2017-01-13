@@ -77,11 +77,10 @@ extension Bool{
 }
 ```
   
-  
-## CGPath
+## CGPath:
 
 public CGPath methods must be converted manually:  
-``CGPathAddPath(self, nil, path)`` is now: ``self.add(path)``  
+``CGPathAddPath(self, nil, path)`` is now: ``self.add(path)`` etc  
         
 
 ## Final notes:
