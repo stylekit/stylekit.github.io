@@ -1,4 +1,4 @@
-Migration insights <!--more--> 
+Migration insights <!--more--> After migrating 30.000 lines swift 2.2 into swift 3.0 code. 
 
 
 ## Range:
