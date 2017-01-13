@@ -1,14 +1,17 @@
 Migration insights <!--more--> 
 
 
-## Range
+## Range:
 Range in swift 3 has been totally re-designed. 🙈
 We now have 2 Main Range types: Range and CountableRange.
 Apples motivation for seperating these types was:
 1. Make a light-weight range type that only holds 2 Ints (start and end)
 2. Make a heavy-weight range type that holds a copy of the original Collection type (aka Array)
 
-## For-loop
+**Important:** If you want to create extensions for Range you now have to make extensions for: Both types as they don't inherit a common protocol
+**Important:** Previously the generic item type for ranges was Element in swift 3 this is called Bound
+
+## For-loop:
 
 The one c-style for-loop to rule them all is gone, now we have 7 different to take its place: 
 
@@ -20,12 +23,12 @@ The one c-style for-loop to rule them all is gone, now we have 7 different to ta
 - ``for i in stride(from:0,to:10,skip:2){}`` 👈 Skips every other
 - ``arr.forEach{$0}`` 👈 Easiest for-loop but only if you don't need to exit early
 
-## NSView
+## NSView:
 
 ``drawLayer(layer:CALayer, inContext ctx: CGContext)`` 👈 This has vanished with out a trace to work around build it your self. 
 ``actionForLayer(layer:CALayer, forKey event: String) -> CAAction?`` 👈 Also gone, Solution: build it your self.
 
-## Modulo
+## Modulo:
 
 Bring back the simple modulo syntax in swift 3:
 
