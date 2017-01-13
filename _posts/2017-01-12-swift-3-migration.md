@@ -62,8 +62,8 @@ public func %% (left:CGFloat, right:CGFloat) -> CGFloat {
 ```swift
 /**
  * Swift 3 removed the possibility to cast CGFloat to Bool. This method brings back this functionality.
- * JUSTIFICATION: Most other languages allow this functionality, and is familiar to the user the alternative is verbose code. Which makes code congnitivly harder to read.
- * NOTE: Bool(Int(1)) still works nativly
+ * JUSTIFICATION: Most other languages allow this functionality, and is familiar to the user the alternative is verbose code. Which makes code cognitively harder to read.
+ * NOTE: Bool(Int(1)) still works natively
  * EXAMPLE: (expected results from other languages)
  * Bool(CGFloat(0))//false
  * Bool(CGFloat(-2))//true
@@ -76,3 +76,7 @@ extension Bool{
     }
 }
 ```
+
+## Final notes:
+
+- Don't Download the latest XCode via MacOS appStore. Find the direct link via apple.com and download it manually. This way you can have two versions of XCode on your computer. It's important to have 2 versions of XCode when you migrate, so that if you get into trouble during the migration you can always revert and try to figure out what worked in your previous swift 2.0 code. 
