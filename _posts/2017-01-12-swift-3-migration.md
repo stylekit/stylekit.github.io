@@ -1,7 +1,7 @@
 After manually migrating 30.000 lines of swift 2.2 into swift 3.0 code. <!--more--> Here are some insights:
 
 
-# Range:
+## Range:
 Range in swift 3 has been totally re-designed. 🙈  
 We now have 2 Main Range types: Range and CountableRange.  
 Apples motivation for seperating these types was:  
@@ -14,7 +14,7 @@ Apples motivation for seperating these types was:
 
 **Important:** Previously the generic item type for ranges was Element in swift 3 this is called Bound
 
-# For-loop:
+## For-loop:
 
 The one c-style for-loop to rule them all is gone, now we have 7 different to take its place: 
 
@@ -26,7 +26,7 @@ The one c-style for-loop to rule them all is gone, now we have 7 different to ta
 - ``for i in stride(from:0,to:10,skip:2){}`` 👈 Skips every other
 - ``arr.forEach{$0}`` 👈 Easiest for-loop but only if you don't need to exit early
 
-# NSView:
+## NSView:
 
 ``drawLayer(layer:CALayer, inContext ctx: CGContext)`` 👈 This has vanished with out a trace to work around build it your self or? 
   
@@ -34,7 +34,7 @@ The one c-style for-loop to rule them all is gone, now we have 7 different to ta
 
 **Important:** Seems these methods are apart of Metal now. So instead of extending NSView we now: ``Import MetalKit`` and ``CustomView:MTKView`` 
 
-# Modulo:
+## Modulo:
 
 **Bring back the simple modulo syntax in swift 3:**
 
