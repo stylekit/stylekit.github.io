@@ -20,3 +20,27 @@ The one c-style for-loop to rule them all is gone, now we have 7 different to ta
 
 ``drawLayer(layer:CALayer, inContext ctx: CGContext)`` 👈 This has vanished with out a trace to work around build it your self. 
 ``actionForLayer(layer:CALayer, forKey event: String) -> CAAction?`` 👈 Also gone, Solution: build it your self.
+
+## Modulo
+
+Bring back the simple modulo syntax in swift 3:
+
+This syntax was actually suggested on Apples official swift mailing list here but for some reason they opted for a less elegant syntax.
+
+```swift
+infix operator %%/*<--infix operator is required for custom infix char combos*/
+/**
+ * Brings back simple modulo syntax (was removed in swift 3)
+ * Calculates the remainder of expression1 divided by expression2
+ * The sign of the modulo result matches the sign of the dividend (the first number). For example, -4 % 3 and -4 % -3 both evaluate to -1
+ * EXAMPLE: 
+ * print(12 %% 5)    // 2
+ * print(4.3 %% 2.1) // 0.0999999999999996
+ * print(4 %% 4)     // 0
+ * NOTE: The first print returns 2, rather than 12/5 or 2.4, because the modulo (%) operator returns only the remainder. The second trace returns 0.0999999999999996 instead of the expected 0.1 because of the limitations of floating-point accuracy in binary computing.
+ */
+public func %% (left:CGFloat, right:CGFloat) -> CGFloat {
+    return left.truncatingRemainder(dividingBy: right)
+}
+```
+
