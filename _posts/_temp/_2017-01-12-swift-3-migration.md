@@ -25,8 +25,10 @@ The one c-style for-loop to rule them all is gone, now we have 7 different to ta
 
 ## NSView:
 
-``drawLayer(layer:CALayer, inContext ctx: CGContext)`` 👈 This has vanished with out a trace to work around build it your self. 
-``actionForLayer(layer:CALayer, forKey event: String) -> CAAction?`` 👈 Also gone, Solution: build it your self.
+``drawLayer(layer:CALayer, inContext ctx: CGContext)`` 👈 This has vanished with out a trace to work around build it your self or? 
+``actionForLayer(layer:CALayer, forKey event: String) -> CAAction?`` 👈 Also gone, Solution: build it your self or?
+
+**Important:** Seems these methods are apart of Metal now. So instead of extending NSView we now: ``Import MetalKit`` and ``CustomView:MTKView`` 
 
 ## Modulo:
 
@@ -47,7 +49,7 @@ infix operator %%/*<--infix operator is required for custom infix char combos*/
  * NOTE: The first print returns 2, rather than 12/5 or 2.4, because the modulo (%) operator returns only the remainder. The second trace returns 0.0999999999999996 instead of the expected 0.1 because of the limitations of floating-point accuracy in binary computing.
  */
 public func %% (left:CGFloat, right:CGFloat) -> CGFloat {
-    return left.truncatingRemainder(dividingBy: right)
+    return left.truncatingRemainder(dividingBy: right)👈🙈
 }
 ```
 
