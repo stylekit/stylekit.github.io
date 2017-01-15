@@ -5,7 +5,7 @@ The three numbers are defined as major, minor, and patch version numbers. For ex
 
 - **Minor:** When the minor number is increased, this means new functionality was added, but it’s backwards compatible. When you decide to upgrade, you may or may not need the new functionality, but it shouldn’t cause any build errors or change existing behavior.
 
-- **patch:** When the patch number is increased, this means bug fixes were added, but no new functionality was added or behavior changes made. In general, you always want to upgrade patch versions as soon as possible to have the latest, stable version of the pod.
+- **Patch:** When the patch number is increased, this means bug fixes were added, but no new functionality was added or behavior changes made. In general, you always want to upgrade patch versions as soon as possible to have the latest, stable version of the pod.
 Lastly, the highest order number (major then minor then patch) must be increased per the above rules and any lower order numbers must be reset to zero.
 Need an Example?
 Consider a pod that has a current version number of 1.2.3.
