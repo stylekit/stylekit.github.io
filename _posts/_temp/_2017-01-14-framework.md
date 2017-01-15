@@ -23,3 +23,5 @@ Swift has three levels of access control. Use the following rules of thumb when 
 1. Right click on the ‘MotionKit.framework’ and select ‘Show in Finder’
  
 2. Now click and drag this .framework file into any of the projects that you want. In my case, I’d drag into my own project,
+
+3. In your new project: Project settings -> General -> Embedded bins and Linked frameworks / libs -> add the  .framework via the + button
