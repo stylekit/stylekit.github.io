@@ -7,6 +7,7 @@ Some notes on .framework <!--more-->
 ## Resources:
 
 - Make a framework of your swift files in a xcode project. And also add playground that can import the framework: [here](https://medium.com/@LogMaestro/adding-playgrounds-to-your-xcode-project-79d5ea0c7087#.q27u3w639) 
+- Use the a .framework file in other projects by copying it: [here](https://www.youtube.com/watch?v=vChxJ_Nk6kI) 
 
 ## Access level:
 
