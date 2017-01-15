@@ -9,7 +9,7 @@ Some notes on .framework <!--more-->
 - Make a framework of your swift files in a xcode project. And also add playground that can import the framework: [here](https://medium.com/@LogMaestro/adding-playgrounds-to-your-xcode-project-79d5ea0c7087#.q27u3w639) 
 - Use the a .framework file in other projects by copying it: [here](https://www.youtube.com/watch?v=vChxJ_Nk6kI) 
 - Export and Drag and drop .framework to different projects: [here](http://stackoverflow.com/a/40991398/5389500) 
-
+- Nice video [here](https://realm.io/news/tryswift-jeff-hui-creating-a-swift-library/) 
 ### Access level:
 
 Swift has three levels of access control. Use the following rules of thumb when creating your own frameworks:
@@ -25,3 +25,4 @@ Swift has three levels of access control. Use the following rules of thumb when 
 2. Now click and drag this .framework file into any of the projects that you want. In my case, I’d drag into my own project,
 
 3. In your new project: Project settings -> General -> Embedded bins and Linked frameworks / libs -> add the  .framework via the + button
+
