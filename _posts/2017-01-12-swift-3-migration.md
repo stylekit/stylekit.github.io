@@ -33,6 +33,7 @@ The one c-style for-loop to rule them all is gone, now we have 7 different to ta
 ``actionForLayer(layer:CALayer, forKey event: String) -> CAAction?`` 👈 Also gone, Solution: build it your self or?
 
 **Important:** Seems these methods are apart of Metal now. So instead of extending NSView we now: ``Import MetalKit`` and ``CustomView:MTKView`` 
+**IMPORTANT:** MetalKit is revolutionary but easy to use out of the box it is not. A simpler solution is to implement CALayerDelegate that has drawLayer and actionForLayer. And then implement these your self. 🔑
 
 ## Modulo:
 
