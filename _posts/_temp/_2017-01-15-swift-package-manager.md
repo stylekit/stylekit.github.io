@@ -8,7 +8,9 @@ let package = Package(
   name: "Element"
 )
 ```
-2. Upload your project to github (the requirements for what files to include are unknown at this time)
+2. keep all other .swift files you want to include in the package in a folder named Sources
+3. Upload the Sources folder and the Package.swift file to github
+
 
 ## Import: 
 
