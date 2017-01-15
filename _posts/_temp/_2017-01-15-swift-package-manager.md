@@ -14,7 +14,7 @@ let package = Package(
 
 ## Import: 
 
-1. add a Package.swift to your xcode project with example: 
+1. Add a Package.swift to your xcode project with example: 
 ```swift
 import PackageDescription
 let package = Package(
@@ -24,5 +24,5 @@ let package = Package(
     ]
 )
 ```
-2. navigate to the folder in terminal ``cd ~/Documents/dev/SomeProject/``
+2. navigate to the folder in terminal ``cd ~/Documents/dev/SomeProject``
 3. in terminal execute ``swift build``
