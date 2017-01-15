@@ -1,4 +1,4 @@
-Notes on Swift package manager<!--more--> 
+Notes on Swift package manager<!--more--> Swift package manager seems like the easier to use than CocoaPod and Carthage. Here is the basic workflow:
 
 ## Export: 
 1. Add an empty Package.Swift to your xcode project
