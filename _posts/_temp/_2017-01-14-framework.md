@@ -17,6 +17,7 @@ Swift has three levels of access control. Use the following rules of thumb when 
 - **Internal**: for code used between functions and classes within the framework, e.g., custom layers in that view.
 - **Fileprivate**: for code used within a single file, e.g., a helper function that computes layout heights.
 - **Private**: for code used within an enclosing declaration, such as a single class block. Private code will not be visible to other blocks, such as extensions of that class, even in the same file, e.g., private variables, setters, or helper sub-functions.
+- **@testable** if you prefix your import with ``@testable`` then you can work with framework classes even if they are not marked public 🔑
 
 ### Export / Import:
 
