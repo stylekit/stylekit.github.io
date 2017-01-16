@@ -1,10 +1,13 @@
 Some notes on swift .framework <!--more--> 
 
-### Export / Import:
+### Export:
 
-1. Right click on the ‘MotionKit.framework’ and select ‘Show in Finder’
+
+### Import:
+
+1. Right click on the ‘.framework’ and select ‘Show in Finder’
  
-2. Now click and drag this .framework file into any of the projects that you want. In my case, I’d drag into my own project,
+2. Now click and drag this .framework file into any of the projects that you want. In my case, I’d drag into my own project.
 
 3. In your new project: Project settings -> General -> Embedded bins and Linked frameworks / libs -> add the  .framework via the + button
 
@@ -19,7 +22,6 @@ Swift has three levels of access control. Use the following rules of thumb when 
 
 
 ### Resources:
-
 - Make a framework of your swift files in a xcode project. And also add playground that can import the framework: [here](https://medium.com/@LogMaestro/adding-playgrounds-to-your-xcode-project-79d5ea0c7087#.q27u3w639) 
 - Use the a .framework file in other projects by copying it: [here](https://www.youtube.com/watch?v=vChxJ_Nk6kI) 
 - Export and Drag and drop .framework to different projects: [here](http://stackoverflow.com/a/40991398/5389500) 
