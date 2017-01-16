@@ -1,7 +1,9 @@
 Some notes on swift .framework <!--more--> 
 
 ### Export:
-
+1. save as target -> pick Cocoa framework 
+2. Select .swift files and set their target membership to the .framework
+3. cmd + b -> build
 
 ### Import:
 
