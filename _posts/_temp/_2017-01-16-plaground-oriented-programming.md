@@ -21,6 +21,10 @@ In order to use multiple .framework in playground you have to:
 
 8. Add this to your playground: 
 
+## Using nested .framework files in playground
+
+Usually .frameworks rely on other .frameworks to work. playground doesn't allow this out of the box
+
 
 ```swift
 @testable import FrameWork //<--Import the framework first (links your external .framework files)
