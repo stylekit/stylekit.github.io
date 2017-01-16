@@ -8,8 +8,8 @@ Some notes on swift .framework <!--more-->
 ### Import:
 
 1. Right click on the ‘.framework’ and select ‘Show in Finder’
-2. Now click and drag this .framework file into any of the projects that you want. In my case, I’d drag into my own project.
-3. In your new project: Project settings -> General -> Embedded bins and Linked frameworks / libs -> add the  .framework via the + button
+2. copy the .framework file in the same folder where your .swift files are. Then drag it into Xcode.
+3. In your new project: Project settings -> General -> Embedded bins and Linked frameworks add the  .framework via the + button
 
 
 ### Access level:
