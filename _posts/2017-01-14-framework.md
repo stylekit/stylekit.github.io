@@ -16,7 +16,7 @@ Some notes on swift .framework <!--more-->
 
 1. Right click on the ‘.framework’ and select ‘Show in Finder’
 2. copy the .framework file in the same folder where your .swift files are. Then drag it into Xcode.
-3. In your new project: Project settings -> General -> Embedded bins and Linked frameworks add the  .framework via the + button
+3. In your new project: Project settings -> General -> Embedded binaries add the  .framework via the + button🔑
 
 
 ### Access level:
