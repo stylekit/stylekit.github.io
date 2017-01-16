@@ -20,6 +20,13 @@ In order to use multiple .framework in playground you have to:
 
 8. Add this to your playground: 
 
+```swift
+@testable import FrameWork //<--links your external .framework files
+@testable import ThirdPartyFrameWork
+
+ThirdPartyFrameWork.test()//Output: hello world
+```
+
 
 ## Using nested .framework files in playground:
 
@@ -60,14 +67,6 @@ Usually .frameworks rely on other .frameworks to work. playground doesn't allow 
 @testable import Child
 @testable import Parent
 
-Parent.myMethod()
-```
-
-
-```swift
-@testable import FrameWork //<--links your external .framework files
-@testable import ThirdPartyFrameWork
-
-ThirdPartyFrameWork.test()//Output: hello world
+Parent.myMethod()//hello parent, hello child
 ```
 
