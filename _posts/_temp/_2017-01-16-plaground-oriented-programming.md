@@ -21,9 +21,47 @@ In order to use multiple .framework in playground you have to:
 
 8. Add this to your playground: 
 
-## Using nested .framework files in playground
+## Using nested .framework files in playground:
 
-Usually .frameworks rely on other .frameworks to work. playground doesn't allow this out of the box
+Usually .frameworks rely on other .frameworks to work. playground doesn't allow this out of the box.
+
+1. file -> new project -> cocoa framework -> call it Child.framework -> cmd+b
+
+2. file -> new project -> cocoa framework -> call it Parent.framework 
+
+3. Copy the Child.framework into the project folder of: Parent.framework 
+
+4. Drag the child.framework into xcode. 
+
+5. the .child .framework in the parent .framework and 
+
+6. In the Parent.framework project: cmd + b (aka build)
+
+7. file -> new project -> Call it: "MyApp"
+
+8. file -> new target -> cocoa framework -> Call it FrameWork.framework   
+
+9. copy Child.framework and Parent.framework into the MyApp project folder
+
+10. drag Child.framework and Parent.framework into the MyApp xcode project
+
+11. add Child.framework and Parent.framework in: general -> "embedded binaries" 
+
+12. cmd + b (aka build)
+
+13. When you run an app you can import the framework with ``@testable import Parent`` and it will work 
+
+14. cmd + n -> playground -> name it MyPlayground
+
+15. in playground make sure you add: (the order of imports is important) 🔑
+
+```swift
+@testable import FrameWork
+@testable import Child
+@testable import Parent
+
+Parent.myMethod()
+```
 
 
 ```swift
