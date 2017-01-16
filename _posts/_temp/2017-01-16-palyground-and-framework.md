@@ -1,4 +1,4 @@
-Notes on adding .framework to playground. t <!--more--> 
+Notes on adding external .framework files to playground. <!--more--> 
 
 ## Using .framework in playground:
 
@@ -56,7 +56,7 @@ Usually .frameworks rely on other .frameworks to work. playground doesn't allow 
 15. in playground make sure you add: (the order of imports is important) 🔑
 
 ```swift
-@testable import FrameWork
+@testable import FrameWork//<--links your external .framework files
 @testable import Child
 @testable import Parent
 
@@ -65,10 +65,9 @@ Parent.myMethod()
 
 
 ```swift
-@testable import FrameWork //<--Import the framework first (links your external .framework files)
-@testable import Element
+@testable import FrameWork //<--links your external .framework files
+@testable import ThirdPartyFrameWork
 
-let button:Button = Button()
-addSubView(button)
+ThirdPartyFrameWork.test()//Output: hello world
 ```
 
