@@ -1,10 +1,10 @@
-After manually migrating 30.000 lines of swift 2.2 into swift 3.0 code. <!--more--> Here are some insights:
+After manually migrating 30.000 lines of swift 2.2 into swift 3.0 code. <!--more--> Here are some insights:  
 
 
 ## Range:
-Range in swift 3 has been totally re-designed. 🙈  
-We now have 2 Main Range types: Range and CountableRange.  
-Apples motivation for seperating these types was:  
+Range in swift 3 has been totally re-designed. 🙈   
+We now have 2 Main Range types: Range and CountableRange.   
+Apples motivation for seperating these types was:    
 
 1. Make a light-weight range type that only holds 2 Ints (start and end)  
 
@@ -39,7 +39,7 @@ The one c-style for-loop to rule them all is gone, now we have 7 different to ta
 
 **Bring back the simple modulo syntax in swift 3:**
 
-This syntax was actually suggested on Apples official swift mailing list here but for some reason they opted for a less elegant syntax.
+This syntax was actually suggested on Apples official swift mailing list here but for some reason they opted for a less elegant syntax.  
 
 ```swift
 infix operator %%/*<--infix operator is required for custom infix char combos*/
@@ -87,21 +87,21 @@ public CGPath methods must be converted manually:
 
 ## CGRect:
 CGRect seems to be a struct now (aka value type) and some methods are removed as a result, But you can get them back:    
-- ``CGRect().offsetInPlace()`` 👈 has been removed. Solution is to make an extension that implements the functionality again.
+- ``CGRect().offsetInPlace()`` 👈 has been removed. Solution is to make an extension that implements the functionality again.   
 
 ## NSDate:
 NSDate is now Date:  
-- ``NSCalendar.currentCalendar().dateByAddingUnit()`` is probably: ``Calendar.current.date()`` 👈 The syntax doesn't include options. So I think this needs some extra research.
+- ``NSCalendar.currentCalendar().dateByAddingUnit()`` is probably: ``Calendar.current.date()`` 👈 The syntax doesn't include options. So I think this needs some extra research.  
 
 ## AnyClass:
-``.isMemberOfClass`` is now: ``isMember(of:)``
+``.isMemberOfClass`` is now: ``isMember(of:)``  
 
 ## Other tidbits:
-XCode now complain if a method that returns a var is unused:  
-``_ = someReturningMethod()`` 👈 The solution is to add: ``_ =`` infront of the call
+XCode now complain if a method that returns a var is unused:   
+``_ = someReturningMethod()`` 👈 The solution is to add: ``_ =`` infront of the call  
 
 
 ## Final notes:
-- If you download the latest XCode via MacOS appStore, it will update your old XCode. A better solution is to find the direct link via apple.com and download it manually. This way you can have two versions of XCode on your computer. It's important to have 2 versions of XCode when you migrate, so that if you get into trouble during the migration you can always revert and try to figure out what worked in your previous swift 2.0 code. 
+- If you download the latest XCode via MacOS appStore, it will update your old XCode. A better solution is to find the direct link via apple.com and download it manually. This way you can have two versions of XCode on your computer. It's important to have 2 versions of XCode when you migrate, so that if you get into trouble during the migration you can always revert and try to figure out what worked in your previous swift 2.0 code.   
 
-- To get 7x BuildTime Speed decrease going from swift 2.0 to 3.0: set this variable: SWIFT_WHOLE_MODULE_OPTIMIZATION = YES [More info here](http://www.splinter.com.au/blog/) 👈 Take this advice with a pinch of salt. But its worth trying.
+- To get 7x BuildTime Speed decrease going from swift 2.0 to 3.0: set this variable: SWIFT_WHOLE_MODULE_OPTIMIZATION = YES [More info here](http://www.splinter.com.au/blog/) 👈 Take this advice with a pinch of salt. But its worth trying.  
