@@ -8,7 +8,7 @@ This applescript can convert a .png to an .icns file in **4 simple steps:**
 **Step.3:** save as: IconMaker.app   
 **Step.4:** drag and drop your .png onto the IconMaker.app you just created.  
 
-http://apple.stackexchange.com/a/140361/179041
+[http://apple.stackexchange.com/a/140361/179041](http://apple.stackexchange.com/a/140361/179041) 
 
 here is an app icon i created in Illustrator:  
 
