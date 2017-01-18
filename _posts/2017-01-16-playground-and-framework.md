@@ -70,5 +70,6 @@ Parent.myMethod()//hello parent, hello child
 
 ## Final notes:
 
-- Having the ability add frameworks to xcode is key to low build times and is also the only way to add external code to playground.  
+- Having the ability add frameworks to XCode is key to low build times and is also the only way to add external code to playground.  
 - Being able to nest frameworks is a must when using Third Party FrameWorks and your own frameworks. 
+- The workflow to get nested frameworks to work in playground is not optimal. **An alternative** is to compile all libraries as a single .framework. This can be done by creating empty .framework files so that the import statements doesn't complain. They need to be empty so that the compiler doesn't complain about duplicate classes. The final step is to copy the third-party framework .swift files into your project. Then follow the steps in "Using framework in playground"
