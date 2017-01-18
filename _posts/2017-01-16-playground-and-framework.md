@@ -1,5 +1,6 @@
 Notes on adding external .framework files to playground. <!--more--> 
 
+## Framework + Playground demo:  
 <video width="1034" height="524" controls="controls" type="video/mp4" autoplay loop preload="none"><source src="https://dl.dropboxusercontent.com/u/2559476/ElementPlaygroundDemo.mov"></video>
 
 
