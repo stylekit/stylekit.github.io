@@ -38,7 +38,7 @@ ThirdPartyFrameWork.test()//Output: hello world
 
 ## Using nested .framework's in playground:
 
-Usually .frameworks rely on other .framework's to work. Playground doesn't allow this out of the box.
+Usually .frameworks rely on other .framework's to work. (Playground doesn't allow this out of the box)
 
 1. file -> new project -> cocoa framework -> call it Child.framework -> cmd+b
 
