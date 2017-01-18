@@ -10,11 +10,11 @@ Apples motivation for seperating these types was:
 
 2. Make a heavy-weight range type that holds a copy of the original Collection type (aka Array)  
   
-**Important:** If you want to create extensions for Range you now have to make extensions for: Both types as they don't inherit a common protocol  
+**Important:** If you want to create extensions for Range you now have to make extensions for: Both types as they don't inherit a common protocol    
 
-**Important:** Previously the generic item type for ranges was Element in swift 3 this is called Bound
+**Important:** Previously the generic item type for ranges was Element in swift 3 this is called Bound  
 
-**Important:** 0...4 is now called a: Closed​Range and CountableClosedRange the later if the Range contains a collection
+**Important:** 0...4 is now called a: Closed​Range and CountableClosedRange the later if the Range contains a collection  
 
 ## For-loop:
 
