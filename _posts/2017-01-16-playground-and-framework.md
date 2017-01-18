@@ -48,24 +48,28 @@ Usually .frameworks rely on other .frameworks to work. playground doesn't allow 
 
 6. file -> new project -> Call it: "MyApp"
 
-7. file -> new target -> cocoa framework -> Call it FrameWork.framework   
+7. Save the xcode project as a workspace
 
-8. Copy Child.framework and Parent.framework into the MyApp project folder
+8. cmd + n -> playground -> name it MyPlayground
 
-9. Drag Child.framework and Parent.framework into the MyApp xcode project
+9. Name it MyPlayground and set the group to the MyWorkspace. 🔑
 
-10. add Child.framework and Parent.framework in: general -> "embedded binaries" 
+10. file -> new target -> cocoa framework -> Call it MyFrameWork.framework   
 
-11. cmd + b (aka build)
+11. Copy Child.framework and Parent.framework into the MyApp project folder
 
-12. When you run an app you can import the framework with ``@testable import Parent`` and it will work 
+12. Drag Child.framework and Parent.framework into the MyApp xcode project
 
-13. cmd + n -> playground -> name it MyPlayground
+13. add Child.framework and Parent.framework in: general -> "embedded binaries" 
 
-14. In playground make sure you add: (the order of imports is important) 🔑
+14. cmd + b (aka build)
+
+15. When you run an app you can import the framework with ``@testable import Parent`` and it will work 
+
+16. In playground you have to make sure you add: (the order of imports is important) 🔑
 
 ```swift
-@testable import FrameWork//<--links your external .framework files
+@testable import MyFrameWork//<--links your external .framework files
 @testable import Child
 @testable import Parent
 
