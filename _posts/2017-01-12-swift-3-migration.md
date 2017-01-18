@@ -14,6 +14,8 @@ Apples motivation for seperating these types was:
 
 **Important:** Previously the generic item type for ranges was Element in swift 3 this is called Bound
 
+**Important:** 0...4 is now called a: Closed​Range and CountableClosedRange the later if the Range contains a collection
+
 ## For-loop:
 
 The one c-style for-loop to rule them all is gone, now we have 7 different to take its place: 
