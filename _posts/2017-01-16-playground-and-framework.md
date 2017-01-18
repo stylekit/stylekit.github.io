@@ -6,7 +6,7 @@ Notes on adding external .framework files to playground. <!--more-->
 
 ## Using .framework in playground:
 
-In order to use multiple .framework in playground you have to: 
+In order to use multiple .framework's in playground you have to: 
 
 1. Create a new xcode project
 
@@ -36,9 +36,9 @@ ThirdPartyFrameWork.test()//Output: hello world
 ```
 
 
-## Using nested .framework files in playground:
+## Using nested .framework's in playground:
 
-Usually .frameworks rely on other .frameworks to work. playground doesn't allow this out of the box.
+Usually .frameworks rely on other .framework's to work. Playground doesn't allow this out of the box.
 
 1. file -> new project -> cocoa framework -> call it Child.framework -> cmd+b
 
