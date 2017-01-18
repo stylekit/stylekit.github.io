@@ -1,6 +1,6 @@
 Notes on adding external .framework files to playground. <!--more--> 
 
-<video width="1034" height="524" controls="controls" type="video/mp4" autoplay="true" preload="none"><source src="https://dl.dropboxusercontent.com/u/2559476/ElementPlaygroundDemo.mov">Your browser does not support the video tag.</video>
+<video width="1034" height="524" controls="controls" type="video/mp4" autoplay preload="none"><source src="https://dl.dropboxusercontent.com/u/2559476/ElementPlaygroundDemo.mov"></video>
 
 
 ## Using .framework in playground:
