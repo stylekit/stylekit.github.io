@@ -8,15 +8,19 @@ In order to use multiple .framework in playground you have to:
 
 2. Save the xcode project as a workspace
 
-3. File -> new target -> Cocoa framework -> name the framework (FrameWork.framework)
+3. Add a playground to the workspace (select the project and cmd + n) 
 
-4. add the .framework files to the folder of your xcode project
+4. Name it MyPlayground and set the group to the workspace. 🔑
 
-5. Drag the .framework files into the project (set target membership to FrameWork.framework)
+5. File -> new target -> Cocoa framework -> name the framework (FrameWork.framework)
 
-6. cmd + b (aka build)
+6. add the .framework files to the folder of your xcode project
 
-7. Add a playground to the workspace (select the project and cmd + n)
+7. Drag the .framework files into the project (set target membership to FrameWork.framework)
+
+8. cmd + b (aka build)
+
+
 
 8. Add this to your playground: 
 
