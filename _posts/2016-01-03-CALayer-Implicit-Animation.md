@@ -8,4 +8,13 @@ override func actionForLayer(layer: CALayer, forKey event: String) -> CAAction? 
     return NSNull()
 }
 ```
+
+alternative: (sandwich your property change)
+
+```swift
+CATransaction.begin()
+CATransaction.setValue(kCFBooleanTrue, forKey: kCATransactionDisableActions)
+// change properties here without animation
+CATransaction.commit()
+```
 Remember to set the delegate of your CALayer instance to an instance of a class that at least extends NSObject. In this example we extend NSView.
