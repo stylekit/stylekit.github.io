@@ -8,3 +8,6 @@ Slack, I’m Breaking Up with You." [Samuel Hulick](https://medium.com/better-pe
 
 ## My constructive suggestion to slack:
 Slack should implement a stackoverflow like rating system for answers. Think measuring the ratio between good answers vs answers.count. This would discourage people taking up too much room without saying anything use-full. Quality over quantity. The implications of such a "rate-ocracy" has its own pitfalls, longer discussion. **But you can't argue that stackoverflow doesn't work.** Even better so than wikipedia, which is cumbersome and elitist in comparison. And stackoverflow is self governed by its users and staff at stackoverflow only task is to keep the lights on.
+
+## A new idea that i've been thinking about
+A-sync collaboration. Similar to how a Threading in cpu works. The way most teams work today is more like a single core cpu works with only one thread. Every thing has to sync or it all falls apart. Which leads to discouraging taking chances and following rabits down rabit holes. Which is what drives innovation. 
