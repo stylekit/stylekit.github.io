@@ -18,11 +18,11 @@ In order to use multiple .framework's in playground you have to:
 
 5. File -> new target -> Cocoa framework -> name the framework (FrameWork.framework)
 
-6. add the .framework files to the folder of your xcode project
+6. Add the .framework files to the folder of your xcode project
 
 7. Drag the .framework files into the project (set target membership to FrameWork.framework)
 
-8. cmd + b (aka build)
+8. Cmd + b (aka build)
 
 
 
@@ -40,9 +40,9 @@ ThirdPartyFrameWork.test()//Output: hello world
 
 Usually .frameworks rely on other .framework's to work. (Playground doesn't allow this out of the box)
 
-1. file -> new project -> cocoa framework -> call it Child.framework -> cmd+b
+1. File -> new project -> cocoa framework -> call it Child.framework -> cmd+b
 
-2. file -> new project -> cocoa framework -> call it Parent.framework 
+2. File -> new project -> cocoa framework -> call it Parent.framework 
 
 3. Copy the Child.framework into the project folder of: Parent.framework 
 
@@ -50,23 +50,23 @@ Usually .frameworks rely on other .framework's to work. (Playground doesn't allo
 
 5. In the Parent.framework project: cmd + b (aka build)
 
-6. file -> new project -> Call it: "MyApp"
+6. File -> new project -> Call it: "MyApp"
 
 7. Save the xcode project as a workspace
 
-8. cmd + n -> playground -> name it MyPlayground
+8. Cmd + n -> playground -> name it MyPlayground
 
 9. Name it MyPlayground and set the group to the MyWorkspace. 🔑
 
-10. file -> new target -> cocoa framework -> Call it MyFrameWork.framework   
+10. File -> new target -> cocoa framework -> Call it MyFrameWork.framework   
 
 11. Copy Child.framework and Parent.framework into the MyApp project folder
 
 12. Drag Child.framework and Parent.framework into the MyApp xcode project
 
-13. add Child.framework and Parent.framework in: general -> "embedded binaries" 
+13. Add Child.framework and Parent.framework in: general -> "embedded binaries" 
 
-14. cmd + b (aka build)
+14. Cmd + b (aka build)
 
 15. When you run an app you can import the framework with ``@testable import Parent`` and it will work 
 
@@ -84,6 +84,6 @@ Parent.myMethod()//hello parent, hello child
 
 - Having the ability add frameworks to XCode is key to low build times and is also the only way to add external code to playground.  
 - Being able to nest frameworks is a must when using Third Party FrameWorks and your own frameworks. 
-- The workflow to get nested frameworks to work in playground is not optimal. **An alternative** is to compile all libraries as a single .framework. This can be done by creating empty .framework files so that the import statements doesn't complain. They need to be empty so that the compiler doesn't complain about duplicate classes. The final step is to copy the third-party framework .swift files into your project. Then follow the steps in "Using framework in playground"
+- The workflow to get nested frameworks to work in playground is not optimal. **An alternative** is to compile all libraries as a single .framework. This can be done by creating empty .framework files so that the import statements doesn't complain. They need to be empty so that the compiler doesn't complain about duplicate classes. The final step is to copy the third-party framework .swift files into both **your project folder** and **xcode** 🔑. Then follow the steps in "Using framework in playground"
 
 <img width="530" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/PlaygroundFrameworkLoop_20FPS_half_size.mp4.gif">
