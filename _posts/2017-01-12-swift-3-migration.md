@@ -41,7 +41,7 @@ The one c-style for-loop to rule them all is gone, now we have 7 different to ta
 
 **Bring back the simple modulo syntax in swift 3:**
 
-This syntax was actually suggested on Apples official swift mailing list here but for some reason they opted for a less elegant syntax.  
+This syntax was actually suggested on Apples official swift mailing list [here](https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20160523/018679.html)  but for some reason they opted for a less elegant syntax.  
 
 ```swift
 infix operator %%/*<--infix operator is required for custom infix char combos*/
