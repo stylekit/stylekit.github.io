@@ -1,5 +1,7 @@
 Notes on implementing two finger swipe on mac<!--more--> 
 
+<img width="192" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/multitouch.mov.gif">
+
 ### In your NSView:
 
 ```swift
@@ -45,7 +47,7 @@ class GestureUtils{
     }
     /**
      * Detects 2 finger (left/right) swipe gesture
-     * NOTE: either of 3 enums is returned. .leftSwipe, .rightSwipe .none
+     * NOTE: either of 3 enums is returned: .leftSwipe, .rightSwipe .none
      * TODO: also make up and down swipe detectors, and do more research into how this could be done easier. Maybe you even have some clues in the notes about gestures etc.
      * Conceptually:
      * 1. Record 2 .began touchEvents
