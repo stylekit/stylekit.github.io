@@ -1,4 +1,4 @@
-Notes on implementing two finger swipe on mac<!--more--> 
+Notes on implementing two finger swipe for macOS<!--more--> 
 
 <img width="192" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/multitouch.mov.gif">
 
