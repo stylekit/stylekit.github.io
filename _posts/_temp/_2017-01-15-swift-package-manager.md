@@ -23,6 +23,22 @@ let package = Package(
         .Package(url: "https://github.com/eonist/Element.git", majorVersion: 1),
     ]
 )
+Pick versions with this syntax: ``majorVersion: 0, minor: 4``
 ```
 2. navigate to the folder in terminal ``cd ~/Documents/dev/SomeProject``
 3. in terminal execute ``swift build``
+
+## Excluding non-source files:  
+Use this property to exclude files and directories from the package sources.  
+```swift
+let package = Package(
+    name: "Foo",
+    exclude: ["Sources/Fixtures", "Sources/readme.md", "Tests/FooTests/images"]
+)
+```
+
+## Create .xcodeproj file via terminal:
+cd to the respected folder
+```bash
+swift package generate-xcodeproj
+```
