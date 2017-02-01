@@ -5,7 +5,7 @@ We are all DevOps now. There is no getting around this, if you want to code effi
 
 ## First impression using SPM:
 
-SPM seems like a command-line tool for downloading projects that contain .swift files from github. It's able to derive files based on sem-ver tagging. 
+SPM seems like a command-line tool for downloading projects that contain .swift files from github. It's able to derive files based on "Sem-Ver" tagging of committed code. 
 
 ## Export: 
 1. Add an empty Package.Swift to your xcode project
