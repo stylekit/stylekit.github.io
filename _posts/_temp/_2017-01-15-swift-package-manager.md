@@ -5,7 +5,7 @@ We are all DevOps now. There is no getting around this, if you want to code effi
 
 ## First impression using SPM:
 
-SPM seems like a command-line tool for downloading projects that contain .swift files from github. It's able to derive files based on "Sem-Ver" tagging of committed code. And thats pretty much it. Which leaves a lot to be desired. 
+SPM seems like a command-line tool for downloading projects that contain .swift files from github. It's able to derive files based on "Sem-Ver" tagging of committed code. I think it also supports nested dependencies but I haven't tested that part. And thats pretty much it. Which leaves a lot to be desired. Like support for binaries (.framework)? Which is really important when dealing with third-party libs. (binaries are a lot fast to compile that source code)
 
 ## Export: 
 1. Add an empty Package.Swift to your xcode project
