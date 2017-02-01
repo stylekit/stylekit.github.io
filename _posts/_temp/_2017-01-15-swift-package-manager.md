@@ -1,8 +1,11 @@
 Notes on Swift package manager<!--more--> Swift package manager seems like the easier to use than CocoaPod and Carthage. Here is the basic workflow:
 
-## First impression:
+## Pretext:  
+We are all DevOps now. There is no getting around this, if you want to code efficiently you have to master the art of DevOps. Or descend into "dependency hell". Package Dependency managers Are not easy to use, but one cannot live with out them. developing for apple devices requires you to use either Cocoapod Carthage or SPM. Which can be divided into 3 camps: The past, the present and the future. SPM being the future. 
 
-SPM seems like a command-line tool for downloading projects that contain .swift files from github. Its able to derive files based on sem-ver tagging. 
+## First impression using SPM:
+
+SPM seems like a command-line tool for downloading projects that contain .swift files from github. It's able to derive files based on sem-ver tagging. 
 
 ## Export: 
 1. Add an empty Package.Swift to your xcode project
