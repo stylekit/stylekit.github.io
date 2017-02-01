@@ -30,7 +30,7 @@ let package = Package(
         .Package(url: "https://github.com/eonist/Element.git", majorVersion: 1),
     ]
 )
-Pick versions with this syntax: ``majorVersion: 0, minor: 4`` For more specific version picking use: ``Version(0, 0, 0, prereleaseIdentifiers: ["alpha", "3"])`` which would download 0.0.0-alpha.3
+Pick versions with this syntax: ``majorVersion: 0, minor: 4`` For more specific version picking use: ``Version(0, 0, 0, prereleaseIdentifiers: ["alpha", "3"])`` which would download 0.0.0-alpha.3 for ranges you can use synx such as : ``Version(2, 0, 1) ..< Version(2, 1, 0)``
 
 
 ```
@@ -51,3 +51,8 @@ cd to the respected folder
 ```bash
 swift package generate-xcodeproj
 ```
+
+## SPM dependency resolvent: 
+
+If two packages depend on different versions of a third package, the package manager tries to find a version of that package that both will find acceptable.
+
