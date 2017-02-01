@@ -1,5 +1,9 @@
 Notes on Swift package manager<!--more--> Swift package manager seems like the easier to use than CocoaPod and Carthage. Here is the basic workflow:
 
+## First impressions:
+
+SPM seems like a command-line tool for downloading projects that contain .swift files from github. Its able to 
+
 ## Export: 
 1. Add an empty Package.Swift to your xcode project
 ```swift
@@ -23,7 +27,9 @@ let package = Package(
         .Package(url: "https://github.com/eonist/Element.git", majorVersion: 1),
     ]
 )
-Pick versions with this syntax: ``majorVersion: 0, minor: 4``
+Pick versions with this syntax: ``majorVersion: 0, minor: 4`` For more specific version picking use: ``Version(0, 0, 0, prereleaseIdentifiers: ["alpha", "3"])`` which would download 0.0.0-alpha.3
+
+
 ```
 2. navigate to the folder in terminal ``cd ~/Documents/dev/SomeProject``
 3. in terminal execute ``swift build``
