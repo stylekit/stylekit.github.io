@@ -30,10 +30,12 @@ let package = Package(
         .Package(url: "https://github.com/eonist/Element.git", majorVersion: 1),
     ]
 )
-Pick versions with this syntax: ``majorVersion: 0, minor: 4`` For more specific version picking use: ``Version(0, 0, 0, prereleaseIdentifiers: ["alpha", "3"])`` which would download 0.0.0-alpha.3 for ranges you can use synx such as : ``Version(2, 0, 1) ..< Version(2, 1, 0)``
-
-
 ```
+
+Pick versions with this syntax: ``majorVersion: 0, minor: 4`` For more specific version picking use: ``Version(0, 0, 0, prereleaseIdentifiers: ["alpha", "3"])`` which would download ``0.0.0-alpha.3`` for ranges you can use syntax such as : ``Version(2, 0, 1) ..< Version(2, 1, 0)``
+
+
+
 2. navigate to the folder in terminal ``cd ~/Documents/dev/SomeProject``
 3. in terminal execute ``swift build``
 
