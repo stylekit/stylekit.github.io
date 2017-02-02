@@ -5,7 +5,7 @@ We are all DevOps now. There is no getting around this, if you want to code effi
 
 ## First impression using SPM:
 
-SPM seems like a command-line tool for downloading projects that contain .swift files from github. It's able to derive files based on "Sem-Ver" tagging of committed code. I think it also supports nested dependencies but I haven't tested that part. And thats pretty much it. Which leaves a lot to be desired. Like support for binaries (.framework)? Which is really important when dealing with third-party libs. (binaries are a lot fast to compile that source code)
+SPM seems like a command-line tool for downloading projects that contain .swift files from github. It's able to derive files based on "Sem-Ver" tagging of committed code. I think it also supports nested dependencies but I haven't tested that part. And thats pretty much it. Which leaves a lot to be desired. Like support for binaries (.framework)? Which is really important when dealing with third-party libs. (binaries are a lot faster to compile that source code)
 
 ## Export: 
 1. Add an empty Package.Swift to your xcode project
@@ -58,3 +58,6 @@ swift package generate-xcodeproj
 
 If two packages depend on different versions of a third package, the package manager tries to find a version of that package that both will find acceptable.
 
+## Drawbacks:
+
+1. Unable to target Commit ids. Only release tags are supported. Which makes it difficult to have a fast workflow when evolving your projects. Releases should be significant and not iterate on every new commit. If you have a lot of nested frameworks which you should because modularity is good and thats why we have dependency managers in the first place. Apple has no intention to support targeting commit ids according to their mailing-list on SPM. Carthage has support for targeting commit ids and even ``"HEAD"`` However pushing a release tag isn't that much work but it is inconvenient. 
