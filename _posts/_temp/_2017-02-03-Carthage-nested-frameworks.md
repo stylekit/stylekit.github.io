@@ -1,4 +1,4 @@
-My notes on Carthage + nested framework <!--more--> 
+My notes on Carthage and nested framework <!--more--> 
 
 ⚠️**PRE-REQUISITES:**⚠️️ In your github repo you need to include .xcodeproj file with framework settings all setup. The settings should also include: 
 1. Scheme is shared. 
