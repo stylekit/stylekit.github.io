@@ -1,9 +1,10 @@
 A few workflows concerning Carthage and nested framework <!--more--> 
 
-⚠️**PRE-REQUISITES:**⚠️️ In your github repo you need to include .xcodeproj file with framework settings all setup. The settings should also include: 
-1. Scheme is shared. 
-2. testability set to YES under build settings. 
-3. build paths set to ``$(SRCROOT)/Carthage/Build`` (Carthage generates aliases in this folder) aka magic portals to other frameworks. 
+⚠️**PRE-REQUISITES:**⚠️️ In your github repo you need to include .xcodeproj file with framework settings all setup. The settings should also include:   
+
+1. Scheme is shared.   
+2. testability set to YES under build settings.   
+3. build paths set to ``$(SRCROOT)/Carthage/Build`` (Carthage generates aliases in this folder) aka magic   portals to other frameworks. 
 
 
 ## 1. The Automated workflow:
