@@ -27,7 +27,7 @@ A few workflows concerning Carthage and nested framework <!--more-->
 If project owners include .framework files in their releases. (Some do, some don't) then using ``carthage update --no-build`` And the binaries will be placed in ``Carthage/Build/<Platform>/`` 
 
 ## 4. Using submodules: 
-Don't do it, Google it if your not familiar with why you shouldn't use submodules for nesting dependencies or just read this article [https://codingkilledthecat.wordpress.com/2012/04/28/why-your-company-shouldnt-use-git-submodules/](https://codingkilledthecat.wordpress.com/2012/04/28/why-your-company-shouldnt-use-git-submodules/) 
+Don't do it, Google it if your not familiar with why you shouldn't use submodules for nesting dependencies or just read this article [https://codingkilledthecat.wordpress.com/2012/04/28/why-your-company-shouldnt-use-git-submodules/](https://codingkilledthecat.wordpress.com/2012/04/28/why-your-company-shouldnt-use-git-submodules/) That being said. Projects such as  [AlamoFireObjectMapper](https://github.com/tristanhimmelman/AlamofireObjectMapper) project do use submodules in conjunction with Carthage framework nesting. 
 
 
 ## Final notes: 
