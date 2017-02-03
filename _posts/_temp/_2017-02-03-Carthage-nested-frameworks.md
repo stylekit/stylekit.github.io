@@ -10,7 +10,7 @@ My notes on Carthage and nested framework <!--more-->
 
 1. Create a repo on github named "A" (this will be the child)
 2. Create a repo on github named "B" (this will be the parent to the child)
-3. In repo "B" add a Cartfile with ``github "eonist/A" "master"`` 
+3. In repo "B" add a Cartfile with ``github "eonist/A" "master"`` 👈 This tells carthage to build this .framework before parent frameworks. 
 4. On your local machine create a Cartfile and add ``github "eonist/B" "master"``
 5. In terminal ``carthage update`` Now everything will download and be built in the right order. Children first 🔑
 6. Drag and drop the .frameworks located in ``Carthage/Build/<Platform>/``
