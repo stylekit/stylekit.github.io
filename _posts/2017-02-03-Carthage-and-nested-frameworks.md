@@ -4,7 +4,8 @@ A few workflows concerning Carthage and nested framework <!--more-->
 
 1. Scheme is shared.   
 2. testability set to YES under build settings.   
-3. build paths set to ``$(SRCROOT)/Carthage/Build`` (Carthage generates aliases in this folder) aka magic   portals to other frameworks. 
+3. build paths set to ``$(SRCROOT)/Carthage/Build`` (Carthage generates aliases in this folder) aka magic   portals to other frameworks.   
+4. .gitignore that excludes .framework files and other binaries (We should not have bins in repos)
 
 
 ## 1. The Automated workflow:
