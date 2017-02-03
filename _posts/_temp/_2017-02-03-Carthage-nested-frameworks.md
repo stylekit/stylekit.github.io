@@ -30,4 +30,4 @@ Don't do it, Google it if your not familiar with why you shouldn't use submodule
 
 ## Final note: 
 
-Which workflow is better? The future is automated so go with option 1. Also you need something that can work in a CI environment. 👉 The optional workflows are written down in order to justify the extra contextual files one has to place in sub dependencies. 👈
+Which workflow is better? The future is automated so go with option 1. Also you need something that can work in a CI environment. The first workflow has a bit more bloat attached and carthage could have avoided this by allowing order take priority when building. (Feature request!!!) 👉 The optional workflows are written down in order to justify the extra contextual files one has to place in sub dependencies. 👈 
