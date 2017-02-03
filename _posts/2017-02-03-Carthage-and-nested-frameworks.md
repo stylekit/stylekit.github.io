@@ -6,7 +6,7 @@ A few workflows concerning Carthage and nested framework <!--more-->
 3. build paths set to ``$(SRCROOT)/Carthage/Build`` (Carthage generates aliases in this folder) aka magic portals to other frameworks. 
 
 
-## 1. The Autmated workflow:
+## 1. The Automated workflow:
 
 1. Create a repo on github named "A" (this will be the child)
 2. Create a repo on github named "B" (this will be the parent to the child)
@@ -16,7 +16,7 @@ A few workflows concerning Carthage and nested framework <!--more-->
 6. Drag and drop the .frameworks located in ``Carthage/Build/<Platform>/``
 
 ## 2. The Manual workflow:
-1. inlcude all the repos you want to use in a cartfile on your local machine 
+1. include all the repos you want to use in a cartfile on your local machine 
 2. In terminal Do ``carthage update --no-build`` (this downloads all repos but skips building)
 3. Then do carthage build <name-of-repo> for each child dependency starting with the farthest descendants
 4. When you have built your last item drag and drop the .frameworks located in ``Carthage/Build/<Platform>/``
@@ -28,6 +28,6 @@ If project owners include .framework files in their releases. (Some do, some don
 Don't do it, Google it if your not familiar with why you shouldn't use submodules for nesting dependencies
 
 
-## Final note: 
+## Final notes: 
 
 Which workflow is better? The future is automated so go with option 1. Also you need something that can work in a CI environment. The first workflow has a bit more bloat attached and carthage could have avoided this by allowing order take priority when building. (Feature request!!!) 👉 The optional workflows are written down in order to justify the extra contextual files one has to place in sub dependencies. 👈 
