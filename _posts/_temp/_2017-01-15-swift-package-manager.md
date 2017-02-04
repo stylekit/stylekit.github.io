@@ -30,7 +30,7 @@ import PackageDescription
 let package = Package(
     name: "Element",
     dependencies: [
-        .Package(url: "https://github.com/eonist/Element.git", majorVersion: 1),
+        .Package(url: "https://github.com/eonist/Element.git", majorVersion: 1)/*<--1.0.0..<2.0.0*/
     ]
 )
 ```
