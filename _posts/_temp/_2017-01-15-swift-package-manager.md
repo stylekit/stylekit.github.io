@@ -1,7 +1,7 @@
 Notes on Swift package manager<!--more--> Swift package manager seems like the easier to use than CocoaPod and Carthage. Here is the basic workflow:
 
 ## Pretext:  
-We are all DevOps now. There is no getting around this, if you want to code efficiently you have to master the art of DevOps. Or descend into "dependency hell". Package Dependency managers Are not easy to use, but one cannot live with out them. developing for apple devices requires you to use either Cocoapod Carthage or SPM. Which can be divided into 3 camps: The past, the present and the future. SPM being the future. 
+Developing for apple devices requires you to use either Cocoapod Carthage or SPM. Which can be divided into 3 camps: The past, the present and the future. SPM being the future. 
 
 ## First impression using SPM:
 
@@ -32,11 +32,12 @@ let package = Package(
 )
 ```
 
+## Versions:  
 Pick versions with this syntax: ``majorVersion: 0, minor: 4`` For more specific version picking use: ``Version(0, 0, 0, prereleaseIdentifiers: ["alpha", "3"])`` which would download ``0.0.0-alpha.3`` for ranges you can use syntax such as : ``Version(2, 0, 1) ..< Version(2, 1, 0)``
 
 
 
-2. navigate to the folder in terminal ``cd ~/Documents/dev/SomeProject``
+2. navigate to the folder in terminal ``cd ~/Documents/dev/SomeProject``  
 3. in terminal execute ``swift build``
 
 ## Excluding non-source files:  
@@ -61,3 +62,7 @@ If two packages depend on different versions of a third package, the package man
 ## Drawbacks:
 
 1. Unable to target Commit ids. Only release tags are supported. Which makes it difficult to have a fast workflow when evolving your projects. Releases should be significant and not iterate on every new commit. If you have a lot of nested frameworks which you should because modularity is good and thats why we have dependency managers in the first place. Apple has no intention to support targeting commit ids according to their mailing-list on SPM. Carthage has support for targeting commit ids and even ``"HEAD"`` However pushing a release tag isn't that much work but it is inconvenient. 
+
+
+## Final word:
+We are all DevOps now. There is no getting around this, if you want to code efficiently you have to master the art of DevOps. Or descend into "dependency hell". Package Dependency managers Are not easy to use, but one cannot live with out them. 
