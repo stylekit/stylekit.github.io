@@ -49,6 +49,7 @@ let package = Package(
 ```
 
 ## Create .xcodeproj file via terminal:
+Each SPM-enabled project can be converted to an Xcode project:  
 cd to the respected folder
 ```bash
 swift package generate-xcodeproj
