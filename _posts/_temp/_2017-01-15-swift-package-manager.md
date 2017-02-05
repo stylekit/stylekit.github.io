@@ -74,7 +74,7 @@ If two packages depend on different versions of a third package, the package man
 - Target beta/alpha versions: ``Version(0, 0, 0, prereleaseIdentifiers: ["alpha", "2"])``
 -  the 'Sources' dir could also be 'Source', 'src' or 'srcs'
 - In terminal: ``swift build --help`` shows help options in terminal
-- In terminal: ``swift package`` shows terminal commands avialbale in SPM
+- In terminal: ``swift package`` shows all terminal commands available in SPM
 - In terminal: ``swift build --version`` prints ``Apple Swift Package Manager - Swift 3.0.2 (swiftpm-11750)``
 - You should be able to target individual commit ids via: buildMetadataIdentifier in version. Google it 🔑
 
