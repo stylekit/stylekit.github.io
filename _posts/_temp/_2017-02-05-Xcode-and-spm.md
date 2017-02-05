@@ -19,7 +19,7 @@ let package = Package(
 4. Terminal: ``swift build`` 👈 downloads the dependencies from github and builds binaries (aka .framework)    
 5. Terminal: ``swift package generate-xcodeproj`` 👈  Creates an XCode project that has .framework files  
 6. XCode: Open the .xcodeproj file file -> Target -> Cocoa app  
-7. XCode: Add this: add ``@testable import Utils`` to ``AppDelegate.swift`` and ``print(StringParser.sansSuffix("blue"))`` inside the ``applicationDidFinishLaunching`` method  
+7. XCode: Add: ``@testable import Utils`` to ``AppDelegate.swift`` and ``print(StringParser.sansSuffix("blue"))`` inside the ``applicationDidFinishLaunching`` method  
 8. ``cmd + r`` will now print ``blu``  
 
 ## Why is this awesome?
@@ -28,7 +28,7 @@ let package = Package(
 2. When you need to download a new version of third party libs: Terminal: ``swift package update``    
 3. Supports nested frameworks 👈 holy grail of Dependency management 	 
 4. Supports CI untested but check  [this](https://www.linkedin.com/pulse/apple-swift-package-manager-deep-dive-shashikant-jagtap) 
-5. If you are developing on your own third-party modules you can integrate this workflow with no extra steps. as the packages are pure .git projects. Just commit back to github repo from your project.    
+5. If you are developing on your own third-party modules you can integrate this workflow with no extra steps. as the packages are pure .git projects. Just commit back to github repo directly from inside your project.    
 6. If you add code to third-party dependencies then they are embedded in the binaries automatically.   
 
 ## Todo:  
