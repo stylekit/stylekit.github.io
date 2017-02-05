@@ -3,7 +3,7 @@ SPM + XCode tutorial<!--more-->
 ## Prextext:
 Here is how you use SPM in your app projects. SPM -> Swift package manager 
 
-## 1. Create SPM files:
+## The workflow:  
 
 1. Terminal: ``cd ~/dev/MyProject/`` 👈 navigate to your project
 2. Terminal: ``swift package init`` 👈 creates the initial SPM files  
@@ -17,11 +17,10 @@ let package = Package(
     ]
 )
 ```
-👆 basically adds Swift-utils as a third Party framework in your project
-
+👆 basically adds Swift-utils as a third Party framework in your project  
 
 4. Terminal: ``swift build`` 👈 downloads the dependencies from github and builds binaries (aka .framework)  
 5. Terminal: ``swift package generate-xcodeproj`` 👈  Creates an XCode project that has .framework files
 6. XCode: Open the .xcodeproj file file -> Target -> Cocoa app
-7. XCode: Add this: ``print(StringParser.sansSuffix("hello"))`` to ``AppDelegate.swift`` in the ``applicationDidFinishLaunching`` method
-8. 
+7. XCode: Add this: add ``@testable import Utils`` to ``AppDelegate.swift`` and ``print(StringParser.sansSuffix("blue"))`` inside the ``applicationDidFinishLaunching`` method
+8. ``cmd + r`` will now print ``blu``
