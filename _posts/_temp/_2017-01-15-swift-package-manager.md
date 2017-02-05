@@ -75,6 +75,8 @@ If two packages depend on different versions of a third package, the package man
 -  the 'Sources' dir could also be 'Source', 'src' or 'srcs'
 - In terminal: ``swift build --help`` shows help options in terminal
 - In terminal: ``swift package`` shows terminal commands avialbale in SPM
+- In terminal: ``swift build --version`` prints ``Apple Swift Package Manager - Swift 3.0.2 (swiftpm-11750)``
+- You should be able to target individual commit ids via: buildMetadataIdentifier in version. Google it 🔑
 
 ## Final word:
 We are all DevOps now. There is no getting around this, if you want to code efficiently you have to master the art of DevOps. Or descend into "dependency hell". Package Dependency managers Are not easy to use, but one cannot live with out them. 
