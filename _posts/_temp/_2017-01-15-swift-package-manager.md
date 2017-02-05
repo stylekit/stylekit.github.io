@@ -78,3 +78,7 @@ If two packages depend on different versions of a third package, the package man
 
 ## Final word:
 We are all DevOps now. There is no getting around this, if you want to code efficiently you have to master the art of DevOps. Or descend into "dependency hell". Package Dependency managers Are not easy to use, but one cannot live with out them. 
+
+## Links:
+
+[basic swift info video](https://honzadvorsky.com/articles/2016-06-30-19-00-nslondon_swift_package_manager/) 
