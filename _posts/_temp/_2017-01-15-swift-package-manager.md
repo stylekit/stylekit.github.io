@@ -78,6 +78,7 @@ If two packages depend on different versions of a third package, the package man
 - In terminal: ``swift build --version`` prints ``Apple Swift Package Manager - Swift 3.0.2 (swiftpm-11750)``
 - You should be able to target individual commit ids via: buildMetadataIdentifier in version. Google it 🔑
 - in terminal: ``swift package init --type=library`` Creates a SPM starter kit
+- In terminal: ``swift package test`` tests your SPM project 
 
 ## Final word:
 We are all DevOps now. There is no getting around this, if you want to code efficiently you have to master the art of DevOps. Or descend into "dependency hell". Package Dependency managers Are not easy to use, but one cannot live with out them. 
