@@ -1,4 +1,4 @@
-Here is how you use SPM in your XCode app projects. SPM -> Swift package manager  <!--more--> 
+Here is how you use Swift package manager in your XCode app projects<!--more--> 
 
 ## The workflow:  
 
@@ -33,4 +33,4 @@ let package = Package(
 
 ## Todo:  
 - [ ] Investigate ``buildMetadataIdentifier`` 👈 Supposedly it enables you to target single commit ids rather than version tags
-- [ ] Implement CI Travis
+- [ ] Implement CI Travis 
