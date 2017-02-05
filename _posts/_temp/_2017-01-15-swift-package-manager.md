@@ -97,4 +97,5 @@ We are all DevOps now. There is no getting around this, if you want to code effi
 [Unit test](https://dzone.com/articles/unit-testing-with-swift-pm) 
 
 ## Todos:
-- [ ] Figure out how SPM can build ``importable frameworks`` into an XCode app project
+- [x] Figure out how SPM can build ``importable frameworks`` into an XCode app project ✅
+- [ ] Figure out how you can bring Existing apps into the SPM framework fold 👈
