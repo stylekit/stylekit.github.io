@@ -99,3 +99,4 @@ We are all DevOps now. There is no getting around this, if you want to code effi
 ## Todos:
 - [x] Figure out how SPM can build ``importable frameworks`` into an XCode app project ✅
 - [ ] Figure out how you can bring Existing apps into the SPM framework fold 👈
+- [ ] test hybrid framework if they rebuild on run or not
