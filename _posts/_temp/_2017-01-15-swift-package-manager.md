@@ -1,4 +1,4 @@
-Notes on Swift package manager<!--more--> Swift package manager seems like the easier to use than CocoaPod and Carthage. Here is the basic workflow:
+Notes on Swift package manager<!--more--> 
 
 ## What is it:  
 SPM automates the process of downloading, compiling, and linking dependencies. 
@@ -92,3 +92,4 @@ We are all DevOps now. There is no getting around this, if you want to code effi
 
 [basic swift info video](https://honzadvorsky.com/articles/2016-06-30-19-00-nslondon_swift_package_manager/) 
 [Apples docs on SPM:](https://github.com/apple/swift-package-manager/blob/master/Documentation/Reference.md#source-layouts) 
+[SPM + CI](https://www.linkedin.com/pulse/apple-swift-package-manager-deep-dive-shashikant-jagtap) 
