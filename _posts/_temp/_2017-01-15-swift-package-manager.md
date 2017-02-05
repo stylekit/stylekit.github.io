@@ -73,7 +73,8 @@ If two packages depend on different versions of a third package, the package man
 ## Side notes:  
 - Target beta/alpha versions: ``Version(0, 0, 0, prereleaseIdentifiers: ["alpha", "2"])``
 -  the 'Sources' dir could also be 'Source', 'src' or 'srcs'
-- ``swift build --help`` shows help options in terminal
+- In terminal: ``swift build --help`` shows help options in terminal
+- In terminal: ``swift package`` shows terminal commands avialbale in SPM
 
 ## Final word:
 We are all DevOps now. There is no getting around this, if you want to code efficiently you have to master the art of DevOps. Or descend into "dependency hell". Package Dependency managers Are not easy to use, but one cannot live with out them. 
