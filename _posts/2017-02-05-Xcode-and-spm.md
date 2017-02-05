@@ -15,8 +15,6 @@ let package = Package(
     ]
 )
 ```
-👆 basically adds Swift-utils as a third Party framework in your project    
-
 4. Terminal: ``swift build`` 👈 downloads the dependencies from github and builds binaries (aka .framework)    
 5. Terminal: ``swift package generate-xcodeproj`` 👈  Creates an XCode project that has .framework files  
 6. XCode: Open the .xcodeproj file file -> Target -> Cocoa app  
