@@ -1,4 +1,4 @@
-My notes on SPM + XCode + Nested frameworks<!--more--> 
+My notes on Swift package manager + XCode + Nested frameworks<!--more--> 
 
 ## Pretext:
 
