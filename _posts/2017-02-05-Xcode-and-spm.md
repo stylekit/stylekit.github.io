@@ -21,7 +21,7 @@ let package = Package(
 - Terminal: ``swift package generate-xcodeproj`` 👈  Creates an XCode project that has .framework files  
 - XCode: Open the .xcodeproj file file -> Target -> Cocoa app  
 - XCode: Add: ``@testable import Utils`` to ``AppDelegate.swift`` and ``print(StringParser.sansSuffix("blue"))`` inside the ``applicationDidFinishLaunching`` method  
-- ``cmd + r`` will now print ``blu``  
+- XCode: ``cmd + r`` will now print ``blu``  
 
 ## Why is this awesome?
 
