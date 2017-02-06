@@ -30,7 +30,7 @@ let package = Package(
 ## Workflow:
 
 1. Terminal: ``cd dev/HackerNews``
-2. Terminal: ``swift package init`` 👈 Creates boilerplace Package.swift etc
+2. Terminal: ``swift package init`` 👈 Creates boilerplate Package.swift etc
 3. Replace the content inside HackerNews/Package.swift with the code written in the Manifest paragraph
 4. Terminal: ``swift build`` 👈 Downloads and builds all the dependencies. 
 5. Terminal: ``swift package generate-xcodeproj`` 👈 Creates .xcodeproj
