@@ -13,5 +13,16 @@ The chain of dependencies looks like this: Its only 2 level deep. But can go dee
 Inside your Package.swift file you write this:
 
 ```swift
-
+import PackageDescription
+let package = Package(
+    name: "Testing",
+	dependencies: [
+		/*Downloads Element + swift-utils*/
+		.Package(url: "https://github.com/eonist/Element.git", Version(0, 0, 0, prereleaseIdentifiers: ["alpha", "5"])),
+		/*Downloads AlamoFire*/
+		.Package(url: "https://github.com/Alamofire/Alamofire.git",MajorVersion:4,minor:3),
+		/*Downloads SwiftyJSON*/
+		.Package(url: "https://github.com/SwiftyJSON/SwiftyJSON.git",MajorVersion:3,minor:1)
+    ]
+)
 ```
