@@ -19,7 +19,7 @@ let package = Package(
 
 - Terminal: ``swift build`` 👈 downloads the dependencies from github and builds binaries (aka .framework)    
 - Terminal: ``swift package generate-xcodeproj`` 👈  Creates an XCode project that has .framework files  
-- XCode: Open the .xcodeproj file file -> Target -> Cocoa app  
+- XCode: Open MyProject.xcodeproj and then: file -> Target -> Cocoa app  
 - XCode: Add: ``@testable import Utils`` to ``AppDelegate.swift`` and ``print(StringParser.sansSuffix("blue"))`` inside the ``applicationDidFinishLaunching`` method  
 - XCode: ``cmd + r`` will now print ``blu``  
 
