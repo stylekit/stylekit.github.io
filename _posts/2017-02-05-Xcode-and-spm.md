@@ -7,6 +7,7 @@ Here is how you use Swift package manager in your XCode app projects<!--more-->
 - Add the bellow to your newly created Package.swift file:   
 
 ```swift
+/*basically adds Swift-utils as a third Party framework in your project    */
 import PackageDescription
 let package = Package(
     name: "MyProject",
@@ -15,7 +16,7 @@ let package = Package(
     ]
 )
 ```
-👆 basically adds Swift-utils as a third Party framework in your project    
+
 - Terminal: ``swift build`` 👈 downloads the dependencies from github and builds binaries (aka .framework)    
 - Terminal: ``swift package generate-xcodeproj`` 👈  Creates an XCode project that has .framework files  
 - XCode: Open the .xcodeproj file file -> Target -> Cocoa app  
