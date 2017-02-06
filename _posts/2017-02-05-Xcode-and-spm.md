@@ -5,6 +5,7 @@ Here is how you use Swift package manager in your XCode app projects<!--more-->
 - Terminal: ``cd ~/dev/MyProject/`` 👈 navigate to your project  
 - Terminal: ``swift package init`` 👈 creates the initial SPM files    
 - Add the bellow to your newly created Package.swift file:   
+
 ```swift
 import PackageDescription
 let package = Package(
