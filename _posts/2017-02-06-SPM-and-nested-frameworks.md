@@ -27,6 +27,8 @@ let package = Package(
 )
 ```
 
+Where is the "swift-utils" dependency you might ask? When you download Element SPM will also look inside a Package.swift file that is in the Element repo on github. And automatically start downloading the swift-utils dependency.
+
 ## Workflow:
 
 1. Terminal: ``cd dev/HackerNews``
