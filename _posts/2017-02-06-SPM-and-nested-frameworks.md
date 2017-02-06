@@ -40,4 +40,4 @@ let package = Package(
 9. To add your app project to Github all you do is make a new project on github.com and add a .gitignore file that ignores /.build, /Tests,/ Packages and .xcodeproj. Then you can stay in-sync with other team-members etc. 
 
 ## Final word:  
-I would love to include some HackNewsApp Example code. And I plan to. Until then you have to figure out how to use AlamoFire, Element and SwiftyJSON your self. At least now you have a solid foundation of how to start making Apps with SPM.
+I would love to include some HackNewsApp Example code. And I plan to. Until then you have to figure out how to use AlamoFire, Element and SwiftyJSON your self. At least now you have a basic foundation on how to start making Apps with SPM. 
