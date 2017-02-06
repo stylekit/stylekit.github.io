@@ -10,7 +10,7 @@ The chain of dependencies looks like this: Its only 2 level deep: (It can go dee
 
 ## Manifest: 
 
-Inside your Package.swift file you write this:
+Inside your Package.swift file you write this:  
 
 ```swift
 import PackageDescription
