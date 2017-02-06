@@ -37,7 +37,7 @@ let package = Package(
 6. Follow this [Tutorial](http://stylekit.org/blog/2017/02/05/Xcode-and-spm/)  on how to Create an App project from this HackerNews.xcodeproj file
 7. Once you have your first "Hello world" going. Start adding some innovative UX ideas to your App project. 
 8. Need to update dependencies or add new ones? Just edit your Package.swift file and Terminal: ``swift build`` 
-
+9. To add your app project to Github all you do is make a new project on github.com and add a .gitignore file that ignores /.build, /Tests,/ Packages and .xcodeproj. Then you can stay in-sync with other team-members etc. 
 
 ## Final word:  
-I would love to include some HackNewsApp Example code. And I plan to. Until then you have to figure out how to use the dependencies your self. At least now you have a solid foundation of how to start making Apps with SPM.
+I would love to include some HackNewsApp Example code. And I plan to. Until then you have to figure out how to use AlamoFire, Element and SwiftyJSON your self. At least now you have a solid foundation of how to start making Apps with SPM.
