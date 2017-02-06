@@ -6,7 +6,7 @@ Lets make an awesome HackerNewsApp in 2 days. For that you need to be modular an
 ## Dependency map:
 The chain of dependencies looks like this: Its only 3 level deep: (It can go deeper if needed)   
 
-<img width="800" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/hacker_news_SPM_diagram.svg">
+<img width="400" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/hacker_news_SPM_diagram.svg">
 
 ## Manifest: 
 
