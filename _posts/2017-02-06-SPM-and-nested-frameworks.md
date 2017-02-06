@@ -1,7 +1,6 @@
 My notes on Swift package manager + XCode + Nested frameworks<!--more--> 
 
 ## Pretext:
-
 Lets make an awesome HackerNewsApp in 2 days. For that you need to be modular and re-use other peoples code. We need AlamoFire for http, SwiftJSON for json and Element for GUI. 
 
 ## Dependency map:
