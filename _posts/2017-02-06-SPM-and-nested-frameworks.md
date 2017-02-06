@@ -5,7 +5,7 @@ My notes on Swift package manager + XCode + Nested frameworks<!--more-->
 Lets make an awesome HackerNewsApp in 2 days. For that you need to be modular and re-use other peoples code. We need AlamoFire for http, SwiftJSON for json and Element for GUI. 
 
 ## Dependency map:
-The chain of dependencies looks like this: Its only 2 level deep: (It can go deeper if needed)   
+The chain of dependencies looks like this: Its only 3 level deep: (It can go deeper if needed)   
 ``[HackerNewsApp] -> [AlamoFire, SwiftyJSON, Element -> [swift-utils]]``
 
 ## Manifest: 
@@ -33,7 +33,7 @@ let package = Package(
 2. Terminal: ``swift package init`` 👈 Creates boilerplace Package.swift etc
 3. Replace the content inside HackerNews/Package.swift with the code written in the Manifest paragraph
 4. Terminal: ``swift build`` 👈 Downloads and builds all the dependencies. 
-5. Terminal: ``swift package generate-xcodeproj`` 👈 Creates HackerNews.xcodeproj
+5. Terminal: ``swift package generate-xcodeproj`` 👈 Creates .xcodeproj
 6. Follow this [Tutorial](http://stylekit.org/blog/2017/02/05/Xcode-and-spm/)  on how to Create an App project from this HackerNews.xcodeproj file
 7. Once you have your first "Hello world" going. Start adding some innovative UX ideas to your App project. 
 8. Need to update dependencies or add new ones? Just edit your Package.swift file and Terminal: ``swift build`` 
