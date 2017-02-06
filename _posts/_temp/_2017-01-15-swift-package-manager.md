@@ -95,6 +95,7 @@ We are all DevOps now. There is no getting around this, if you want to code effi
 [Apples docs on SPM:](https://github.com/apple/swift-package-manager/blob/master/Documentation/Reference.md#source-layouts) 
 [SPM + CI](https://www.linkedin.com/pulse/apple-swift-package-manager-deep-dive-shashikant-jagtap) 
 [Unit test](https://dzone.com/articles/unit-testing-with-swift-pm) 
+[advance spm](https://www.cocoawithlove.com/blog/package-manager-fetch.html) 
 
 ## Todos:
 - [x] Figure out how SPM can build ``importable frameworks`` into an XCode app project ✅
