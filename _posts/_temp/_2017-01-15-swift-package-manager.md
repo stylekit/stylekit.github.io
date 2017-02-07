@@ -72,16 +72,18 @@ If two packages depend on different versions of a third package, the package man
 
 ## Side notes:  
 - Target beta/alpha versions: ``Version(0, 0, 0, prereleaseIdentifiers: ["alpha", "2"])``
--  the 'Sources' dir could also be 'Source', 'src' or 'srcs'
+- The 'Sources' dir could also be 'Source', 'src' or 'srcs'
 - In terminal: ``swift build --help`` shows help options in terminal
 - In terminal: ``swift package`` shows all terminal commands available in SPM
 - In terminal: ``swift build --version`` prints ``Apple Swift Package Manager - Swift 3.0.2 (swiftpm-11750)``
 - You should be able to target individual commit ids via: buildMetadataIdentifier in Version. Google it 🔑
 - in terminal: ``swift package init --type=library`` Creates a SPM starter kit
 - In terminal: ``swift package test`` tests your SPM project 
-- In terminal ``swift package init --type executable`` makes an SPM starter kit that can be called from terminal
+- In terminal: ``swift package init --type executable`` makes an SPM starter kit that can be called from terminal
 - In terminal: ``.build/debug/<Package-Name>`` will execute your project if its executable and has been built
 - In terminal: ``swift package init --type=library`` creates a testable setup. Run ``swift test`` after
+- In terminal: ``swift package fetch``  Swift package has commands to fetch the dependencies 
+- In terminal: ``swift package update`` Swift package has commands to update the dependencies 
 
 ## Epiphanies:
 1. SPM forces you to organize your folder structure the "SPM way", I didn't like this at first. Source/<project-name>/<file-name>.swift but if you only have one 'module' which you should. Modularity and all that. Then github.com will not force you to jump through 2 levels to see your files. as github skips 1 level if a folder is inside another folder. So you just click sources and there is all your files. all in 1 click. NICE! 🔑  
