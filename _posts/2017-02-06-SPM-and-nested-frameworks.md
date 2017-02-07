@@ -15,7 +15,7 @@ Inside your Package.swift file you write this:
 ```swift
 import PackageDescription
 let package = Package(
-    name: "Testing",
+    name: "HackerNews",
 	dependencies: [
 		/*Downloads Element + swift-utils*/
 		.Package(url: "https://github.com/eonist/Element.git", Version(0, 0, 0, prereleaseIdentifiers: ["alpha", "5"])),
@@ -36,7 +36,7 @@ Where is the "swift-utils" dependency you might ask? When you download Element S
 3. Replace the content inside HackerNews/Package.swift with the code written in the Manifest paragraph
 4. Terminal: ``swift build`` 👈 Downloads and builds all the dependencies. 
 5. Terminal: ``swift package generate-xcodeproj`` 👈 Creates .xcodeproj
-6. Follow this [Tutorial](http://stylekit.org/blog/2017/02/05/Xcode-and-spm/)  on how to Create an App project from this HackerNews.xcodeproj file
+6. Follow my [Tutorial](http://stylekit.org/blog/2017/02/05/Xcode-and-spm/)  on how to Create an SPM App project from this HackerNews.xcodeproj file
 7. Once you have your first "Hello world" going. Start adding some innovative UX ideas to your App project. 
 8. Need to update dependencies or add new ones? Just edit your Package.swift file and Terminal: ``swift build`` 
 9. To add your app project to Github all you do is make a new project on github.com and add a .gitignore file that ignores /.build, /Tests,/ Packages and .xcodeproj. Then you can stay in-sync with other team-members etc. 
