@@ -81,7 +81,7 @@ If two packages depend on different versions of a third package, the package man
 - In terminal: ``swift package test`` tests your SPM project 
 - In terminal ``swift package init --type executable`` makes an SPM starter kit that can be called from terminal
 - In terminal: ``.build/debug/<Package-Name>`` will execute your project if its executable and has been built
-- In terminal: ``swift build --init library`` creates a testable setup. Run ``swift test`` after
+- In terminal: ``swift package init --type=library`` creates a testable setup. Run ``swift test`` after
 
 ## Epiphanies:
 1. SPM forces you to organize your folder structure the "SPM way", I didn't like this at first. Source/<project-name>/<file-name>.swift but if you only have one 'module' which you should. Modularity and all that. Then github.com will not force you to jump through 2 levels to see your files. as github skips 1 level if a folder is inside another folder. So you just click sources and there is all your files. all in 1 click. NICE! 🔑  
