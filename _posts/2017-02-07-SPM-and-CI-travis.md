@@ -1,5 +1,7 @@
 My notes on Swift PM + CI Travis<!--more--> 
 
+<img width="600" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/TravisCI-Full-Color.eps.svg">
+
 ## Workflow:
 
 1. Create a project named HelloTravis on github. Then download it via Github desktop app
@@ -18,6 +20,7 @@ My notes on Swift PM + CI Travis<!--more-->
 ## YML
 
 A typical ``.travis.yml`` file looks like this: (This is the config file for Travis)
+
 ```
 os:
   - osx
