@@ -15,10 +15,10 @@ My notes on Swift PM + CI Travis<!--more-->
 11. Add More complex tests under the HelloTravis/Tests/HelloTravisTests.swift file. 
 12. Add nested dependencies to your Tests via my [Tutorial on SPM + Nested tests](http://stylekit.org/blog/2017/02/06/SPM-and-nested-frameworks/) 
 
-## bash
+## YML
 
 A typical .yml file looks like this: 
-```yml
+```
 os:
   - osx
 language: generic
