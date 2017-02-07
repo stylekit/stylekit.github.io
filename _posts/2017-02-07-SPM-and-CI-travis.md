@@ -13,11 +13,11 @@ My notes on Swift PM + CI Travis<!--more-->
 9. Copy the MarkDown badge and add it to your README.md file in the HelloTravis project on github. 
 10. Wait a little while and your Badge will become Green if all tests pass. 
 11. Add More complex tests under the HelloTravis/Tests/HelloTravisTests.swift file. 
-12. Add nested dependencies to your Tests via my [Tutorial on SPM + Nested tests](http://stylekit.org/blog/2017/02/06/SPM-and-nested-frameworks/) 
+12. Add nested dependencies to your Tests by following this [Tutorial on SPM + Nested tests](http://stylekit.org/blog/2017/02/06/SPM-and-nested-frameworks/) 
 
 ## YML
 
-A typical .yml file looks like this: 
+A typical ``.travis.yml`` file looks like this: (This is the config file for Travis)
 ```
 os:
   - osx
