@@ -36,4 +36,4 @@ notifications:
 
 ## Final word: 
 
-Some people like to keep a /Tests folder in the github repo. I prefer not to because they are not always relevant to whom ever use the repo. As such I prefer to keep tests in a "test" repo. Which pulls in the dependencies from other repos. Travis-ci has a simple button which can test your project daily/weekly/monthly. So you don't have to push changes to test things. 
+Some people like to keep a /Tests folder in the github repo. I prefer not to because they are not always relevant to whom ever uses the repo. As such I prefer to keep tests in a "test" repo. Which pulls in the dependencies from other repos. Travis-ci has a simple button which can test your project daily/weekly/monthly. So you don't have to push changes to test things. 
