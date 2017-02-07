@@ -4,7 +4,7 @@ My notes on Swift PM + CI Travis<!--more-->
 
 1. Create a project named HelloTravis on github. Then download it via Github desktop app
 2. Terminal: ``cd dev/HelloTravis`` 👈 Navigate to the folder you just downloaded
-3. Terminal: ``swift package init --type=library`` 👈 creates a testable setup
+3. Terminal: ``swift package init`` 👈 Creates a Package.swift file etc
 4. Terminal: ``swift test`` 👈 Runs the first test
 5. add an .travis.yml see [YML paragraph](#yml) 
 6. Uploaded all the changes to github again. 
@@ -36,4 +36,4 @@ notifications:
 
 ## Final word: 
 
-Since you have to create a special library package to enable 
+Some people like to keep a /Tests folder in the github repo. I prefer not to because they are not always relevant to whom ever use the repo. As such I prefer to keep tests in a "test" repo. Which pulls in the dependencies from other repos. Travis-ci has a simple button which can test your project daily/weekly/monthly. So you don't have to push changes to test things. 
