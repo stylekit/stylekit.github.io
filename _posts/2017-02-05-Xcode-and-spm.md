@@ -21,6 +21,7 @@ let package = Package(
 - Terminal: ``swift package generate-xcodeproj`` 👈  Creates an XCode project that has .framework files  
 - XCode: Open MyProject.xcodeproj and then: file -> Target -> Cocoa app  -> Name it MyApp
 - XCode: Select MyProject -> General -> Targets -> MyApp -> Embedded binaries -> Add the Utils.framework
+- XCode: Menu -> Product -> Scheme -> MyApp then hit ``cmd + b`` 👈 This will build the frameworks
 - XCode: Add: ``@testable import Utils`` to ``AppDelegate.swift`` and ``print(StringParser.sansSuffix("blue"))`` inside the ``applicationDidFinishLaunching`` method  
 - XCode: Run the MyApp and it will now print ``blu``   
 
