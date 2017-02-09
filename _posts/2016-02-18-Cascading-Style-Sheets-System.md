@@ -114,7 +114,7 @@ offset:50% 0%;
 offset:20px 0px;
 
 
-the precentage is calculated based on the parents width and height
+the percentage is calculated based on the parents width and height
 
 
 width,height:100%;// means fill the parent space
@@ -151,7 +151,7 @@ Button{
     fill,font-color,line:blue; /*multiple properties with the same value)*/
 }
 
-Note: the later value and the later style always take property
+Note: The later value and the later style always take property
 ```
 
 ## TextField and TextFormat
@@ -187,7 +187,7 @@ mask:type(../assets/blob.svg);
 mask:offset(20,20);
 ```
 What if mask works like this:
-Mask:1,none,3; //you set the array ref to the graphic you want to mask,none is dont mask
+Mask:1,none,3; //you set the array ref to the graphic you want to mask, none is don't mask
 
 
 **blendmode**
@@ -207,7 +207,7 @@ translate
 
 ## URL
 
-**Impliment this:**
+**Implement this:**
 
 The URL itself is just like the HTML href attribute used for links, meaning you can use an absolute URL like http://www.missingmanuals.com/images/tile.gif, a root-relative path like /images/tile.gif, or a document- relative URL like ../../images/tile.gif. See page 244 for the full story on these kinds of paths.
 
@@ -219,7 +219,7 @@ If a class is likely to get overridden then you should set the getClass() method
 Related posts:
 - [Resolving CSS links](http://stylekit.org/blog/2015/11/04/Resolving-CSS-links/)   
 - [The css box model](http://stylekit.org/blog/2016/01/04/The-css-box-model/) 
-- The-style-linkage-system (article comming soon)
+- The-style-linkage-system (article coming soon)
 
 ```swift
 //Section relies on the default implementation of Element
