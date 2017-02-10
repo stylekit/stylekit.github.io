@@ -1,6 +1,18 @@
 How you can speed up compile times in XCode with Swift Package Manager<!--more--> 
 
 
+## Workflow features:
+
+Feature: | | 
+--- | --- 
+Speeds up builds | ✅
+Simple to setup| ✅
+Version Controlled | ✅
+Encourages re-usability | ✅
+Future proof | ✅
+Supports macOS | ✅
+Supports iOS | 🚫
+
 - Utilizing modules in your code
 
 - Commit your modules to github
@@ -11,3 +23,8 @@ How you can speed up compile times in XCode with Swift Package Manager<!--more--
 
 - etc
 
+- blazing fast compile times because your only recompile the code that is not in your modules.
+
+- works in playground
+
+- 
