@@ -24,5 +24,4 @@ When parts of your apps get complete and is not actively worked on move it to a 
 By keeping your app in modules you are also able to reuse these in XCode playground. Because modules produce .framework files which works in XCode playground read [this](http://stylekit.org/blog/2017/01/16/playground-and-framework/)  for a .frame work + playground workflow
 
 ## Further reading: 
-
-- Use .framework by splitting up in different frameworks helps with compile time artsy.com, see comments) [here](http://artsy.github.io/blog/2014/11/13/eidolon-retrospective/) 
+- Use .framework by splitting up in different frameworks helps with compile time artsy.com, see comments) [here](http://artsy.github.io/blog/2014/11/13/eidolon-retrospective/)   
