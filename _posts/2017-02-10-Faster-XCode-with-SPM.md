@@ -1,8 +1,6 @@
 How you can speed up compile times in XCode with Swift Package Manager<!--more--> 
 
-
 ## Workflow features:
-
 Feature: | | 
 --- | --- 
 Speeds up builds | ✅
@@ -20,7 +18,7 @@ Supports iOS | 🚫
 4: ``git push origin master``
 
 ## Blazing fast compile times:
-When parts of your apps get complete and is not actively worked on move it to a Module. This will make your app faster to build because your only recompile the code that is not in your modules. If you change code inside a module it will re-build When you run the app, it will take some time. If you wan other parts of your app to be able to use new method calls, just hit ``cmd + b`` and it will become available to your entire app.
+When parts of your apps get complete and is not actively worked on move it to a Module. This will make your app faster to build because your only re-compile the code that is not in your modules. If you change code inside a module it will re-build When you run the app, it will take some time. If you want other parts of your app to be able to use new method calls, just hit ``cmd + b`` and it will become available to your entire app.
 
 ## Module oriented programing:
 By keeping your app in modules you are also able to reuse these in XCode playground. Because modules produce .framework files which works in XCode playground read [this](http://stylekit.org/blog/2017/01/16/playground-and-framework/)  for a .frame work + playground workflow
