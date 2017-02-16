@@ -23,7 +23,7 @@ The one c-style for-loop to rule them all is gone, now we have 9 different to ta
 - ``for i in 0..4{}`` 👈 regular forward looping
 - ``for (i,obj) in arr.enumerate(){print(i);print(obj)}`` 👈 access to i and obj
 - ``for obj in arr{}`` 👈 iterate over objects
-- ``for (i in 0..<4).reversed{}`` 👈 backward looping
+- ``for i in (0..<4).reversed(){}`` 👈 backward looping
 - ``var i = 0;while(i<4){print(i);i+=1}`` 👈 If you want to manipulate i while looping
 - ``for i in stride(from:0,to:10,skip:2){}`` 👈 Skips every other
 - ``arr.forEach{$0}`` 👈 Easiest for-loop but only if you don't need to exit early
