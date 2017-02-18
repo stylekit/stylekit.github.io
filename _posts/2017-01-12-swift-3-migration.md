@@ -28,7 +28,7 @@ The one c-style for-loop to rule them all is gone, now we have 9 different to ta
 - ``for i in stride(from:0,to:10,skip:2){}`` 👈 Skips every other
 - ``arr.forEach{$0}`` 👈 Easiest for-loop but only if you don't need to exit early
 - ``for i in arr.indices {print(i)}`` 👈 Access to i
-- ``for _ in 0..<arr.count`` 👈 If you just want to loop something and not use any value
+- ``for _ in 0..<arr.count`` 👈 If you just wan't to loop something and not use any value
 
 ## NSView:
 
