@@ -108,4 +108,4 @@ XCode now complain if a method that returns a var is unused:
 ## Final notes:
 - If you download the latest XCode via MacOS appStore, it will update your old XCode. A better solution is to find the direct link via apple.com and download it manually. This way you can have two versions of XCode on your computer. It's important to have 2 versions of XCode when you migrate, so that if you get into trouble during the migration you can always revert and try to figure out what worked in your previous swift 2.0 code.   
 
-- To get 7x BuildTime Speed decrease going from swift 2.0 to 3.0: set this variable: SWIFT_WHOLE_MODULE_OPTIMIZATION = YES [More info here](http://www.splinter.com.au/blog/) 👈 Take this advice with a pinch of salt. But its worth trying.  
+- To get 7x BuildTime Speed decrease going from swift 2.0 to 3.0: set this variable: SWIFT_WHOLE_MODULE_OPTIMIZATION = YES [More info here](http://www.splinter.com.au/blog/) 👈 Take this advice with a pinch of salt. But its worth trying.
