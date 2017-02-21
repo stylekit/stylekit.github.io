@@ -47,5 +47,36 @@ extension Temp:UnWrappable{
 </Temp>
 ```
 
+### Array with Dictionary reflection:
+
+```swift
+let temp:Temp = Temp()
+let xml:XML = Reflection.toXML(temp)
+Swift.print("xml.xmlString: " + "\(xml.xmlString)")
+class Temp{
+    let temp:[[String:String]] = [["a":"b"],["1":"2"]]
+}
+```
+
+```xml
+<Temp>
+	<temp type="Array">
+		<item type="Dictionary">
+			<item>
+				<key type="String">a</key>
+				<value type="String">b</value>
+			</item>
+		</item>
+		<item type="Dictionary">
+			<item>
+				<key type="String">1</key>
+				<value type="String">2</value>
+			</item>
+		</item>
+	</temp>
+</Temp>
+
+```
+
 ### Note:
 Storing key and value in separate nodes is important because key can have different types and value can have nested nodes. Aka complex content. As can key when I think about it, as long as it extends the Hashable protocol. 
