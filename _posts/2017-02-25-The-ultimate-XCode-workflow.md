@@ -1,8 +1,6 @@
-spend zero time managing dependencies <!--more-->Build speed is almost down to zero even for big projects, and 99.99% of my time is spent coding. 
-
+spend zero time managing dependencies<!--more-->. Build speed is almost down to zero even for big projects, and 99.99% of my time is spent coding. 
 
 ## Wants: 
-
 - Ability to Build from .framework (because of zero to low build times)   
 - Syncronize source code across projects autonomously (many to many sync)   
 - Syncronize directly to 1 singular origin repo at github (version control)   
@@ -20,7 +18,6 @@ To achieve this: read my series on SPM (Swift package manager) and use [gitsync.
 - [Xcode and spm](http://stylekit.org/blog/2017/02/05/Xcode-and-spm/) 
 
 ## Scenario:
-
 **Problem:**  
 You have a Testing xcode project, A Library xcode project and an App xcode project. You want to fix a problem in your Library. And you want to test if the fix works, if it does you want to see that change in the app project. 
   
