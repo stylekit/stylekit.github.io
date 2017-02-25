@@ -5,7 +5,7 @@ spend zero time managing dependencies <!--more-->Build speed is almost down to z
 
 1. Ability to Build from .framework (because of zero to low build times) ✅
 2. Syncronize source code across projects autonomously (many to many sync) ✅
-3. Syncronize directly to 1 singular origin at github (version control) ✅
+3. Syncronize directly to 1 singular ~~mothership~~ origin repo at github (version control) ✅
 4. Full SPM integration (Sharing code) ✅
 5. Ability to edit external framework code directly inside app projects, and automatically sync back to origin. ✅
 6. Playground friendly (since you are building .frameworks it works in playground) ✅
@@ -19,7 +19,7 @@ To achieve this: read my series on SPM (Swift package manager) and use [GitSync]
 - [Spm and nested frameworks](http://stylekit.org/blog/2017/02/06/SPM-and-nested-frameworks/)
 - [Xcode and spm](http://stylekit.org/blog/2017/02/05/Xcode-and-spm/) 
 
-## Scenario A:
+## Scenario:
 
 **Problem:**  
 You have a Testing xcode project, A Library xcode project and an App xcode project. You want to fix a problem in your Library. And you want to test if the fix works, if it does you want to see that change in the app project. 
