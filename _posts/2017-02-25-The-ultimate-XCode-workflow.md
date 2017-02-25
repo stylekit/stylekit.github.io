@@ -1,4 +1,4 @@
-spend zero time managing dependencies<!--more-->. Build speed is almost down to zero even for big projects, and 99.99% of my time is spent coding. 
+Spend zero time managing dependencies<!--more-->. Build speed is almost down to zero even for big projects, and 99.99% of my time is spent coding. 
 
 ## Wants: 
 - Ability to Build from .framework (because of zero to low build times)   
@@ -9,7 +9,7 @@ spend zero time managing dependencies<!--more-->. Build speed is almost down to 
 - Playground friendly (You are building .frameworks so it works in playground)   
 - iOS support (macOS only, 🍏 is working on 📱 support)   
   
-To achieve this: read my series on SPM (Swift package manager) and use [gitsync.io](http://www.gitsync.io)   
+**To achieve this:** Read my series on SPM (Swift package manager) and use [gitsync.io](http://www.gitsync.io)   
 
 ## SPM Series:  
 - [Faster xcode with spm](http://stylekit.org/blog/2017/02/10/Faster-XCode-with-SPM/) 
@@ -23,6 +23,3 @@ You have a Testing xcode project, A Library xcode project and an App xcode proje
   
 **Solution:**  
 This would require an enormous amount of work to achieve. Even the simplest variable change would take 15 minutes to propagate and be perfectly aligned in all projects and git repos etc etc. All this is automatic with GitSync + SPM. You simply change the lib hit cmd save in xcode and all the other projects are synced within seconds. Just switch tab and see the changes be reflected. Then just run your test and your app and .frameworks will be rebuilt and source is up today. Thats not all. You don't have to edit your code in your test library. You can edit the lib code right in your app code. GitSync syncs uni-directionally. 👌   
-
-
-SPM 👉 Swift package manager
