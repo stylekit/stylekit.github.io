@@ -1,15 +1,15 @@
-spend zero time managing dependencies <!--more-->Build speed is almost down to zero even for big projects, and 99.99% of my time I spent actually coding. 
+spend zero time managing dependencies <!--more-->Build speed is almost down to zero even for big projects, and 99.99% of my time is spent coding. 
 
 
 ## Wants: 
 
-- ✅ Ability to Build from .framework (because of zero to low build times) 
-- ✅ Syncronize source code across projects autonomously (many to many sync) 
-- ✅ Syncronize directly to 1 singular origin repo at github (version control) 
-- ✅ Full SPM integration (Sharing code w/ Community)
-- ✅ Ability to edit external framework code directly inside app projects, and automatically sync back to origin. 
-- ✅ Playground friendly (You are building .frameworks so it works in playground) 
-- 🚫 iOS support  (macOS only, Apple is working on iOS support) 
+✅ Ability to Build from .framework (because of zero to low build times)   
+✅ Syncronize source code across projects autonomously (many to many sync)   
+✅ Syncronize directly to 1 singular origin repo at github (version control)   
+✅ Full SPM integration (Sharing code w/ Community)  
+✅ Ability to edit external framework code directly inside app projects, and automatically sync back to origin.   
+✅ Playground friendly (You are building .frameworks so it works in playground)   
+🚫 iOS support  (macOS only, Apple is working on iOS support)   
   
 To achieve this: read my series on SPM (Swift package manager) and use [gitsync.io](http://www.gitsync.io)   
 
