@@ -7,7 +7,7 @@ Spend zero time managing dependencies<!--more-->. Build speed is almost down to 
 - Full SPM integration (Sharing code w/ Community)  
 - Ability to edit external framework code directly inside app projects, and automatically sync back to origin.   
 - Playground friendly (You are building .frameworks so it works in playground)   
-- iOS support (macOS only, 🍏 is working on 📱 support)   
+- iOS support (macOS only, 🍏 is working on 📱 support [experimental](https://gist.github.com/nathanborror/4ecb16bcb1ae0bd11e7eed043c6cd8bd) )   
   
 **To achieve this:** Read my series on SPM (Swift package manager) and use [gitsync.io](http://www.gitsync.io)   
 
