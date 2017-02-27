@@ -16,6 +16,8 @@ Spend zero time managing dependencies<!--more-->. Build speed is almost down to 
 - [Spm and ci travis](http://stylekit.org/blog/2017/02/07/SPM-and-CI-travis/) 
 - [Spm and nested frameworks](http://stylekit.org/blog/2017/02/06/SPM-and-nested-frameworks/)
 - [Xcode and spm](http://stylekit.org/blog/2017/02/05/Xcode-and-spm/) 
+- [Swift package manager](http://stylekit.org/blog/2017/01/15/swift-package-manager/)  
+- [Playground and framework](http://stylekit.org/blog/2017/01/16/playground-and-framework/) **bonus**  
 
 ## Scenario:
 **Problem:**  
