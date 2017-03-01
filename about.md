@@ -11,5 +11,5 @@ Relevant links:
 - [StyleKit on Twitter](http://twitter.com/stylekit_org/) 
 - [RSS](/feed.xml) 
 
-Newsletter: (Only major announcements, around 1 per month)
+Newsletter: (Only major announcements, around 4 per year)
 [StyleKit Newsletter via Mailchimp](http://eepurl.com/bN4clD) 
