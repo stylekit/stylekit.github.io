@@ -1,19 +1,8 @@
 Creating an app icon that can be use for macOS apps<!--more--> It also supports retina screens.
 
-### Workflow:
-
-This applescripts can convert a .png to an .icns file in **4 simple steps:** 
-
-**Step.1:** open the AppleScript app  
-**Step.2:** copy and paste the code into AppleScript from JoeFrizzell in the link bellow.   
-**Step.3:** save as: IconMaker.app   
-**Step.4:** drag and drop your .png onto the IconMaker.app you just created.  
-
-[http://apple.stackexchange.com/a/140361/179041](http://apple.stackexchange.com/a/140361/179041) 
-
-### Download the IconMaker.app:
-
-[IconMaker.app](https://raw.githubusercontent.com/stylekit/img/master/iconmaker.app) via Github
+### Create and .icns file from a .png:
+**Step.1:** Download [IconMaker.app](https://raw.githubusercontent.com/stylekit/img/master/iconmaker.app) via Github
+**Step.2:** Drag and drop your .png onto the IconMaker.app you just created.
 
 ### Example:
 
@@ -26,3 +15,13 @@ here is an app icon i created in Illustrator:
 
 Now you have the .icns file that can be added to your xcode project. 
 
+### Build IconMaker.app your self:
+
+This applescripts can convert a .png to an .icns file in **4 simple steps:** 
+
+**Step.1:** Open the AppleScript app  
+**Step.2:** Copy and paste the code into AppleScript from JoeFrizzell in the link bellow.   
+**Step.3:** Save as: IconMaker.app   
+**Step.4:** Drag and drop your .png onto the IconMaker.app you just created.  
+
+[http://apple.stackexchange.com/a/140361/179041](http://apple.stackexchange.com/a/140361/179041) 
