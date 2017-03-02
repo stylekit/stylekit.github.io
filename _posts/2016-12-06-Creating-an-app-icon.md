@@ -1,10 +1,10 @@
 Creating an app icon that can be use for macOS apps<!--more--> It also supports retina screens.
 
 
-This applescript can convert a .png to an .icns file in **4 simple steps:** 
+This applescripts can convert a .png to an .icns file in **4 simple steps:** 
 
-**Step.1:** open the applescript app  
-**Step.2:** copy and paste the code into applescript from JoeFrizzell in the link bellow.   
+**Step.1:** open the AppleScript app  
+**Step.2:** copy and paste the code into AppleScript from JoeFrizzell in the link bellow.   
 **Step.3:** save as: IconMaker.app   
 **Step.4:** drag and drop your .png onto the IconMaker.app you just created.  
 
