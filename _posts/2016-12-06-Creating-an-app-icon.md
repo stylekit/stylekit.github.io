@@ -1,7 +1,7 @@
 Creating an app icon that can be use for macOS apps<!--more--> It also supports retina screens.
 
 ### .png 👉 .icns
-1. Download [IconMaker.app](https://raw.githubusercontent.com/stylekit/img/master/iconmaker.app) 👈 It's just an .applescript won't bite   
+1. Download [IconMaker.app](https://raw.githubusercontent.com/stylekit/img/master/iconmaker.app) 👈 (It's just an .applescript won't bite)   
 2. Drag and drop your .png onto the IconMaker.app you just created.
 
 ### Example:
