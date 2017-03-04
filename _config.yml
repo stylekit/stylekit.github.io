@@ -2,7 +2,7 @@
 title:       StyleKit
 email:       stylekit@outlook.com
 author:      Eonist
-description: "OpenSource UI framework for OSX."
+description: "Programmatic UI framework for macOS."
 baseurl:     ""
 url:         "http://stylekit.org/"
 date_format: "%b %-d, %Y"
@@ -25,7 +25,7 @@ google_verification:
 animated:             true
 show_related_posts:   false
 show_post_footers:    false
-show_social_icons:    false
+show_social_icons:    true
 ajaxify_contact_form: false
 
 # Disqus post comments
