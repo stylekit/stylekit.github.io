@@ -1,4 +1,4 @@
-<!--more--> 
+My notes on AppCode<!--more--> 
 
 
 ## Pros:
