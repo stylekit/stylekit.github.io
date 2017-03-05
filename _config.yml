@@ -25,7 +25,7 @@ google_verification:
 animated:             true
 show_related_posts:   true
 show_post_footers:    false
-show_social_icons:    true
+show_social_icons:    false
 ajaxify_contact_form: false
 
 # Disqus post comments
