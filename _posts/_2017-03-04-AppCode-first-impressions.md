@@ -1,4 +1,4 @@
-My notes on AppCode<!--more--> 
+My preliminary notes on AppCode<!--more--> 
 
 
 ## Pros:
@@ -12,5 +12,10 @@ My notes on AppCode<!--more-->
 - MY entire complicated "Ultimate SPM workflow" worked out of the box just adding the project folder to AppCode
 
 ## Cons: 
-- It's Eclipse. Its java. 
+- It's Eclipse. It's java. 
 - TextExpander doesn't work, will try to find a solution for this!
+- XCode Tree-view collapses if you do something in AppCode. 
+
+## Gotchas:
+
+- Your personal AppCode concierge	(cmd + shift + A) it basically list all available commands and is searchable
