@@ -6,6 +6,8 @@ My notes on Protocol Inheritance<!--more-->
 
 Say you have 3 classes that needs to call the same method with the same code. But you cant extend a new BaseClass. Because the BaseClass is different in each 3 classes. You need to override the same method in all classes "scroll" And you want to be able to call the "super" There is no super with pop (protocol oriented programming)
 
+
+```swift
 /**
  * This setup describes how classes may call methods and the methods call their "super" method. 
  * Inheritance with protocols. retaining the ability to call "super" and the ability to override
@@ -54,3 +56,5 @@ b.scroll()//b, a
 print("")
 let c = C()
 c.scroll()//c , b , a
+
+```
