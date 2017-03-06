@@ -1,4 +1,5 @@
 Explains how one could do **"upstream-event-propagation"** and **"downstream-state-distribution"**:<!--more--> 
+Explains how one could do **"upstream-event-propagation"** and **"downstream-state-distribution"**:
 
 <img width="680" alt="img" src="https://rawgit.com/stylekit/img/master/event_and_state_diagram.svg">
 
@@ -47,4 +48,8 @@ let state + ExternalState.path.reduce{$0 == TitleBarPresenter}.wheaterState+ Ext
 render()
 ```
 
-Hmm. I think I need to do more research into RX. No need to re-invent the wheel if it already exists 😁
+And then there is reduction to limit the scope the event affects. Not all UI needs every state change at the app level etc. 
+
+Hmm. I think I need to do more research into **RX and related concepts**. No need to re-invent the wheel if it already exists. I will do some examples that combine RX with the MOSBY presenter regime tomorrow  😁 
+
+Ah. I think I get it now. We use RX for UI communication. and the presenter as just a layer that attach it self to the RX eventBus. but then why do view need a ref to presenter. Because RX only travels down stream?  
