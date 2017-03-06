@@ -1,6 +1,6 @@
 My notes on Protocol Inheritance<!--more--> 
 
-> insert class hierarchy diagram here. <
+insert class hierarchy diagram here.
 
 ## Rational
 
