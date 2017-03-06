@@ -1,5 +1,5 @@
 My notes on protocol delegation<!--more--> 
-
+```swift
 protocol X{}
 extension X{
     func render(){
@@ -23,3 +23,4 @@ class A:X,Y{//👈 Conforms both X and Y
 let a = A()
 a.renderX()//x
 a.renderY()//y
+```
