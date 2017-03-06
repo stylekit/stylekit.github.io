@@ -1,4 +1,4 @@
-Explains how one could do event propagation and global/local state distribution:<!--more--> 
+Explains how one could do **"upstream-event-propagation"** and **"downstream-state-distribution"**:<!--more--> 
 
 <img width="680" alt="img" src="https://rawgit.com/stylekit/img/master/event_and_state_diagram.svg">
 
