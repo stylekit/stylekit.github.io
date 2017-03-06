@@ -16,6 +16,6 @@ My preliminary notes on AppCode<!--more-->
 - TextExpander doesn't work, will try to find a solution for this!
 - XCode Tree-view collapses if you do something in AppCode. 
 
-## Gotchas:
+## Top AppCode key-combos
 
-- Your personal AppCode concierge	(cmd + shift + A) it basically list all available commands and is searchable
+- Your personal AppCode concierge: (cmd + shift + A) it basically list all available commands and is searchable
