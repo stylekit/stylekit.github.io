@@ -1,4 +1,4 @@
-My notes on protocol delegation<!--more--> 
+How to differentiate protocol ambiguity<!--more-->
 ```swift
 protocol X{}
 extension X{
