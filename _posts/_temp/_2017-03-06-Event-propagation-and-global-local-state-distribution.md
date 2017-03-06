@@ -2,7 +2,7 @@ Explains how one could do **"upstream-event-propagation"** and **"downstream-sta
 
 <img width="680" alt="img" src="https://rawgit.com/stylekit/img/master/event_and_state_diagram.svg">
 
-**In Element we don't distribute state**. State is derived by asking up hierarchy about the entire "hierarchy-state" and then calculating final state for the descendants.  We still have to distribute the state call to call the render() recursively to each descendant. But we don't pass an externalState down hierarchy. The passing of externalState down hierarchy example described in the diagram is to enable state change in AppKit since AppKit doesn't do the whole CSS thing that Element does and cant look up hierarchy to derive its design.
+**In Element we don't distribute state**. State is derived by asking up hierarchy about the entire "hierarchy-state" and then calculating final state for the descendants.  We still have to distribute the state call to call the render() recursively to each descendant. But we don't pass an externalState down hierarchy. "The-passing-of-externalState-down-hierarchy-example" described in the diagram above is to enable state change in AppKit since AppKit doesn't do the whole CSS thing that Element does and can't look up hierarchy to derive its design.
 
 In element we would rather do:
 ```css
@@ -25,3 +25,26 @@ Window :inactive TitleBar Button{
 
 Now only buttons inside**TitleBar** inside **Window** gets this inactive look. 
 And other buttons render in a default style.
+
+
+How is all this related to MOSBY? 🤔
+
+There needs to be a simple way to communicate up and down stream between Presenters. I presume there can be multiple levels of presenters in MOSBY? One at app level and one a TitleBar level. These need to be able to get event calls from deep down in the UI hierarchy. And then react accordingly. 
+
+
+Still not convinced about traveling up and down hierarchy?
+
+Well, When RX broadcasts its state change to all listeners it's the same amount of calls as a recursive call on hierarchy. The difference being that RX attaches every point it traveled through to get to its destination. Which is a good idea actually because then you can assert on its inverse hierarchy. If the RX event came from App then do this. If RX event came from window then do that. etc. 🤔
+
+I guess this starts to look more and more like RX actually. Personal RX enlightenment 💥 
+
+What if we just Distributed an ExternalState that collects its path from its origin until its farthest descendant. inverse hierarchy. Similar to how Event works but in reverse and also storing all path "checkpoints". 
+
+Just an idea. that would give us power to do something RX like: 
+
+```swift
+let state + ExternalState.path.reduce{$0 == TitleBarPresenter}.wheaterState+ ExternalState.path.reduce{$0 == AppPresenter}.locationState + internalState
+render()
+```
+
+Hmm. I think I need to do more research into RX. No need to re-invent the wheel if it already exists 😁
