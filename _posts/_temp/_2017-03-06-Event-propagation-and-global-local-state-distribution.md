@@ -1,3 +1,14 @@
-Explains how event propagation and global/local state distribution works in Element<!--more--> 
+Explains how one could do event propagation and global/local state distribution:<!--more--> 
 
 <img width="680" alt="img" src="https://rawgit.com/stylekit/img/master/event_and_state_diagram.svg">
+
+In Element we don't distribute state. State is derived by asking up hierarchy about its state and then calculating final state for the descendants.  We still have to distribute the state call to call the render() on each descendant. But we don't pass an externalState down hierarchy. The passing of externalState down hierarchy example described in the diagram is to enable state change in AppKit since AppKit doesn't do the whole CSS thing that Element does and cant look up hierarchy to derive its design.
+
+In element we would rather do:
+```css
+/*All descendants of window will now use the white fill and grey line when window is set to inactive*/
+Window :inactive{
+   fill:white;
+   line:grey;
+}
+```
