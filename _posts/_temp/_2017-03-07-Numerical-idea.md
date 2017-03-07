@@ -35,3 +35,20 @@ print(numbers.sum) // Prints: "10.0"
 let numbers2:Array = [Int(1), Int(2.0), Int(3), Int(4.0)]
 print(numbers2.sum)//10
 ```
+
+### Sum different types:
+
+```swift
+let list:[Any] = ["2",CGFloat(3),Int(4)]
+var sum:Int = 0
+list.forEach{
+    if($0 is Int){
+        sum += $0 as! Int
+    }else if($0 is CGFloat){
+        sum += ($0 as! CGFloat).int
+    }else{
+        sum += ($0 as! String).int
+    }
+}
+Swift.print("sum: " + "\(sum)")//9
+```
