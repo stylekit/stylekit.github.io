@@ -1,4 +1,4 @@
-This is a great way to add functionality to existing classes and new classes by having a common extension to a common protocol.  <!--more--> 
+### This is a great way to add functionality to existing classes and new classes by having a common extension to a common protocol.  <!--more--> 
 Adding a protocol to NSButton: 
 
 ```swift
