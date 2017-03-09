@@ -58,3 +58,25 @@ let c = C()
 c.scroll()//c , b , a
 
 ```
+
+
+## An alternative is to : 
+
+
+```swift
+protocol X{}
+protocol Y{}
+protocol Z{}
+extension X{func render(print("x")){}}
+extension Y{func render(print("y")){}}
+extension Z{func render(print("z")){}}
+class A:X,Y,Z{
+    func render(){//can be called from a Super class
+        (self as X).render()
+        (self as Y).render()
+        (self as Z).render()
+    }
+}
+let a = A()
+a.render()//z,x,y
+```
