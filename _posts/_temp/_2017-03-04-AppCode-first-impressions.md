@@ -20,3 +20,6 @@ My preliminary notes on AppCode<!--more-->
 ## Top AppCode key-combos
 
 - Your personal AppCode concierge: (cmd + shift + A) it basically list all available commands and is searchable
+
+## AppCode concierge
+- select in project view 👉 shows you the active file in the file-tree-view
