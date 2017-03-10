@@ -8,14 +8,15 @@ My preliminary notes on AppCode<!--more-->
 - Building an app works, .frameworks seems to work.
 - MY entire complicated "Ultimate SPM workflow" worked out of the box just adding the project folder to AppCode
 - It's fast. Unlike xcode
-
+-
 ## Cons: 
 - It's Eclipse. It's java. 
 - TextExpander doesn't work, will try to find a solution for this!
 - XCode Tree-view collapses if you do something in AppCode. 
 - Sometimes the AppCode icon jumps up and down with a green ✅ sign. I presume its updated, but no info in the app 🤔
 - Way too many preference options, which is often the case with Eclipse/java based apps. Less is more. Hide the advance stuff please. 80/20 rule? The prefs that are used a lot, highlight these then hide the prefs that isn't used much.
-
+- you have to doubble click to open files from tree menu (possible changable in settings)
+ 
 ## Top AppCode key-combos
 
 - Your personal AppCode concierge: (cmd + shift + A) it basically list all available commands and is searchable
