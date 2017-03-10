@@ -4,19 +4,17 @@ My preliminary notes on AppCode<!--more-->
 ## Pros:
 
 - AppCode edits your xcode .xcodeproject file when moving files. Everything is perfectly mirrored. This is worth its weight in gold alone. My projects are going to be so organized.
-
 - AppCode can rename symbolically 🏆. Meaning it can rename a function and globally change every reference in your entire codebase to the new name. 
-
 - Building an app works, .frameworks seems to work.
-
 - MY entire complicated "Ultimate SPM workflow" worked out of the box just adding the project folder to AppCode
+- It's fast. Unlike xcode
 
 ## Cons: 
 - It's Eclipse. It's java. 
 - TextExpander doesn't work, will try to find a solution for this!
 - XCode Tree-view collapses if you do something in AppCode. 
 - Sometimes the AppCode icon jumps up and down with a green ✅ sign. I presume its updated, but no info in the app 🤔
-- Way too many prefrence options, which is often the case with Eclipse/java based apps. Less is more. Hide the advance stuff please. 80/20 rule? The prefs that are used alot, highlight these then hide the prefs that isnt used much.
+- Way too many preference options, which is often the case with Eclipse/java based apps. Less is more. Hide the advance stuff please. 80/20 rule? The prefs that are used a lot, highlight these then hide the prefs that isn't used much.
 
 ## Top AppCode key-combos
 
