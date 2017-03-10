@@ -16,7 +16,7 @@ My preliminary notes on AppCode<!--more-->
 - TextExpander doesn't work, will try to find a solution for this!
 - XCode Tree-view collapses if you do something in AppCode. 
 - Sometimes the AppCode icon jumps up and down with a green ✅ sign. I presume its updated, but no info in the app 🤔
-- Way too many prefrence options, which is often the case with Eclipse/java based apps. Less is more. Hide the advance stuff please. 
+- Way too many prefrence options, which is often the case with Eclipse/java based apps. Less is more. Hide the advance stuff please. 80/20 rule? The prefs that are used alot, highlight these then hide the prefs that isnt used much.
 
 ## Top AppCode key-combos
 
