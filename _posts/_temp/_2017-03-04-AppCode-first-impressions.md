@@ -7,7 +7,7 @@ My preliminary notes on AppCode<!--more-->
 - Building an app works, .frameworks seems to work.
 - MY entire complicated "Ultimate SPM workflow" worked out of the box just adding the project folder to AppCode
 - It's fast. Unlike xcode
-- Appcode asks permission to share app metrics annonomies. Its good that they ask and that its not hidden in some obscure setting. Happened on the 8th run or so. 
+- Appcode asks permission to share app metrics annonomiesly. It's good that they ask and that its not hidden in some obscure setting. Happened on the 8th run or so. 
 
 ## Cons: 🚫
 - It's Eclipse. It's java. 
