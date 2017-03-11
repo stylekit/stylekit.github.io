@@ -15,7 +15,7 @@ My preliminary notes on AppCode<!--more-->
 - Sometimes the AppCode icon jumps up and down with a green ✅ sign. I presume its updated, but no info in the app 🤔
 - Way too many preference options, which is often the case with Eclipse/java based apps. Less is more. Hide the advance stuff please. 80/20 rule? The prefs that are used a lot, highlight these then hide the prefs that isn't used much.
 - you have to doubble click to open files from tree menu (possible changable in settings)
- 
+- AppCode feels like a futuristic code editor. 
 ## Top AppCode key-combos
 
 - Your personal AppCode concierge: (cmd + shift + A) it basically list all available commands and is searchable. When you dont want to searh helplessly through tthe gazillion pref optioins just try to free associat eabout what you want to do and things may show up here. Like bigger font size, write increase font etc. 
