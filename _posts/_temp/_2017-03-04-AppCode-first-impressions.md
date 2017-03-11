@@ -7,7 +7,7 @@ My preliminary notes on AppCode<!--more-->
 - Building an app works, .frameworks seems to work.
 - MY entire complicated "Ultimate SPM workflow" worked out of the box just adding the project folder to AppCode
 - It's fast. Unlike xcode
--
+- Appcode asks permission to share app metrics annonomies. Its good that they ask and that its not hidden in some obscure setting. Happened on the 8th run or so. 
 ## Cons: 
 - It's Eclipse. It's java. 
 - TextExpander doesn't work, will try to find a solution for this!
@@ -18,7 +18,7 @@ My preliminary notes on AppCode<!--more-->
  
 ## Top AppCode key-combos
 
-- Your personal AppCode concierge: (cmd + shift + A) it basically list all available commands and is searchable
+- Your personal AppCode concierge: (cmd + shift + A) it basically list all available commands and is searchable. When you dont want to searh helplessly through tthe gazillion pref optioins just try to free associat eabout what you want to do and things may show up here. Like bigger font size, write increase font etc. 
 
 ## AppCode concierge
 - select in project view 👉 shows you the active file in the file-tree-view
