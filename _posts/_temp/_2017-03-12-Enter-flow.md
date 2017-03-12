@@ -28,7 +28,7 @@ Create a nice diagram with emojis that symbolize flow peaks decorated w/ footbal
 - 18:00 Coffee and Flow - mind is at peace. ☕
 - 20:00 Fruits 🍊
 - 20:10 Enter flow 💯
-- 21:30 Overflow - light tasks / review / Think 🤔
+- 21:30 Overflow - lite tasks / review / Think 🤔
 - 22:30 Shower - Need a final re-energizer ⚡
 - 22:45 Enter Flow 💯 - Boost mode
 - 23:55 Continue on to get ahead of the next day or netflix? 📺
@@ -36,7 +36,7 @@ Create a nice diagram with emojis that symbolize flow peaks decorated w/ footbal
 
 ### Final word:
 
-Flows last usually around 1 H or less. The same reason why school hours are counted as 45Min. They 👀 knew about flow back-when as well. In truth I dont work more than 8H (8x💯). I just spread it out over 17Hours so that I peak more often, rather than try and peak 8 times inside 8 hours which is impossible. You only get max 3-4 peaks inside 8 hours. Regular office hours. 💥
+Flows last usually around 1 H or less. The same reason why school hours are counted as 45Min. They 👀 knew about flow back-when as well. In truth I don't work more than 8H (8*💯). I just spread it out over 17Hours so that I peak more often, rather than try and peak 8 times inside 8 hours which is impossible. You only get max 3-4 peaks inside 8 hours. Regular office hours. 💥
 
 <img width="200" alt="img" src="https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif">
 
