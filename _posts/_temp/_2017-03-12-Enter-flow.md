@@ -16,12 +16,12 @@ Create a nice diagram with emojis that symbolize flow peaks decorated w/ footbal
 - 09:10 Enter flow 💯 . Mind is peak
 - 10:30 Shower - energize ⚡
 - 10:45 Enter flow 💯-  Mind is glowing
-- 11:30 Eat breakfast bread 🥐
-- 11:40 Enter flow 💯 - minds is ampt
+- 11:30 Eat breakfast 🥐
+- 11:40 Enter flow 💯 - minds is Amp'ed
 - 13:30 Eat lunch - Fruits n Nuts 🍓
-- 13:45 Enter flow 💯 - Mind is ampt 2
+- 13:45 Enter flow 💯 - Mind is Amp'ed 2
 - 15:00 Play with football in garden + fruit
-- 15:15 Enter flow 💯 - mind is ampt 3
+- 15:15 Enter flow 💯 - mind is Amp'ed 3
 - 16:00 Make a fruit juice. 🍏
 - 16:10 Enter flow 💯 - mind is reenergized. 
 - 17:30 Make Italian pizza 🍕
