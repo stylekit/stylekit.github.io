@@ -1,6 +1,5 @@
 My preliminary notes on AppCode<!--more--> 
 
-
 ## Pros: ✅
 - AppCode can rename symbolically 🏆. Meaning it can rename a function and globally change every reference in your entire codebase to the new name. This is worth the price of admission alone
 - AppCode edits your xcode .xcodeproject file when moving files. Everything is perfectly mirrored. This is worth its weight in gold alone. My projects are going to be so organized.
@@ -10,7 +9,8 @@ My preliminary notes on AppCode<!--more-->
 - Appcode asks permission to share app metrics annonomiesly. It's good that they ask and that its not hidden in some obscure setting. Happened on the 8th run or so. 
 
 ## Cons: 🚫
-- It's Eclipse. It's java. 
+- It's Eclipse. It's java.
+- No emojies 🙁 
 - TextExpander doesn't work, will try to find a solution for this!
 - XCode Tree-view collapses if you do something in AppCode. 
 - Sometimes the AppCode icon jumps up and down with a green ✅ sign. I presume it's updated, but no info in the app 🤔
