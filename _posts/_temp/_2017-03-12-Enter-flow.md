@@ -2,11 +2,11 @@ On Entering flow<!--more-->
 
 ### Prelude:
 I **Don't** try to work hard or work as much as I can , I rather try to Enter Flow as many times as possible throughout the day. 
-> Mini breaks helps to retain the flow highs. 
+> Mini breaks helps to retain the flow highs. ☝️
 
 I do not believe in systems to keep you in check, all systems are prisons. I rather believe that I need to be open to all input, wims i get through the day. Keep your door open to the world or you will work on sightly the wrong thing. <-link
-I have two rules: Wear Noice cancelling headphones.  
-> And **Don't waste your flow time** on things that don't require flow. 
+I have two rules: Wear Noice cancelling headphones.🎧  
+> And **Don't waste your flow time** on things that don't require flow. ☝️ 
 
 ### Bar-graph:
 Create a nice diagram with emojis that symbolize football, pizza, fruits etc...maybe. My flow chart..pun intended 🤣
