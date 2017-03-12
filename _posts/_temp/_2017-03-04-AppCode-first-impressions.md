@@ -22,6 +22,7 @@ My preliminary notes on AppCode<!--more-->
 ## Top AppCode key-combos 🏄
 
 - Your personal AppCode concierge: (cmd + shift + A) it basically list all available commands and is searchable. When you dont want to searh helplessly through the gazillion pref options just try to free associate  about what you want to do and things may show up here. Like bigger font size, write increase font etc. 
+- CMD + SHIFT + O: Same as XCode. open file
 
 ## AppCode concierge 💁
 - select in project view 👉 shows you the active file in the file-tree-view
