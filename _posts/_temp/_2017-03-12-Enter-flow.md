@@ -9,7 +9,7 @@ I have two rules: Wear Noice cancelling headphones.🎧
 > And **Don't waste your flow time** on things that don't require flow. ☝️ 
 
 ### Bar-graph:
-Create a nice diagram with emojis that symbolize football, pizza, fruits etc...maybe. My flow chart..pun intended 🤣
+Create a nice diagram with emojis that symbolize flow peaks decorated w/ football, pizza, fruits etc...maybe. My flow chart..pun intended 🤣
 
 ### A random day: 
 - 09:00 wakeup ⏰
@@ -36,7 +36,7 @@ Create a nice diagram with emojis that symbolize football, pizza, fruits etc...m
 
 ### Final word:
 
-Flows last usually around 1 H or less. The same reason why school hours are counted as 45Min. They 👀 knew about flow back-when as well. In truth I dont work more than 8H. I just spread it out over 17Hours so that I peak more often, rather than try and peak 8 times inside 8 hours which is impossible. You only get max 3-4 peaks inside 8 hours. Regular office hours. 💥
+Flows last usually around 1 H or less. The same reason why school hours are counted as 45Min. They 👀 knew about flow back-when as well. In truth I dont work more than 8H (8x💯). I just spread it out over 17Hours so that I peak more often, rather than try and peak 8 times inside 8 hours which is impossible. You only get max 3-4 peaks inside 8 hours. Regular office hours. 💥
 
 <img width="200" alt="img" src="https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif">
 
