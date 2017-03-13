@@ -7,10 +7,11 @@ My preliminary notes on AppCode<!--more-->
 - MY entire complicated "Ultimate SPM workflow" worked out of the box just adding the project folder to AppCode
 - It's fast. Unlike xcode
 - Appcode asks permission to share app metrics annonomiesly. It's good that they ask and that its not hidden in some obscure setting. Happened on the 8th run or so. 
+- You can paint the selection like TextMate >Insert emoji<
 
 ## Cons: 🚫
 - It's Eclipse. It's java.
-- No emojies 🙁 
+- No emoji support 🙁 
 - TextExpander doesn't work, will try to find a solution for this!
 - XCode Tree-view collapses if you do something in AppCode. 
 - Sometimes the AppCode icon jumps up and down with a green ✅ sign. I presume it's updated, but no info in the app 🤔
