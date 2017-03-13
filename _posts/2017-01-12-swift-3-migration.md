@@ -4,7 +4,7 @@ After manually migrating 35.000 lines of swift 2.2 into swift 3.0 code. <!--more
 ## Range:
 Range in swift 3 has been totally re-designed. 🙈   
 We now have 2 Main Range types: Range and CountableRange.   
-Apples motivation for seperating these types was:    
+Apples motivation for separating these types was:    
 
 1. Make a light-weight range type that only holds 2 Ints (start and end)  
 
