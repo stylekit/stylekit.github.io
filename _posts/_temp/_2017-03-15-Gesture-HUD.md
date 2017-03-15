@@ -1,3 +1,6 @@
+Notes on GestureHUD<!--more-->. Great for debugging gestures in macOS
+
+<img width="192" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/multitouch.mov.gif">
 
 
 ```swift
