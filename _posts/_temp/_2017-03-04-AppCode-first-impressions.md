@@ -8,6 +8,7 @@ My preliminary notes on AppCode<!--more-->
 - It's fast. Unlike xcode
 - Appcode asks permission to share app metrics annonomiesly. It's good that they ask and that its not hidden in some obscure setting. Happened on the 8th run or so. 
 - You can paint the selection like TextMate >Insert emoji<
+- jetbrains CLion has support for swift now. Meaning in theory you can code swift on a linux machine. If only there was a cross platform UI library 🤔 We could start coding apps on Linux maschines, that worked for mac and linux. Which means we could buy really fast computers on the cheap for desktop development 8-core CPU 64GB ram, 1GB SSD for less than 2k$. Add a 5K LG screen to that rig please. The future is bright.	
 
 ## Cons: 🚫
 - It's Eclipse. It's java.
