@@ -100,6 +100,9 @@ NSDate is now Date:
 ## AnyClass:
 ``.isMemberOfClass`` is now: ``isMember(of:)``  
 
+## Selector
+was: ``ObjectiveC.Selector("onMagnifyGesture:")`` now: ``#selector(onMagnifyGesture)``
+
 ## Other tidbits:
 XCode now complain if a method that returns a var is unused:   
 ``_ = someReturningMethod()`` 👈 The solution is to add: ``_ =`` infront of the call  
