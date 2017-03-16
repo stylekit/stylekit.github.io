@@ -64,3 +64,7 @@ Swift.print("d.number: " + "\(d.number)")
 let d2 = Digit(123)
 d2.number = 42 // compile error
 ```
+
+### Class:
+
+ Classes are not bad; they’re good! For one thing, a class instance is very efficient to pass around, because all you’re passing is a pointer. No matter how big and complicated a class instance may be, no matter how many prop‐ erties it may have containing vast amounts of data, passing the instance is incredibly fast and efficient, because no new data is generated.
