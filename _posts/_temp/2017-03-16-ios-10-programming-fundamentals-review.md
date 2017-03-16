@@ -17,3 +17,20 @@ class Dog {
 }
 //print(Dog.Noise.noise)//Woof
 ```
+
+### Enums:
+
+```swift
+/*If the type is String, the implicitly assigned values are the string equivalents of the
+case names. For example:*/
+    enum Filter : String {
+        case albums
+        case playlists
+        case podcasts
+        case books
+}
+```
+
+```swift
+
+```
