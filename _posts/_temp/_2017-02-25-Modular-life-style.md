@@ -2,7 +2,7 @@
 
 Iterating on an idea that [Thiago forte article](https://medium.com/praxis-blog/bending-the-curves-of-productivity-25edb268672f#.xg2s22css)  wrote about. Were instead of trying to accomplish task based on eod (end of day) you rather focus on working on modules of work. This way you don't have to shut your door on the rest of the world to get something done. Because people that isolate them selfs tend to work on slightly the wrong problem, where as thous that keep the door open doesn't get any work done. 
 
-<img width="500" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/asym_vs_eod_illustration.svg">
+<img width="500" alt="img" src="https://rawgit.com/stylekit/img/master/asym_vs_eod_illustration.svg">
 
 ## Modular tasks:
 Create a few milestones of where you want to go. 
