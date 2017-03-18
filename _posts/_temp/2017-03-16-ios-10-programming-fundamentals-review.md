@@ -67,3 +67,33 @@ d2.number = 42 // compile error
  Classes are not bad; they’re good! For one thing, a class instance is very efficient to pass around, because all you’re passing is a pointer. No matter how big and complicated a class instance may be, no matter how many prop‐ erties it may have containing vast amounts of data, passing the instance is incredibly fast and efficient, because no new data is generated.
  
  Even more important, there are many situations where the independent identity of a class instance, no matter how many times it is referred to, is exactly what you want. The extended lifetime of a class instance, as it is passed around, can be crucial to its functionality and integrity. In particular, only a class instance can successfully repre‐ sent an independent reality. For example, a UIView needs to be a class, not a struct, because an individual UIView instance, no matter how it gets passed around, must continue to represent the same single real and persistent view in your running app’s interface.
+ 
+ ### Enums
+ 
+ Swift is chock full of protocols already. Let’s make one of our own object types adopt one. One of the most useful Swift protocols is CustomStringConvertible. The Cus‐ tomStringConvertible protocol requires that we implement a description String property. If we do that, a wonderful thing happens: when an instance of this type is used in string interpolation or print (or the po command in the console), the description property value is used automatically to represent it.
+Recall, for example, the Filter enum, from earlier in this chapter. I’ll add a description property to it:
+```swift
+enum Filter : String {
+    case albums = "Albums"
+    case playlists = "Playlists"
+    case podcasts = "Podcasts"
+    case books = "Audiobooks"
+    var description : String { return self.rawValue }
+}
+```
+But that isn’t enough, in and of itself, to give Filter the power of the CustomString‐ Convertible protocol; to do that, we also need to adopt the CustomStringConvertible protocol formally. There is already a colon and a type in the Filter declaration, so an adopted protocol comes after a comma:
+```swift
+enum Filter : String, CustomStringConvertible {
+    case albums = "Albums"
+    case playlists = "Playlists"
+    case podcasts = "Podcasts"
+    case books = "Audiobooks"
+    var description : String { return self.rawValue }
+}
+```
+We have now made Filter formally adopt the CustomStringConvertible protocol. The CustomStringConvertible protocol requires that we implement a description String property; we do implement a description String property, so our code compiles. Now we can hand a Filter to print, or interpolate it into a string, and its description will appear automatically:
+```swift
+let type = Filter.albums
+print(type) // Albums
+print("It is \(type)") // It is Albums
+```
