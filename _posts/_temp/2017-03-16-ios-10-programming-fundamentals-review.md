@@ -97,10 +97,35 @@ let type = Filter.albums
 print(type) // Albums
 print("It is \(type)") // It is Albums
 ```
-generic
+
+### generic
 
 Generic protocol with Self
 In a protocol, use of the keyword Self (note the capitalization) turns the proto‐ col into a generic. Self is a placeholder meaning the type of the adopter. For example, here’s a Flier protocol that declares a method that takes a Self parame‐ ter:
         protocol Flier {
             func flockTogetherWith(_ f:Self)
 }
+
+### extension
+
+An extension can’t override an existing member (but it can overload an existing method).
+
+### inferring value:
+
+```swift
+class Color{
+    var name:String = ""
+    init(_ color:String){self.name = color}
+}
+extension Color{
+    static var orange:Color {return Color("orange")}
+    static var green:Color {return Color("green")}
+    static var blue:Color {return Color("blue")}
+}
+func test(_ a:Color){
+    Swift.print("Color: \(a.name)")
+}
+test(.orange)//orange
+test(.blue)//blue
+test(.green)//green
+```
