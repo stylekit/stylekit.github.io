@@ -97,3 +97,10 @@ let type = Filter.albums
 print(type) // Albums
 print("It is \(type)") // It is Albums
 ```
+generic
+
+Generic protocol with Self
+In a protocol, use of the keyword Self (note the capitalization) turns the proto‐ col into a generic. Self is a placeholder meaning the type of the adopter. For example, here’s a Flier protocol that declares a method that takes a Self parame‐ ter:
+        protocol Flier {
+            func flockTogetherWith(_ f:Self)
+}
