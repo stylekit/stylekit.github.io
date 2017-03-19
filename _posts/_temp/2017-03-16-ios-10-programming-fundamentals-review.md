@@ -152,3 +152,12 @@ But you can do it with a generic protocol, so the trick is to extend a generic p
         }
 }
 ```
+
+type assertion:
+
+```swift
+ func typeTester(_ d:Dog, _ whattype:Dog.Type) {
+        if type(of:d) === whattype {
+// ... }
+}
+```
