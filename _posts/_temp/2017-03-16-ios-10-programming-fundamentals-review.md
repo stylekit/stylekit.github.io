@@ -161,3 +161,28 @@ type assertion:
 // ... }
 }
 ```
+
+arr tricks
+
+An array also has an initializer whose parameter is a sequence. This means that if a type is a sequence, you can split an instance of it into the elements of an array. For example:
+• Array(1...3) generates the array of Int [1,2,3].
+• Array("hey".characters) generates the array of Character ["h","e","y"].
+• Array(d), where d is a Dictionary, generates an array of tuples of the key–value pairs of d.
+
+
+arr slicing
+
+An array’s largest accessible index is one less than its count. You may find yourself calculating index values with reference to the count; for example, to refer to the last two elements of arr, you can say:
+    let arr = [1,2,3]
+    let slice = arr[arr.count-2...arr.count-1] // [2,3]
+Swift doesn’t adopt the modern convention of letting you use negative numbers as a shorthand for that calculation. On the other hand, for the common case where you want the last n elements of an array, you can use the suffix(_:) method:
+    let arr = [1,2,3]
+    let slice = arr.suffix(2) // [2,3]
+Both suffix(_:) and its companion prefix(_:) yield ArraySlices, and have the remarkable feature that there is no penalty for going out of range:
+    let arr = [1,2,3]
+    let slice = arr.suffix(10) // [1,2,3] (and no crash)
+Instead of describing the size of the suffix or prefix by its count, you can express the limit of the suffix or prefix by its index:
+    let arr = [1,2,3]
+    let slice = arr.suffix(from:1)    // [2,3]
+    let slice2 = arr.prefix(upTo:1)    // [1]
+    let slice3 = arr.prefix(through:1) // [1,2]
