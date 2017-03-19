@@ -197,3 +197,27 @@ The index(of:) method reports the index of the first occurrence of an element in
 Alternatively, you can call index(where:), supplying your own function that takes an element type and returns a Bool, and you’ll get back the index of the first element for which that Bool is true. In this example, my Bird struct has a name String property:
     let aviary = [Bird(name:"Tweety"), Bird(name:"Flappy"), Bird(name:"Lady")]
     let ix = aviary.index {$0.name.characters.count < 5} // Optional(2)
+    
+arr sequence
+
+As a sequence, an array’s contains(_:) method reports whether it contains an ele‐ ment. Again, you can rely on the == operator if the elements are Equatables, or you can supply your own function that takes an element type and returns a Bool:
+    let arr = [1,2,3]
+    let ok = arr.contains(2) // true
+    let ok2 = arr.contains {$0 > 3} // false
+The starts(with:) method reports whether an array’s starting elements match the elements of a given sequence of the same type. Once more, you can rely on the == operator for Equatables, or you can supply a function that takes two values of the ele‐ ment type and returns a Bool stating whether they match:
+    let arr = [1,2,3]
+    let ok = arr.starts(with:[1,2]) // true
+    let ok2 = arr.starts(with:[1,-2]) {abs($0) == abs($1)} // true
+The elementsEqual(_:) method is the sequence generalization of array comparison: the two sequences must be of the same length, and either their elements must be Equatables or you can supply a matching function
+
+
+arr joined
+
+The joined(separator:) instance method starts with an array of arrays. It extracts their individual elements, and interposes between each sequence of extracted ele‐ ments the elements of the separator:. The result is an intermediate sequence called a JoinSequence, and might have to be coerced further to an Array if that’s what you were after. For example:
+    let arr = [[1,2], [3,4], [5,6]]
+    let joined = Array(arr.joined(separator:[10,11]))
+    // [1, 2, 10, 11, 3, 4, 10, 11, 5, 6]
+Calling joined() with no separator: is a way to flatten an array of arrays. Again, it returns an intermediate sequence (or collection), so you might want to coerce to an Array:
+    let arr = [[1,2], [3,4], [5,6]]
+    let arr2 = Array(arr.flatten())
+    // [1, 2, 3, 4, 5, 6]
