@@ -131,6 +131,7 @@ test(.green)//green
 ```
 
 ### Where clause:
+
 An interesting problem arises when you want your generic extension where clause to specify type equality (==) instead of protocol adoption or class inheritance (:). The problem is that you can’t do that with a generic struct. Suppose, for example, that I want to give Array a sum method when the elements are Ints. I can’t do it:
 ```swift
 
@@ -153,7 +154,7 @@ But you can do it with a generic protocol, so the trick is to extend a generic p
 }
 ```
 
-type assertion:
+### Type assertion:
 
 ```swift
  func typeTester(_ d:Dog, _ whattype:Dog.Type) {
@@ -162,7 +163,7 @@ type assertion:
 }
 ```
 
-arr tricks
+### Array tricks tricks
 
 An array also has an initializer whose parameter is a sequence. This means that if a type is a sequence, you can split an instance of it into the elements of an array. For example:
 • Array(1...3) generates the array of Int [1,2,3].
@@ -170,58 +171,79 @@ An array also has an initializer whose parameter is a sequence. This means that 
 • Array(d), where d is a Dictionary, generates an array of tuples of the key–value pairs of d.
 
 
-arr slicing
+### Array slicing
 
 An array’s largest accessible index is one less than its count. You may find yourself calculating index values with reference to the count; for example, to refer to the last two elements of arr, you can say:
-    let arr = [1,2,3]
-    let slice = arr[arr.count-2...arr.count-1] // [2,3]
-Swift doesn’t adopt the modern convention of letting you use negative numbers as a shorthand for that calculation. On the other hand, for the common case where you want the last n elements of an array, you can use the suffix(_:) method:
-    let arr = [1,2,3]
-    let slice = arr.suffix(2) // [2,3]
-Both suffix(_:) and its companion prefix(_:) yield ArraySlices, and have the remarkable feature that there is no penalty for going out of range:
-    let arr = [1,2,3]
-    let slice = arr.suffix(10) // [1,2,3] (and no crash)
+```swift
+let arr = [1,2,3]
+let slice = arr[arr.count-2...arr.count-1] // [2,3]
+```
+Swift doesn’t adopt the modern convention of letting you use negative numbers as a shorthand for that calculation. On the other hand, for the common case where you want the last n elements of an array, you can use the suffix(:) method:
+```swift
+let arr = [1,2,3]
+let slice = arr.suffix(2) // [2,3]
+```
+Both suffix(:) and its companion prefix(:) yield ArraySlices, and have the remarkable feature that there is no penalty for going out of range:
+```swift
+let arr = [1,2,3]
+let slice = arr.suffix(10) // [1,2,3] (and no crash)
+```
 Instead of describing the size of the suffix or prefix by its count, you can express the limit of the suffix or prefix by its index:
-    let arr = [1,2,3]
-    let slice = arr.suffix(from:1)    // [2,3]
-    let slice2 = arr.prefix(upTo:1)    // [1]
-    let slice3 = arr.prefix(through:1) // [1,2]
-    
-    
-arr idx
+```swift
+let arr = [1,2,3]
+let slice = arr.suffix(from:1)    // [2,3]
+let slice2 = arr.prefix(upTo:1)    // [1]
+let slice3 = arr.prefix(through:1) // [1,2]
 
+```
+    
+### array idx
 
 The index(of:) method reports the index of the first occurrence of an element in an array, but it is wrapped in an Optional so that nil can be returned if the element doesn’t appear in the array. If the array consists of Equatables, the comparison uses == behind the scenes to identify the element being sought:
-    let arr = [1,2,3]
-    let ix = arr.index(of:2) // Optional wrapping 1
+```swift
+let arr = [1,2,3]
+let ix = arr.index(of:2) // Optional wrapping 1
+```
 Alternatively, you can call index(where:), supplying your own function that takes an element type and returns a Bool, and you’ll get back the index of the first element for which that Bool is true. In this example, my Bird struct has a name String property:
-    let aviary = [Bird(name:"Tweety"), Bird(name:"Flappy"), Bird(name:"Lady")]
-    let ix = aviary.index {$0.name.characters.count < 5} // Optional(2)
+```swift
+let aviary = [Bird(name:"Tweety"), Bird(name:"Flappy"), Bird(name:"Lady")]
+let ix = aviary.index {$0.name.characters.count < 5} // Optional(2)
+```
     
-arr sequence
+Array sequence
 
-As a sequence, an array’s contains(_:) method reports whether it contains an ele‐ ment. Again, you can rely on the == operator if the elements are Equatables, or you can supply your own function that takes an element type and returns a Bool:
-    let arr = [1,2,3]
-    let ok = arr.contains(2) // true
-    let ok2 = arr.contains {$0 > 3} // false
+As a sequence, an array’s contains(:) method reports whether it contains an ele‐ ment. Again, you can rely on the == operator if the elements are Equatables, or you can supply your own function that takes an element type and returns a Bool:
+```swift
+let arr = [1,2,3]
+let ok = arr.contains(2) // true
+let ok2 = arr.contains {$0 > 3} // false
+```
 The starts(with:) method reports whether an array’s starting elements match the elements of a given sequence of the same type. Once more, you can rely on the == operator for Equatables, or you can supply a function that takes two values of the ele‐ ment type and returns a Bool stating whether they match:
-    let arr = [1,2,3]
-    let ok = arr.starts(with:[1,2]) // true
-    let ok2 = arr.starts(with:[1,-2]) {abs($0) == abs($1)} // true
-The elementsEqual(_:) method is the sequence generalization of array comparison: the two sequences must be of the same length, and either their elements must be Equatables or you can supply a matching function
+```swift
+let arr = [1,2,3]
+let ok = arr.starts(with:[1,2]) // true
+let ok2 = arr.starts(with:[1,-2]) {abs($0) == abs($1)} // true
+```    
+The elementsEqual(:) method is the sequence generalization of array comparison: the two sequences must be of the same length, and either their elements must be Equatables or you can supply a matching function
 
 
 ### Array joined
 
 The joined(separator:) instance method starts with an array of arrays. It extracts their individual elements, and interposes between each sequence of extracted ele‐ ments the elements of the separator:. The result is an intermediate sequence called a JoinSequence, and might have to be coerced further to an Array if that’s what you were after. For example:
-    let arr = [[1,2], [3,4], [5,6]]
-    let joined = Array(arr.joined(separator:[10,11]))
-    // [1, 2, 10, 11, 3, 4, 10, 11, 5, 6]
+```swift
+let arr = [[1,2], [3,4], [5,6]]
+let joined = Array(arr.joined(separator:[10,11]))
+// [1, 2, 10, 11, 3, 4, 10, 11, 5, 6]
+```
 Calling joined() with no separator: is a way to flatten an array of arrays. Again, it returns an intermediate sequence (or collection), so you might want to coerce to an Array:
-    let arr = [[1,2], [3,4], [5,6]]
-    let arr2 = Array(arr.flatten())
-    // [1, 2, 3, 4, 5, 6]
+```swift
+let arr = [[1,2], [3,4], [5,6]]
+let arr2 = Array(arr.flatten())
+// [1, 2, 3, 4, 5, 6]
+```
     
-arr sort
+Array sort
 
- arr.sort {$0 > $1} // [6, 5, 4, 3, 2, 1]
+```swift
+arr.sort {$0 > $1} // [6, 5, 4, 3, 2, 1]
+```
