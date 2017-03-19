@@ -211,7 +211,7 @@ The starts(with:) method reports whether an array’s starting elements match th
 The elementsEqual(_:) method is the sequence generalization of array comparison: the two sequences must be of the same length, and either their elements must be Equatables or you can supply a matching function
 
 
-arr joined
+### Array joined
 
 The joined(separator:) instance method starts with an array of arrays. It extracts their individual elements, and interposes between each sequence of extracted ele‐ ments the elements of the separator:. The result is an intermediate sequence called a JoinSequence, and might have to be coerced further to an Array if that’s what you were after. For example:
     let arr = [[1,2], [3,4], [5,6]]
@@ -221,3 +221,7 @@ Calling joined() with no separator: is a way to flatten an array of arrays. Agai
     let arr = [[1,2], [3,4], [5,6]]
     let arr2 = Array(arr.flatten())
     // [1, 2, 3, 4, 5, 6]
+    
+arr sort
+
+ arr.sort {$0 > $1} // [6, 5, 4, 3, 2, 1]
