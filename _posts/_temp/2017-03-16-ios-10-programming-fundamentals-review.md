@@ -129,3 +129,26 @@ test(.orange)//orange
 test(.blue)//blue
 test(.green)//green
 ```
+
+### Where clause:
+An interesting problem arises when you want your generic extension where clause to specify type equality (==) instead of protocol adoption or class inheritance (:). The problem is that you can’t do that with a generic struct. Suppose, for example, that I want to give Array a sum method when the elements are Ints. I can’t do it:
+```swift
+
+    extension Array where Element == Int { // compile error
+        func sum() -> Int {
+            return self.reduce(0, +)
+        }
+}
+
+```
+
+But you can do it with a generic protocol, so the trick is to extend a generic protocol adopted by your struct. In this case, there is already a generic protocol adopted by Array, namely Sequence; so the solution is extend that instead:
+
+```swift
+
+    extension Sequence where Iterator.Element == Int {
+        func sum() -> Int {
+            return self.reduce(0, +)
+        }
+}
+```
