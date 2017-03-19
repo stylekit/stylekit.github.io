@@ -186,3 +186,14 @@ Instead of describing the size of the suffix or prefix by its count, you can exp
     let slice = arr.suffix(from:1)    // [2,3]
     let slice2 = arr.prefix(upTo:1)    // [1]
     let slice3 = arr.prefix(through:1) // [1,2]
+    
+    
+arr idx
+
+
+The index(of:) method reports the index of the first occurrence of an element in an array, but it is wrapped in an Optional so that nil can be returned if the element doesn’t appear in the array. If the array consists of Equatables, the comparison uses == behind the scenes to identify the element being sought:
+    let arr = [1,2,3]
+    let ix = arr.index(of:2) // Optional wrapping 1
+Alternatively, you can call index(where:), supplying your own function that takes an element type and returns a Bool, and you’ll get back the index of the first element for which that Bool is true. In this example, my Bird struct has a name String property:
+    let aviary = [Bird(name:"Tweety"), Bird(name:"Flappy"), Bird(name:"Lady")]
+    let ix = aviary.index {$0.name.characters.count < 5} // Optional(2)
