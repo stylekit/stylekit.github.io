@@ -594,7 +594,7 @@ guard case let output = howMany(), output > 10 else {return}
 ### Privacy:
 
 **fileprivate** (narrower than internal)
-A thing declared fileprivate is visible only within its containing  le. For exam‐ ple, two object types declared in the same file can see one another’s members declared fileprivate, but code in other files cannot see those members. Why would you declare something fileprivate rather than private? One common reason has to do with extensions.
+A thing declared fileprivate is visible only within its containing  le. For exam‐ ple, two object types declared in the same file can see one another’s members declared fileprivate, but code in other files cannot see those members. Why would you declare something fileprivate rather than private? One common reason has to do with extensions. By the same token, privacy is not magically violated by the existence of a special object relationship. For example, even a subclass cannot see its superclass’s private members. (This comes as a surprise to those coming from a language with a protected privacy level.) You can work around this by declaring the class and its sub‐ class in the same file and declaring those members fileprivate instead of private. fileprivate is sort of the same as protected in other languages.
 
 **private** (even narrower than fileprivate)
 A thing declared private is visible only within its containing curly braces. In effect, the visibility of an object type’s member declared private is limited to code within this class declaration. (A private declaration at the top level of a file is equivalent to fileprivate.)
