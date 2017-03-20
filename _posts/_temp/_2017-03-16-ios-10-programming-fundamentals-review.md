@@ -609,3 +609,23 @@ If a class is declared open, code in another module can subclass it; it can’t 
 ### deInit:
 
 One way to test for and observe a memory leak is to implement a class’s deinit. This method is called when the instance goes out of existence. If the instance never goes out of existence, deinit is never called. That’s a bad sign, if you were expecting that the instance should go out of existence.
+
+```swift
+func testRetainCycle() {
+        class Dog {
+            deinit {
+                print("farewell from Dog")
+} }
+        class Cat {
+            deinit {
+                print("farewell from Cat")
+            }
+        }
+        let d = Dog()
+        let c = Cat()
+    }
+    testRetainCycle() // farewell from Cat, farewell from Dog
+```
+
+### Memory management
+THe book has a great overview of solutions regarding weak refs unowned etc.  CA: p288
