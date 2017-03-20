@@ -20,7 +20,7 @@ Create a nice diagram with emojis that symbolize flow peaks decorated w/ footbal
 - 11:40 Enter flow 💯 - minds is Amp'ed
 - 13:30 Eat lunch - Fruits n Nuts 🍓
 - 13:45 Enter flow 💯 - Mind is Amp'ed 2
-- 15:00 Play with football in garden + fruit
+- 15:00 Play with football in garden + fruit (brain needs o2)
 - 15:15 Enter flow 💯 - mind is Amp'ed 3
 - 16:00 Make a fruit juice. 🍏
 - 16:10 Enter flow 💯 - mind is reenergized. 
