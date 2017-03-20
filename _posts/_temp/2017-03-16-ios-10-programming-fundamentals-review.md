@@ -247,3 +247,11 @@ Array sort
 ```swift
 arr.sort {$0 > $1} // [6, 5, 4, 3, 2, 1]
 ```
+
+### Dictionary:
+
+You can extract a dictionary’s entire contents at once as an array (of key–value tuples) by coercing the dictionary to an array:
+```swift
+var d = ["CA": "California", "NY": "New York"]
+let arr = Array(d) // [("NY", "New York"), ("CA", "California")]
+```
