@@ -16,7 +16,7 @@ Searching for a Gif animation app that can output crisp .gif animations of GUI a
 
 ### Result:
 
-<img width="442" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/hover_svg_asset_d8jd.gif">
+<img width="442" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/hover_svg_asset_d8jd.gif">
 
 Retina-ready and Perfect for twitter. Maybe adjust the file-size when using it on the web. ==Currently at 1.5mb==. I would use .mp4 and embed that but apple iOS devices ==can't autoplay== or loop .mp4. Its a policy in safari. There are some obscure workaround to get .mp4 working in IOS safari but the workarounds are not trivial to implement.
 
