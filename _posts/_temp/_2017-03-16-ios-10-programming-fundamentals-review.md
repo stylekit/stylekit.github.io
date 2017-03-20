@@ -479,3 +479,19 @@ while self.movenda.count > 0 {
     // ...
 }
 ```
+
+
+```swift
+while let p = self.movenda.popLast() {
+        // ...
+}
+```
+There is no Swift repeat...until construct; instead, negate the while condition. In my own code, for example, I commonly need to walk my way up or down a hierarchy. Here, textField is a subview, at some depth, of some table view cell, and I want to know which table view cell it is a subview of. So I keep walking up the view hierarchy, investigating each superview in turn, until either I reach a table view cell or I hit the top of the view hierarchy:
+```swift
+var v : UIView? = textField
+repeat {v = v?.superview} while !(v is UITableViewCell || v == nil)
+if let c = v as? UITableViewCell {
+    // ... if we get here, c is the cell
+}
+```
+
