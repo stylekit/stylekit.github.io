@@ -290,3 +290,54 @@ guard let ok = change?[.newKey] as? Bool else {return}
 guard ok else {return}
 // ...
 ```
+
+## switch trickery:
+
+Now let’s focus on the comparison between the tag value and the case value. In the preceding example, it works like an equality comparison (==); but that isn’t the only possibility. In Swift, a case value is actually a special expression called a pattern, and the pattern is compared to the tag value using a “secret” pattern-matching operator, ~=. The more you know about the syntax for constructing a pattern, the more power‐ ful your case values and your switch statements will be.
+A pattern can include an underscore (_) to absorb all values without using them. An underscore case is thus an alternative form of “mop-up” case:
+
+ switch i {
+    case 1:
+        print("You have 1 thingy!")
+    case _:
+        print("You have many thingies!")
+    }
+    
+    
+    switch i {
+    case 1?:
+        print("You have 1 thingy!")
+    case let n?:
+        print("You have \(n) thingies!")
+    case nil: break
+}
+
+ switch i {
+    case let j where j < 0:
+        print("i is negative")
+    case let j where j > 0:
+        print("i is positive")
+    case 0:
+        print("i is 0")
+    default:break
+}
+
+switch d {
+    case is NoisyDog:
+        print("You have a noisy dog!")
+    case _:
+        print("You have a dog.")
+    }
+    
+    
+    switch d {
+    case let nd as NoisyDog:
+        nd.beQuiet()
+    case let d:
+d.bark() }
+
+switch (d["size"], d["desc"]) {
+    case let (size as Int, desc as String):
+        print("You have size \(size) and it is \(desc)")
+    default:break
+}
