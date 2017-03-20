@@ -341,3 +341,23 @@ switch (d["size"], d["desc"]) {
         print("You have size \(size) and it is \(desc)")
     default:break
 }
+
+When a tag is an enum, the cases can be cases of the enum. A switch statement is thus an excellent way to handle an enum. Here’s the Filter enum:
+    enum Filter {
+        case albums
+        case playlists
+        case podcasts
+        case books
+}
+
+And here’s a switch statement, where the tag, type, is a Filter; no mop-up is needed, because I’ve exhausted the cases:
+    switch type {
+    case .albums:
+        print("Albums")
+    case .playlists:
+        print("Playlists")
+    case .podcasts:
+        print("Podcasts")
+    case .books:
+        print("Books")
+    }
