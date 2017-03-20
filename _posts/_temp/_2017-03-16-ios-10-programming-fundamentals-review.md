@@ -565,6 +565,9 @@ statements
 A single do block can be accompanied by multiple catch blocks. Catch blocks are like the cases of a switch statement, and will usually have the same logic: first, you might have specialized catch blocks, each of which is designed to handle some limited set of possible errors; finally, you might have a general catch block that acts as the default, mopping up any errors that were not caught by any of the specialized catch blocks.
 
 unwrap the Optional safely at the same point where you make the call, like this:
+```swift
     let f = // path to some file, maybe
     if let s = try? String(contentsOfFile: f) {
 // ... }
+
+```
