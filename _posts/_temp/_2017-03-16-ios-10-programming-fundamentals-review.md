@@ -539,3 +539,32 @@ let arr : [Any] = ["hey", 1, "ho"]
     for case let s as String in arr {
         print(s) // hey, ho
     }
+    
+    
+### For-loop lables:
+
+if you wanted to abort the entire nested construct? The solution is a label:
+
+outer: for i in 1...5 {
+        for j in 1...5 {
+            print("\(i), \(j);")
+break outer }
+}
+// 1, 1;
+
+### throws:
+
+```swift
+do {
+statements // a throw can happen here
+} catch errortype { statements
+} catch {
+statements
+}
+```
+A single do block can be accompanied by multiple catch blocks. Catch blocks are like the cases of a switch statement, and will usually have the same logic: first, you might have specialized catch blocks, each of which is designed to handle some limited set of possible errors; finally, you might have a general catch block that acts as the default, mopping up any errors that were not caught by any of the specialized catch blocks.
+
+unwrap the Optional safely at the same point where you make the call, like this:
+    let f = // path to some file, maybe
+    if let s = try? String(contentsOfFile: f) {
+// ... }
