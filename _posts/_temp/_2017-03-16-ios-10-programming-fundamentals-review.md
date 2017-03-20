@@ -532,3 +532,10 @@ Here we cycle through the whole array, extracting just the .number associated va
         print(i) // 10, -1
 }
 ```
+
+Similarly, here’s how to work safely with an array each of whose elements might or might not be castable to a certain type:
+
+let arr : [Any] = ["hey", 1, "ho"]
+    for case let s as String in arr {
+        print(s) // hey, ho
+    }
