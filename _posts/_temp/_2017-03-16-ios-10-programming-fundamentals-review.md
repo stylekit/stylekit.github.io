@@ -495,3 +495,20 @@ if let c = v as? UITableViewCell {
 }
 ```
 
+
+
+
+
+We can extract the .message associated string values from the start of the array, like
+this:
+
+    ```swift
+let arr : [Error] = [
+    .message("ouch"), .message("yipes"), .number(10), .number(-1), .fatal
+]
+
+var i = 0
+while case let .message(message) = arr[i]  {
+    print(message) // "ouch", then "yipes"; then the loop stops
+i += 1 }
+```
