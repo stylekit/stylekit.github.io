@@ -294,7 +294,8 @@ guard ok else {return}
 ## switch trickery:
 
 Now let’s focus on the comparison between the tag value and the case value. In the preceding example, it works like an equality comparison (==); but that isn’t the only possibility. In Swift, a case value is actually a special expression called a pattern, and the pattern is compared to the tag value using a “secret” pattern-matching operator, ~=. The more you know about the syntax for constructing a pattern, the more power‐ ful your case values and your switch statements will be.
-A pattern can include an underscore (_) to absorb all values without using them. An underscore case is thus an alternative form of “mop-up” case:
+A pattern can include an underscore (\_) to absorb all values without using them. An underscore case is thus an alternative form of “mop-up” case:
+```swift
 
  switch i {
     case 1:
@@ -311,6 +312,7 @@ A pattern can include an underscore (_) to absorb all values without using them.
         print("You have \(n) thingies!")
     case nil: break
 }
+
 
  switch i {
     case let j where j < 0:
@@ -342,18 +344,26 @@ switch (d["size"], d["desc"]) {
     default:break
 }
 
-When a tag is an enum, the cases can be cases of the enum. A switch statement is thus an excellent way to handle an enum. Here’s the Filter enum:
+```
+
+
+When a tag is an enum, the cases can be cases of the enum. A switch statement is thus an excellent way to handle an enum. Here’s the
+
+```swift
+Filter enum:
     enum Filter {
         case albums
         case playlists
         case podcasts
         case books
 }
+```
 
 And here’s a switch statement, where the tag, type, is a Filter; no mop-up is needed, because I’ve exhausted the cases:
 
 
 
+```swift
     switch type {
     case .albums:
         print("Albums")
@@ -370,7 +380,9 @@ And here’s a switch statement, where the tag, type, is a Filter; no mop-up is 
         case message(String)
 case fatal }
 
+```
 To extract the error number from an Error whose case is .number, or the message string from an Error whose case is .message, I can use a switch statement. Recall that the associated value is actually a tuple. A tuple of patterns after the matched case name is applied to the associated value. If a pattern is a binding variable, it captures the associated value. The let (or var) can appear inside the parentheses or after the case keyword; this code illustrates both alternatives:
+```swift
 
 
     switch err {
@@ -402,3 +414,42 @@ To extract the error number from an Error whose case is .number, or the message 
     default:
         print("You have too many thingies for me to count.")
     }
+
+
+```
+
+In this example, i is declared as an Any:
+```swift
+    switch i {
+    case is Int, is Double:
+        print("It's some kind of number.")
+    default:
+        print("I don't know what it is.")
+    }
+    
+    
+    New in Swift 3, a comma can even combine patterns that declare binding variables, provided they declare the same variable of the same type:
+    switch err {
+    case let .number(n) where n > 0, let .number(n) where n < 0:
+        print("It's a nonzero error number \(n)")
+    case .number(0):
+        print("It's a zero error number")
+    default:break
+}
+```
+
+There are languages that let you talk that way, but Swift is not one of them. However, an easy workaround does exist — use a define-and-call anonymous function, as I sug‐ gested in Chapter 2:
+
+```swift
+    let title : String = {
+        switch type {
+        case .albums:
+            return "Albums"
+        case .playlists:
+            return "Playlists"
+        case .podcasts:
+            return "Podcasts"
+        case .books:
+            return "Books"
+} }()
+```
