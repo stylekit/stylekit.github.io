@@ -1,7 +1,7 @@
 Case study of the CheckBoxButton element<!--more-->
 
 
-<img width="554" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/checkBoxButton_4.gif">
+<img width="554" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/checkBoxButton_4.gif">
  
  
 - 1. [Example](#example) 

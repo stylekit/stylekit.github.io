@@ -1,12 +1,12 @@
 My Research-notes on core animation<!--more-->
 
-<img width="532" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/CVDisplayLink_60fps_demo.mov.gif">  
+<img width="532" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/CVDisplayLink_60fps_demo.mov.gif">  
 Through sheer persistence/stubbornness I got CVDisplayLink working in swift with CALayer and CGContext (The holy grail of OSX/iOS animation) [also added this to vimeo](https://vimeo.com/156418351) 60 frames per sec. Silky smooth animation. Next up is trying it with some interactions as well. Also need to test it with Gradient etc. And path shifting. 
 
-<img width="476" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/CATransitionDemo_full_24323.gif">  
+<img width="476" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/CATransitionDemo_full_24323.gif">  
 CATransition doesn't really animate the properties, rather it crossfades 2 graphic states. ~~To animate properties take a look at this link:~~ [Listening for progress callbacks] and [vimeo link](https://vimeo.com/156419251) 
 
-<img width="452" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/color_anim.mov.gif">  
+<img width="452" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/color_anim.mov.gif">  
 The example above shows the humble beginnings of color tweening CA Layer CGContext (CATransition)  
  
 **Content of page** 

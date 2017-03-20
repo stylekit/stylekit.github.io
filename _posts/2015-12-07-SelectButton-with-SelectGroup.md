@@ -8,4 +8,4 @@ SelectButton:down{fill:green;}
 SelectButton:selected{fill:blue;}
 ```
 
-<img width="320" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/39349f3hf9344.gif">
+<img width="320" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/39349f3hf9344.gif">

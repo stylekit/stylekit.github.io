@@ -18,4 +18,4 @@ func styleTesting(){
    self.addSubview(Element(150,150,150,150,nil,"fourth"))
 }
 ```
-<img width="412" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2015-12-03 at 19.15.15.png">
+<img width="412" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2015-12-03 at 19.15.15.png">

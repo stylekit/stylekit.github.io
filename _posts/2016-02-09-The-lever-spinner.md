@@ -1,6 +1,6 @@
 Case study of the LeverSpinner element <!--more-->
 
-<img width="550" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/leverSpinner_1_x14hs.gif">
+<img width="550" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/leverSpinner_1_x14hs.gif">
 
 - 1. [Example](#example) 
 - 2. [Notes](#notes) 

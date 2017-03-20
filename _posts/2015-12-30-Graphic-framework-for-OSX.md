@@ -1,6 +1,6 @@
 A graphics framework built on Quartz <!--more--> and core graphics in swift  
 
-<img width="650" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2015-12-26 at 10.30.58.png">
+<img width="650" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2015-12-26 at 10.30.58.png">
 
 The swift code for the above example:  
 

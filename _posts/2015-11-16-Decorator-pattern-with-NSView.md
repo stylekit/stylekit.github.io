@@ -17,4 +17,4 @@ Here is a possible solution<!--more--> :
    
  If all this fails, then an idea is to use Protocol and Extension and just do Polymorphism that way. it will be alot of interfaces to cover all combinations, but you may figure something out.
  
- <img width="307" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2015-11-14 at 18.33.17.png">
+ <img width="307" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2015-11-14 at 18.33.17.png">

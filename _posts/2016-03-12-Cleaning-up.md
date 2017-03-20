@@ -1,6 +1,6 @@
 Cleaning up the framework<!--more--> and Squashing bugs etc
 
-<img width="1055" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-03-17 at 21.10.40.png">
+<img width="1055" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-03-17 at 21.10.40.png">
 
 [Mavericks CSS](https://github.com/stylekit/mavericks)  
 [Explorer.app](https://github.com/stylekit/explorer) 

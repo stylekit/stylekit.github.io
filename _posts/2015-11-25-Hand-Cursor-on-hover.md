@@ -6,4 +6,4 @@ override func resetCursorRects() {
    cursor.setOnMouseEntered(true)
 }
 ```
-<img width="320" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2015-11-21 at 19.48.08.png">
+<img width="320" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2015-11-21 at 19.48.08.png">

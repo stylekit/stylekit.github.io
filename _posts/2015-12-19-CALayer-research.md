@@ -10,7 +10,7 @@ CALayers are great, but they dont have any interaction support, you have to do a
 - [ ] For maximum compatibility could we do the "do-all-NStracking-in-root-then-test-with-hittest-scheme" with NSViews for maximum compatibility?
 
 **Testing Overlapping NSView with NSTrackingArea:** (not working)  
-<img width="320" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/owirgo4i2.gif">
+<img width="320" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/owirgo4i2.gif">
 
 **NOTE**
 Overlapping NSTrackingArea's are not working, so it seems you have to do mouse-tracking in a topmost nsview anyway, so then the CALayer-scheme is the only way to go. 

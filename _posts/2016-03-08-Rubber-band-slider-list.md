@@ -1,6 +1,6 @@
 Case study of the RBSliderList<!--more-->. The RB is short for RubberBand. And its made by utilizing a a custom built ==animation engine== that delivers ==60FPS== butter smooth motion. It supports ==Rich interaction== combined with running tween animation. Apple doesn't provide this combo so it had to be made. The RBSliderList is the first component to use this animation engine. 
 
-<img width="516" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/list_med_30fps.gif">
+<img width="516" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/list_med_30fps.gif">
 
 - 1. [Example](#example) 
 - 2. [Notes](#notes) 

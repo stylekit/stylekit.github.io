@@ -1,6 +1,6 @@
 My research notes on the scroll-wheel<!--more-->
 
-<img width="185" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/CVDisplayLink_ScrollWheel.mov.gif">  
+<img width="185" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/CVDisplayLink_ScrollWheel.mov.gif">  
 [vimeo](https://vimeo.com/157038820) and the original 60fps .mov file: [dropbox](https://dl.dropboxusercontent.com/u/2559476/CVDisplayLink_ScrollWheel.mov) 
 
 - 1. [Example](#example) 

@@ -26,4 +26,4 @@ StyleManager.addStyle(css)
 let textButton = TextButton("Hello world",200,80)
 self.addSubview(textButton)
 ```
-<img width="320" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/23oifje2424.gif">
+<img width="320" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/23oifje2424.gif">

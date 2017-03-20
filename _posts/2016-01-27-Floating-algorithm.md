@@ -7,24 +7,24 @@ The floating algorithm takes care of floating the Elements to their position <!-
 
 ### Examples
 The floating algorithm at work: (2 boxes in a Section that both are set to float:left and clear:left)
-<img width="391" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-01-26 at 23.57.16.png">
+<img width="391" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-01-26 at 23.57.16.png">
 
 `float:left;clear:left;`
-<img width="610" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-01-27 at 07.05.23.png">
+<img width="610" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-01-27 at 07.05.23.png">
 
 `float:right;clear:right;`
-<img width="610" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-01-27 at 07.05.05.png">
+<img width="610" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-01-27 at 07.05.05.png">
 
 `float:left;clear:none;`
-<img width="610" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-01-27 at 07.05.45.png">
+<img width="610" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-01-27 at 07.05.45.png">
 
 `float:right;clear:none;`
-<img width="610" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-01-27 at 07.06.03.png">
+<img width="610" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-01-27 at 07.06.03.png">
 
 
 
 `float:none;clear:none;` All boxes are on top of each other, Use swift code to position, and or animate.
-<img width="610" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-01-27 at 07.11.44.png">
+<img width="610" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-01-27 at 07.11.44.png">
 
 ### Thoughts: 
 - I think we should redesign the Window element to act more independently, the window should act as an element and just use the view as a vessel for the content. test if this is possible of course

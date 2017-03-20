@@ -13,11 +13,11 @@ StyleManager.addStyle(css)
 self.addSubview(Element(200,200,20,20))
 ```
 **Produces this result:**    
-<img width="333" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2015-12-09 at 06.46.10.png">
+<img width="333" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2015-12-09 at 06.46.10.png">
 
 
 **This is an isolated quartz test:**  
-<img width="243" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2015-12-06 at 07.51.59.png">
+<img width="243" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2015-12-06 at 07.51.59.png">
 
 
 - [x] Complete your "wide-net-research" into "inner/inset shadow" in quartz
@@ -68,10 +68,10 @@ The common denominator of the different shadow-modes above is the addPathToConte
 
 
 Example of shape with color fill and color stroke with inset shadow applied to the shape as a whole:  
-<img width="240" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2015-12-07 at 18.04.32.png">
+<img width="240" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2015-12-07 at 18.04.32.png">
 
 Example of many shapes using the same inset shadow scheme:  
-<img width="262" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2015-12-07 at 15.36.53.png">
+<img width="262" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2015-12-07 at 15.36.53.png">
 
 Lets first define what the drop-shadow css code should look like:   
 
@@ -99,7 +99,7 @@ var inner:Bool = true/*if this is true the inner shadow scheme is employed to th
 - the problem with gradient and shadow, discussion here: [here](http://stackoverflow.com/questions/2577622/how-to-draw-a-drop-shadow-and-gradient-with-quartz2d) And [here](http://stackoverflow.com/questions/3160220/draw-a-rounded-uiview-with-gradient-and-drop-shadow) 
 
 Non-inset-shadow: (DropShadow, also called outer shadow)  
-<img width="120" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2015-12-08 at 05.35.28.png">
+<img width="120" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2015-12-08 at 05.35.28.png">
 
 
 **Example exported from PaintCode:**

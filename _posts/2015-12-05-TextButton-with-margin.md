@@ -2,4 +2,4 @@ The text in the TextButton now supports margin (Its also possible to use percent
 ```css
 TextButton Text{margin-top:4px;}/*This will align the text to the vertical center*/
 ```
-<img width="240" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/button_vid02844.gif">
+<img width="240" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/button_vid02844.gif">

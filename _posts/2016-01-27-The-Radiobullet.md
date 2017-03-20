@@ -1,6 +1,6 @@
 Case study of the RadioBullet element <!--more-->
 
-<img width="500" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/radiobullets_crop_low.gif">
+<img width="500" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/radiobullets_crop_low.gif">
 
 - 1. [Example](#example) 
 - 2. [Notes](#notes) 

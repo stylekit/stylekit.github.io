@@ -3,7 +3,7 @@ Researching hit-testing of sub views <!--more--> ==This article is a work in pro
 ## Premises:
 You need to be able to detect sub views and their hit boundaries. It needs to work in an interactive / animatable environment. 
 
-<img width="512" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/slider_test_1.gif"> 
+<img width="512" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/slider_test_1.gif"> 
 The above example shows how you can create your own ScrollBar component. Code for this is on github.
 
 ## Important
@@ -21,7 +21,7 @@ Dependent on NSTrackingArea rectangles to work(optimization)
 <!--add explanation here-->
 Propagates downstream
 
-<img width="515" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/upstream_vs_downstream242feef2q.png">
+<img width="515" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/upstream_vs_downstream242feef2q.png">
 
 **IMPORTANT 1:**
 Read the ==Core graphics animation book== front to back (you need to do this at some point anyway)
@@ -32,7 +32,7 @@ Note that an NSView can have ==multiple tracking areas and you cannot update the
 **EXTREMELY IMPORTANT 1:**
 If you hitTest a view that has a frame.size of zero the hit test wont go through. As apple thinks since there is no frame there is nothing to hit. The thing is that CALayer backed views doesnt need a frame size to show content. And so we need hitTest even if the frame.size is zero. One way to do this is to implement your own hitTest method. Loop through children and hitTest them as well. 
 
-<img width="550" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/tracking_areaif22f.png">
+<img width="550" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/tracking_areaif22f.png">
 
 **Test setup 1:** (to test theories)
 1. setup 3 views with transparent color fills. (Use the graphics engine) 
@@ -40,7 +40,7 @@ If you hitTest a view that has a frame.size of zero the hit test wont go through
 3. create a 4th view that is standalone (this can act as a "partly-cover-up-view")
 4. test the window?.mouseLocationOutsideOfEventStream, and see what i picks up
 
-<img width="1024" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Interaction events sketch 47hdje738.png">
+<img width="1024" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Interaction events sketch 47hdje738.png">
 
 **Idea 1:**
 - A possible solution would be to let the skin add a rect of its frame to the parent Element NSTrackingArea instance. NSTrackingArea instances can have multiple rectangles added to it. (this solution would also be really quick to implement) 
@@ -66,7 +66,7 @@ You don't implement tracking-area on the sub-views. Instead you just inform the 
 
 problem with this is rounded corners, do they return their view if you hit outside the round-corner but inside the views frame? ==This must be tested before going forward== The implication of this is that you will need to implement isPointWithinPath on each subview. (luckely apple has code for this, even support for hull-testing, think vector with holes in them) 
 
-<img width="464" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/descendant_hover_42gs.gif">    
+<img width="464" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/descendant_hover_42gs.gif">    
 
 **Idea 6:**
 Ok i got it. The skin views should each override the hitTest. Element it self should not. Then you just add the .
@@ -93,7 +93,7 @@ If you override hitTest and return self or nil then self will be the upmost hit 
 - If you return self at any point the search will stop and that view will be the hit result.
 - if you return nil the search will continue but not in the siblings of the view you returned nil 
 
-<img width="537" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/sibling_solution2d23d.png">
+<img width="537" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/sibling_solution2d23d.png">
 
 **observation 5**
 - rounded rects are hit even if you hit them on the outside of the rounded corner. Its treated as a normal rect. 
@@ -178,7 +178,7 @@ convertPoint(winMousePos, toView: nil)//<--try to replace toView with fromView i
 
 ## Thoughts on hovering subviews:
 
-<img width="537" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/event_propegation3d232.png">
+<img width="537" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/event_propegation3d232.png">
 
 
 Solution for roll over roll out

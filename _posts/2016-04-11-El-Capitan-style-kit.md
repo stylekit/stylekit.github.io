@@ -1,60 +1,60 @@
 The beginnings of the El Capitan StyleKit.<!--more-->
 
-<img width="410" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/colorpanel_el_cap.mov.gif">
+<img width="410" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/colorpanel_el_cap.mov.gif">
 
-<img width="1034" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-04-16 at 13.08.01.png">
+<img width="1034" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-04-16 at 13.08.01.png">
 
-<img width="492" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/SliderTreeList.mov.gif">
+<img width="492" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/SliderTreeList.mov.gif">
 
-<img width="490" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/table_1.mov.gif">
+<img width="490" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/table_1.mov.gif">
 
-<img width="1034" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-04-15 at 06.41.37.png">
+<img width="1034" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-04-15 at 06.41.37.png">
 
-<img width="434" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-04-15 at 06.34.48.png">
+<img width="434" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-04-15 at 06.34.48.png">
 
-<img width="1034" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-04-14 at 15.57.55.png">
+<img width="1034" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-04-14 at 15.57.55.png">
 
-<img width="460" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-04-14 at 12.51.44.png">
+<img width="460" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-04-14 at 12.51.44.png">
 
 Added larger text for the TextButton
 
-<img width="430" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/volumeslider.mov.gif">
+<img width="430" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/volumeslider.mov.gif">
 
-<img width="434" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-04-14 at 07.49.33.png">
+<img width="434" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-04-14 at 07.49.33.png">
 
-<img width="434" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-04-14 at 07.49.10.png">
+<img width="434" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-04-14 at 07.49.10.png">
 
-<img width="434" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-04-13 at 20.23.39.png">
+<img width="434" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-04-13 at 20.23.39.png">
 
 Added Outer-Shadow to SVG asset. You might want to test if inset shadow works
 
-<img width="434" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-04-13 at 15.19.54.png">
+<img width="434" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-04-13 at 15.19.54.png">
 
-<img width="434" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-04-13 at 15.06.21.png">
+<img width="434" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-04-13 at 15.06.21.png">
 
-<img width="434" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-04-13 at 14.58.33.png">
+<img width="434" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-04-13 at 14.58.33.png">
 
-<img width="434" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-04-13 at 14.43.49.png">
+<img width="434" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-04-13 at 14.43.49.png">
 
-<img width="450" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/el_cap_check_box_btn.mov.gif">
+<img width="450" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/el_cap_check_box_btn.mov.gif">
 
-<img width="434" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-04-13 at 11.39.18.png">
+<img width="434" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-04-13 at 11.39.18.png">
 
-<img width="434" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-04-13 at 11.23.18.png">
+<img width="434" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-04-13 at 11.23.18.png">
 
-<img width="434" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-04-13 at 11.16.50.png">
+<img width="434" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-04-13 at 11.16.50.png">
 
-<img width="434" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-04-12 at 17.41.15.png">
+<img width="434" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-04-12 at 17.41.15.png">
 
-<img width="434" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-04-12 at 16.31.13.png">
+<img width="434" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-04-12 at 16.31.13.png">
 
-<img width="365" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-04-12 at 14.37.33.png">
+<img width="365" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-04-12 at 14.37.33.png">
 
-<img width="445" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-04-12 at 14.05.54.png">
+<img width="445" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-04-12 at 14.05.54.png">
 
-<img width="355" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-04-11 at 22.27.24.png">
+<img width="355" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-04-11 at 22.27.24.png">
 
-<img width="197" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-04-11 at 08.58.59.png">
+<img width="197" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-04-11 at 08.58.59.png">
 
 [vimeo](https://vimeo.com/162345517) 
 

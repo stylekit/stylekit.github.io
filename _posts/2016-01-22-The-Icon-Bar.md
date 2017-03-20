@@ -1,6 +1,6 @@
 A case study of the icon bar<!--more-->: 
 
-<img width="474" alt="task-bar-animation" src="https://dl.dropboxusercontent.com/u/2559476/the_icon_bar_anim_x2p.gif">
+<img width="474" alt="task-bar-animation" src="https://raw.githubusercontent.com/stylekit/img/master/the_icon_bar_anim_x2p.gif">
 
 ### Swift:
 This example uses a ==Section element== to contain the SelectButtons:  

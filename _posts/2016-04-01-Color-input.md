@@ -1,6 +1,6 @@
 Case study of the ColorInput element<!--more-->
 
-<img width="426" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/colorinput.mov.gif">
+<img width="426" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/colorinput.mov.gif">
 
 - 1. [Example](#example) 
 - 2. [Notes](#notes) 

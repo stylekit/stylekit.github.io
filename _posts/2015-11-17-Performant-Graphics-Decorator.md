@@ -15,4 +15,4 @@ The class structure: <!--more-->
 - CircleGraphic:GraphicDecoratable
 - GradientGraphic:GraphicDecoratable
 
-<img width="320" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2015-11-15 at 06.25.44.png">
+<img width="320" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2015-11-15 at 06.25.44.png">

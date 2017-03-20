@@ -5,7 +5,7 @@ The problem with with using the TransparencyLayers to clear CGContext is that yo
 **Note:** Element also extends NSView but you shouldn't refresh this to clear, because you want to be able to manipulate the graphics inside an Element instance without calling drawRect in Element. Element resolves its graphic every time it is refreshed through drawRect so this wouldn't work. Think how the slider works etc. 
 
 
-<img width="338" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2015-11-14 at 06.09.05.png">
+<img width="338" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2015-11-14 at 06.09.05.png">
 
 ## **A "clear-procedure" for CGContext**
 1. Draw a red triangle
@@ -21,7 +21,7 @@ The problem with with using the TransparencyLayers to clear CGContext is that yo
 
 **NOTE:** Most likely all graphics drawn in the CGContext across all views are drawn together, not separate. This means that most likely there is no cost of extending NSView. So this may be a viable option if the clear procedure doesn't pan out. 
 
-<img width="87" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2015-11-13 at 13.31.06.png">
+<img width="87" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2015-11-13 at 13.31.06.png">
 
 ## **Clearing Context**
 When you want to clear context you can do this by:  
@@ -59,4 +59,4 @@ When you want to clear context you can do this by:
 
 ```
 
-<img width="331" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2015-11-13 at 08.08.57.png">
+<img width="331" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2015-11-13 at 08.08.57.png">

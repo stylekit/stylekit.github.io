@@ -31,7 +31,7 @@ Regular image:
 Retina image:
 <img width="320" alt="img" src="https://www.google.com/logo.png">
 ```
-_![desk](https://dl.dropboxusercontent.com/u/2559476/computer screen 232323.png)_ 
+_![desk](https://raw.githubusercontent.com/stylekit/img/master/computer screen 232323.png)_ 
 Here is an example on adding video to your markdown: 
 
 ```

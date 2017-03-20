@@ -1,6 +1,6 @@
 **The hazy look and feel** is a pointer to the use of translucency that OSX and IOS offer within modern UI (TranclucentSkin TM). The void like design is also a symbol that the StyleKit it self is just an empty framework. <!--more--> Its What you express with it that counts. The stylekit is just the enabler. The simplicity of the logo represents how simple it is to use it.   
 
-<img width="380" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/stylekit_idea_01.png">
+<img width="380" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/stylekit_idea_01.png">
 
 
 **Quick design idea for inspiration:**   

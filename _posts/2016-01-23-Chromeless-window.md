@@ -1,6 +1,6 @@
 Customize a window with any design and behavior, everything is also animatable. <!--more-->    
 
-<img width="432" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/custom_win.gif">
+<img width="432" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/custom_win.gif">
 
 Content of page:  
 
@@ -19,22 +19,22 @@ Content of page:
 13. [Footnotes](#footnotes) 
 
 ## Examples:
-<img width="173" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-01-23 at 17.15.52.png">
+<img width="173" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-01-23 at 17.15.52.png">
 
 ## Translucency
 allowsVibrancy is used to change how a view draws when it's in a view hierarchy that uses vibrancy; ==it doesn't do the vibrant background itself.== The following translucent materials are from the class: **NSVisualEffectMaterial**
 
 **Dark** 
-<img width="345" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-01-24 at 07.36.31.png">
+<img width="345" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-01-24 at 07.36.31.png">
 
 **Light** 
-<img width="345" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-01-24 at 07.43.40.png">
+<img width="345" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-01-24 at 07.43.40.png">
 
 **MediumLight** 
 Example coming
 
 **UltraDark** 
-<img width="273" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-01-24 at 07.46.17.png">
+<img width="273" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-01-24 at 07.46.17.png">
 
 >These are abstract materials managed by AppKit and should be used when creating UI that needs to mimic these material types Many of these colors are dynamic and depend on the current NSAppearance set on the view (or its parent view)
 
@@ -77,11 +77,11 @@ If you want to test a working solution right away drop this [github gist](https:
 3. self.movableByWindowBackground = true/*This enables you do drag the window around via the background*/
 4. You might want to consider adding more complex drag handling. [Dragging code link]
 
-<img width="366" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-01-24 at 09.53.42.png">
+<img width="366" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-01-24 at 09.53.42.png">
 
 You can also add a custom bezier mask shape to the translucency:
 
-<img width="298" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-01-24 at 11.41.59.png">
+<img width="298" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-01-24 at 11.41.59.png">
 
 The code to add a custom bezier shape (it also stretches when you resize, also remember to set the visualEffectView as the contentView)
    
@@ -105,11 +105,11 @@ func maskImage(cornerRadius cornerRadius: CGFloat) -> NSImage {
 
 ## Darkmode:
 If you set the `self.appearance = NSAppearance(named: NSAppearanceNameVibrantDark)` in the NSWindow subclass you get this:
-<img width="253" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-01-24 at 07.13.03.png">
+<img width="253" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-01-24 at 07.13.03.png">
 
 ## No titlebar 
 If you dont want the titlebar background design but still want its functionality, dragging, titlebar buttons etc Drop this in your NSWindow subclass: `self.titlebarAppearsTransparent = true` The result will be: (this is NSAppearanceNameVibrantLight)
-<img width="274" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-01-24 at 07.17.40.png">
+<img width="274" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-01-24 at 07.17.40.png">
 
 
 ## General findings:  

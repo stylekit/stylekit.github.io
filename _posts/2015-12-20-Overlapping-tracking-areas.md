@@ -5,7 +5,7 @@ All you have to do is hitTest from view you are in. if this is true:
 window.view.hitTest(window.mousePos) === self/*Sudo code*/
 ``` 
 
-<img width="240" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/kldfjif329842899f932.gif">
+<img width="240" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/kldfjif329842899f932.gif">
 
 What this code does is that it returns the view under the mouse position. Now all you have to do is setup a few if and else clauses to verify that your mouse is of or on the view. It works after initial testing. Example coming soon. Now this only works for NSView. CALayer still needs the root NSView to do its mouse handling. So we will use NSView scheme in the continuation of the project. 
 
@@ -13,7 +13,7 @@ What this code does is that it returns the view under the mouse position. Now al
 
 
 **Testing Overlapping NSView with NSTrackingArea:** (not working)  
-<img width="240" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/owirgo4i2.gif">
+<img width="240" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/owirgo4i2.gif">
 
 The problem with the above example is that the view that cover the view bellow doesn't cancel the hover interaction. As you would expect. In some-cases this could be intended behavior but most likely not. To differentiate the two behaviors one could imagine describing it as mouseRollOver and mouseRollOut and in the above example mouseEnter and mouseExit.
 

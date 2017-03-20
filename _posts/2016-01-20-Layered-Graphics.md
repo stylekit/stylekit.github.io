@@ -19,7 +19,7 @@ Element{
 }
 ```
 
-<img width="257" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-01-19 at 21.09.20.png">
+<img width="257" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-01-19 at 21.09.20.png">
 
 **Another example:** (CSS color as layer 1, SVGAsset as layer 2)  
 
@@ -28,10 +28,10 @@ StyleManager.addStyle("Element{fill:red,~/Desktop/icons/search.svg blue;}")
 addSubView(Element(200,200))
 ```
 
-<img width="309" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-01-20 at 17.30.33.png">
+<img width="309" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-01-20 at 17.30.33.png">
 
 ### OSX TitleBar Buttons
-<img width="370" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/titlebar_buttons_anim.gif">  
+<img width="370" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/titlebar_buttons_anim.gif">  
 [Retina version on Vimeo](https://vimeo.com/152491179)
 
 The SVG graphic engine is working. Apparently the SVG graphics also animates quite nicely. You can load SVG from external sources like your desktop (nice for quick tests) or from internal asset folders in a project. Just prefix your URL with the tilde character "~" and you have relative paths. More animation examples comming soon.

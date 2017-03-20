@@ -1,6 +1,6 @@
  CVDisplayLink is a timer object that allows your application to synchronize its drawing to the refresh rate of the display. ==It's highly useful when you want to combine animation with user interactions==, something that is not easily handled by transitions or stock animations.<!--more--> 
  
- <img width="258" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/CVDisplayLink_60fps_Anim_plus_interactivity_demo.mov.gif">  
+ <img width="258" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/CVDisplayLink_60fps_Anim_plus_interactivity_demo.mov.gif">  
  CVDisplayLink 60fps rich animation + interactivity demo: [vimeo probably at 30fps?](https://vimeo.com/156972617) and  [original video in 60fps @dropbox](https://dl.dropboxusercontent.com/u/2559476/CVDisplayLink_60fps_Anim_plus_interactivity_demo.mov) and the code for this [here](https://github.com/eonist/GitSyncOSX/blob/master/src/window/view/TestView3.swift)  and [here](https://github.com/eonist/GitSyncOSX/blob/master/src/window/view/experiment/VerticalThrowArea.swift) 
  
  - 1. [Example](#example) 

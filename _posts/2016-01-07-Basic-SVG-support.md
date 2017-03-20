@@ -1,10 +1,10 @@
 SVG support is coming along. <!--more-->
 
-<img width="314" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-01-17 at 10.31.13.png">
+<img width="314" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-01-17 at 10.31.13.png">
 
-<img width="609" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-01-17 at 19.45.23.png">
+<img width="609" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-01-17 at 19.45.23.png">
 
-<img width="469" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-01-19 at 16.47.01.png">
+<img width="469" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-01-19 at 16.47.01.png">
 
 ### Gradient engine
 Scaling the gradient could in-fact be the job of the caller after all, since the boundingbox isn't always the reference to work on, think what happens when you manipulate individual path points as oppose to scaling the entire shape at which point you should ==use the new scale and append this to the transform matrix==, rather than calculating the new boundingbox each time, which can be ==cpu intensive==. The only thing is that the relative values provide convenience that enables you to get quick results. How is this handled in the old code? I presume with a matrix? 
@@ -23,7 +23,7 @@ Illustrator doesn't anchor the gradient, but rather stretches the gradient to fi
 **Discussion:**  
 Actually you need Different systems. For Graphic you need to be able to use Rotation for linear and focal ratio and rotation for radial. Then you Make a class named GraphicsGradient and GraphicsLinearGradient and GraphicsRadialGradient and IGraphicsGradient, these classes will have absolute values and only work on the Graphics class. In the end you will have 3 Gradient class categories. ==SVGGradient==, ==Gradient== and ==GraphicsGradient==. CSS will use the Gradient class. SVG will use the SVGGradient and the graphic framework will use Gradient as well. All systems will eventually use the GraphicsGradient in Graphics which is based on absolute values. This way you can add features to the Gradient and SVGGradient classes if its needed at a later state. The underlaying GraphicsGradient can stay the same and ==wont break the classes that uses it==. 
 
-<img width="639" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-01-12 at 14.33.57.png">
+<img width="639" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-01-12 at 14.33.57.png">
 
 - [x] SVGPolygon with color fill support
 - [x] SVGPolygon with color line support
@@ -78,11 +78,11 @@ Actually you need Different systems. For Graphic you need to be able to use Rota
 - [x] ~~the reference issues you are struggling with is probably due to the fact that your casting instances and while you do this you lose the reference to the original instance, Maybe (It could be that you need to use the inout param, but why then doesn't it work on simple describe methods?)~~ (it was a lazy variable)
 - [ ] check if you support inline style like this: style="fill:red;stroke:black;stroke-width:5;opacity:0.5"
 
-<img width="499" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-01-18 at 09.28.18.png">
+<img width="499" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-01-18 at 09.28.18.png">
 
-<img width="661" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-01-16 at 17.05.07.png">
+<img width="661" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-01-16 at 17.05.07.png">
 
-<img width="675" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-01-16 at 15.09.12.png">
+<img width="675" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-01-16 at 15.09.12.png">
 
 **NOTE:**  
 ==Never use lazy variables again==, they will make you work for 6 hours straight trying to figure out a reference bug. They are not worth it, just instantiate the variable on init. Making it lazy wont save you a lot of memory, if you really want lazy add it after you have completed the application as optimization.
@@ -106,13 +106,13 @@ Actually you need Different systems. For Graphic you need to be able to use Rota
         
 - you should probably support absolute variables aswell not just % THink SVG and how we do it there
 
-<img width="465" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-01-14 at 16.54.24.png">
+<img width="465" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-01-14 at 16.54.24.png">
 
-<img width="491" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-01-14 at 16.52.20.png">
+<img width="491" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-01-14 at 16.52.20.png">
 
-<img width="352" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-01-14 at 08.36.14.png">
+<img width="352" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-01-14 at 08.36.14.png">
 
-<img width="154" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/linear-gradient_mozilla cc_3132.png">
+<img width="154" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/linear-gradient_mozilla cc_3132.png">
 
 Use these ==IOS9 colors== when debugging:  
 <img width="420" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/92402Colors.jpg">   
@@ -133,7 +133,7 @@ medium gray #CECED2
 black #000000
 ```
 More debug colors:
-<img width="600" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/342423ColorsPalette.png">
+<img width="600" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/342423ColorsPalette.png">
 
 ```swift
 public struct ColorCodes{
@@ -184,9 +184,9 @@ public struct ColorCodes{
 
 
 **Radial gradient without background:**  
-<img width="295" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-01-17 at 10.29.57.png">
+<img width="295" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-01-17 at 10.29.57.png">
 **Radial gradient with knockout mask:**(The path of the mask is the radial gradient area knocked out of the path of the graphic)  
-<img width="307" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-01-17 at 10.30.20.png">
+<img width="307" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-01-17 at 10.30.20.png">
 
 This code was added as a way to make a knockout background for the radial gradient. However this was later accomplished through the use of extending the radial gradient after end. The path is used as a mask anyway so this is a really good solution. And its faster. But the bellow code can come in handy if you want to achieve EvenOdd clipping/masking at a later point. Or if the current solution has problems.  
  
@@ -206,12 +206,12 @@ CGContextRestoreGState(context)//restore the graphic mask
 ```
 
 Solved the knockout problem: (these are the tests)  
-<img width="369" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-01-19 at 15.46.09.png">
-<img width="399" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-01-19 at 15.50.05.png">
-<img width="417" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-01-19 at 15.52.14.png">
-<img width="435" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-01-19 at 15.52.34.png">
-<img width="415" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-01-19 at 15.53.18.png">
-<img width="499" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/Screen Shot 2016-01-18 at 09.28.18.png">
+<img width="369" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-01-19 at 15.46.09.png">
+<img width="399" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-01-19 at 15.50.05.png">
+<img width="417" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-01-19 at 15.52.14.png">
+<img width="435" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-01-19 at 15.52.34.png">
+<img width="415" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-01-19 at 15.53.18.png">
+<img width="499" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Screen Shot 2016-01-18 at 09.28.18.png">
 
 
 

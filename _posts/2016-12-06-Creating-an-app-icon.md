@@ -8,7 +8,7 @@ Creating an app icon that can be use for macOS apps<!--more--> It also supports 
 
 here is an app icon i created in Illustrator:  
 
-<img width="314" alt="img" src="https://dl.dropboxusercontent.com/u/2559476/gitsync_logo_2016_blue.png">
+<img width="314" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/gitsync_logo_2016_blue.png">
 
 [gitsync_logo_2016_blue_512.icns](https://raw.githubusercontent.com/stylekit/img/master/gitsync_logo_2016_blue_512.icns) 
 [gitsync_logo_2016_blue_512.icns](https://raw.githubusercontent.com/stylekit/img/master/gitsync_logo_2016_blue_1024.icns.icns) 
