@@ -605,3 +605,7 @@ A thing declared public is visible even outside its containing module. Another m
 
 **open** (even wider than public)
 If a class is declared open, code in another module can subclass it; it can’t do that if the class is declared merely public. If an open class member is declared open, code in another module that subclasses this class can override this member; it can’t do that without the open declaration.
+
+### deInit:
+
+One way to test for and observe a memory leak is to implement a class’s deinit. This method is called when the instance goes out of existence. If the instance never goes out of existence, deinit is never called. That’s a bad sign, if you were expecting that the instance should go out of existence.
