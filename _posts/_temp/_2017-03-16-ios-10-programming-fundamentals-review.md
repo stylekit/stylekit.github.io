@@ -453,3 +453,29 @@ There are languages that let you talk that way, but Swift is not one of them. Ho
             return "Books"
 } }()
 ```
+
+### And the nil-coalescing operator:
+
+```swift
+let arr2 = arr.map {$0 ?? NSNull() as Any} //Expressions using ?? can be chained:
+let someNumber = i1 as? Int ?? i2 as? Int ?? 0
+```
+
+
+### While:
+
+```swift
+while condition { statements
+}
+repeat {
+statements
+} while condition
+```
+The chief difference between the two forms is the timing of the test. In the second form, the condition is tested after the block has executed — meaning that the block will be executed at least once.
+Usually, the code inside the block will change something that alters both the environ‐ ment and the condition, thus eventually bringing the loop to an end. Here’s a typical example from my own code (movenda is an array):
+    ```swift
+while self.movenda.count > 0 {
+    let p = self.movenda.removeLast()
+    // ...
+}
+```
