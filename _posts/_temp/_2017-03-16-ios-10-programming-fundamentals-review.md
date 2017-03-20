@@ -571,3 +571,12 @@ unwrap the Optional safely at the same point where you make the call, like this:
 // ... }
 
 ```
+
+### Guard:
+
+```swift
+let f = // path to some file, maybe
+guard let s = try? String(contentsOfFile: f)
+    else {return}
+// s is now a String (not an Optional)
+```
