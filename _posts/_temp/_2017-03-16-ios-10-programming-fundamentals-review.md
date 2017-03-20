@@ -579,4 +579,9 @@ let f = // path to some file, maybe
 guard let s = try? String(contentsOfFile: f)
     else {return}
 // s is now a String (not an Optional)
+
+//howMany() is not an optional in the bellow example:
+
+guard case let output = howMany(), output > 10 else {return}
+    // now output is in scope
 ```
