@@ -264,4 +264,12 @@ let arr = Array(d) // [("NY", "New York"), ("CA", "California")]
 
 
 A set (Set, a struct) is an unordered collection of unique objects. Its elements must be all of one type; it has a count and an isEmpty property; it can be initialized from any sequence; you can cycle through its elements with for...in. But the order of ele‐ ments is not guaranteed, and you should make no assumptions about it.
-The uniqueness of set elements is implemented by constraining their type to be Equatable and Hashable, just like the keys of a Dictionary. Thus, the hash values can be used behind the scenes for rapid access. Checking whether a set contains a given element, which you can do with the contains(_:) instance method, is very efficient — far more efficient than doing the same thing with an array. Therefore, if element uniqueness is acceptable (or desirable) and you don’t need indexing or a guaranteed order, a set can be a much better choice of collection than an array.
+The uniqueness of set elements is implemented by constraining their type to be Equatable and Hashable, just like the keys of a Dictionary. Thus, the hash values can be used behind the scenes for rapid access. Checking whether a set contains a given element, which you can do with the contains(:) instance method, is very efficient — far more efficient than doing the same thing with an array. Therefore, if element uniqueness is acceptable (or desirable) and you don’t need indexing or a guaranteed order, a set can be a much better choice of collection than an array.
+
+## if let trickery:
+
+To help avoid the indentation, successive conditional bindings can be combined into a condition list, with each condition separated by comma:
+    if let ui = n.userInfo, let prog = ui["progress"] as? NSNumber {
+        self.progress = prog.doubleValue
+}
+
