@@ -351,6 +351,9 @@ When a tag is an enum, the cases can be cases of the enum. A switch statement is
 }
 
 And here’s a switch statement, where the tag, type, is a Filter; no mop-up is needed, because I’ve exhausted the cases:
+
+
+
     switch type {
     case .albums:
         print("Albums")
@@ -360,4 +363,42 @@ And here’s a switch statement, where the tag, type, is a Filter; no mop-up is 
         print("Podcasts")
     case .books:
         print("Books")
+    }
+    
+    enum Error {
+        case number(Int)
+        case message(String)
+case fatal }
+
+To extract the error number from an Error whose case is .number, or the message string from an Error whose case is .message, I can use a switch statement. Recall that the associated value is actually a tuple. A tuple of patterns after the matched case name is applied to the associated value. If a pattern is a binding variable, it captures the associated value. The let (or var) can appear inside the parentheses or after the case keyword; this code illustrates both alternatives:
+
+
+    switch err {
+    case .number(let theNumber):
+        print("It is a number: \(theNumber)")
+    case let .message(theMessage):
+        print("It is a message: \(theMessage)")
+    case .fatal:
+        print("It is fatal")
+    }
+    
+    If the let (or var) appears after the case keyword, I can add a where clause:
+    switch err {
+    case let .number(n) where n > 0:
+        print("It's a positive error number \(n)")
+    case let .number(n) where n < 0:
+        print("It's a negative error number \(n)")
+    case .number(0):
+        print("It's a zero error number")
+    default:break
+}
+
+
+   switch i {
+    case 1,3,5,7,9:
+        print("You have a small odd number of thingies.")
+    case 2,4,6,8,10:
+        print("You have a small even number of thingies.")
+    default:
+        print("You have too many thingies for me to count.")
     }
