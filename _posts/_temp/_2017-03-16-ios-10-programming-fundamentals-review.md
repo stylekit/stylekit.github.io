@@ -269,7 +269,24 @@ The uniqueness of set elements is implemented by constraining their type to be E
 ## if let trickery:
 
 To help avoid the indentation, successive conditional bindings can be combined into a condition list, with each condition separated by comma:
-    if let ui = n.userInfo, let prog = ui["progress"] as? NSNumber {
-        self.progress = prog.doubleValue
+```swift
+if let ui = n.userInfo, let prog = ui["progress"] as? NSNumber {
+    self.progress = prog.doubleValue
 }
 
+
+```
+and: 
+```swift
+if keyPath == readyForDisplay, let obj = object as? AVPlayerViewController, let ok = change?[.newKey] as? Bool,ok{
+    // ... 
+}
+```
+as guard:
+```swift
+guard keyPath == readyForDisplay else {return}
+guard let obj = object as? AVPlayerViewController else {return}
+guard let ok = change?[.newKey] as? Bool else {return}
+guard ok else {return}
+// ...
+```
