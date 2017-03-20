@@ -512,3 +512,23 @@ while case let .message(message) = arr[i]  {
     print(message) // "ouch", then "yipes"; then the loop stops
 i += 1 }
 ```
+
+### For-loop:
+```swift
+var g = (1...5).makeIterator()
+    while let i = g.next() {
+print(i) }
+```
+
+Like if case and while case, there’s also for case, letting us use a switch case pat‐ tern in a for loop. The tag is each successive value of the sequence, so no assignment operator is used. Return to our example of an array of Error enums:
+    
+Here we cycle through the whole array, extracting just the .number associated values:
+```swift
+    
+    let arr : [Error] = [
+        .message("ouch"), .message("yipes"), .number(10), .number(-1), .fatal
+]
+    for case let .number(i) in arr {
+        print(i) // 10, -1
+}
+```
