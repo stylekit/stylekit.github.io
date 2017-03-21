@@ -629,3 +629,15 @@ func testRetainCycle() {
 
 ### Memory management
 THe book has a great overview of solutions regarding weak refs unowned etc.  CA: p288
+
+
+### Cleaning xcode:
+
+**Shallow clean**
+Choose Product → Clean, which removes the built app and some of the inter‐ mediate information in the build folder.
+
+**Deeper clean**
+Hold Option and choose Product → Clean Build Folder, which removes the entire build folder.
+
+**Insanely clean**
+Quit Xcode. Open your user Library/Developer/Xcode/DerivedData folder and move all its contents to the trash. This is a complete clean for every project you’ve opened recently — plus the module cache. Removing the module cache can reset Swift itself, thus causing occasional mysterious compilation, code-completion, or syntax coloring issues to go away.
