@@ -641,3 +641,12 @@ Hold Option and choose Product → Clean Build Folder, which removes the entire 
 
 **Insanely clean**
 Quit Xcode. Open your user Library/Developer/Xcode/DerivedData folder and move all its contents to the trash. This is a complete clean for every project you’ve opened recently — plus the module cache. Removing the module cache can reset Swift itself, thus causing occasional mysterious compilation, code-completion, or syntax coloring issues to go away.
+
+
+### IOS simulator:
+
+- you can hold Option to simulate use of two fingers,
+
+### App submission instructions
+
+- The book has an indepth walkthrough of how to get ios apps on the app store. P400 and onwards. This + medium articles + stackoverflow should cover every corner when this is needed. 
