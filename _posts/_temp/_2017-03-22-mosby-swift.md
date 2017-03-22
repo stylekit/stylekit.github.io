@@ -2,9 +2,6 @@ Notes on mosby in swift<!--more-->
 
 
 
-http://chris.eidhof.nl/post/functional-view-controllers/
-
-
 ```swift
 
 /*Dual system that uses generics and associatedType to achieve Circular protocol conformance/inference:*/
@@ -83,3 +80,9 @@ presenter.informView()//viewX.render()
 
 //One can also init with View and Presenter  in the example above
 ```
+
+
+Could be useful:   
+
+
+http://chris.eidhof.nl/post/functional-view-controllers/
