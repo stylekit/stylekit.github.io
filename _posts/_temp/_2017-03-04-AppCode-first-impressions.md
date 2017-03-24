@@ -11,7 +11,7 @@ My preliminary notes on AppCode<!--more-->
 - jetbrains CLion has support for swift now. Meaning in theory you can code swift on a linux machine. If only there was a cross platform UI library 🤔 We could start coding apps on Linux machines, that worked for mac and linux. Which means we could buy really fast computers on the cheap for desktop development: 8-core CPU 64GB ram, 1GB SSD for less than 2k$. Add a 5K LG screen to that rig please. The future is bright.	
 
 ## Cons: 🚫
-- It's Eclipse. It's java.
+- It feels like Eclipse. It's java.
 - No emoji support 🙁 
 - TextExpander doesn't work, will try to find a solution for this!
 - XCode Tree-view collapses if you do something in AppCode. 
