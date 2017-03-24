@@ -24,3 +24,24 @@ A().test()//Output:A
 B().test()//Output:B
 C().test()//Output:C
 ```
+
+### Updated example: 
+
+```swift
+/**
+ * Create instances dynamically
+ */
+protocol X{var s:String{get};init(_ s:String)}
+class A:X{var s:String;required init(_ s:String){self.s = s}}
+class B:X{var s:String;required init(_ s:String){self.s = s}}
+var instance:X
+var classType:X.Type
+
+classType = A.self
+instance = classType.init("abc")
+print(instance.s)//abc
+
+classType = B.self
+instance = classType.init("123")
+print(instance.s)//123
+```
