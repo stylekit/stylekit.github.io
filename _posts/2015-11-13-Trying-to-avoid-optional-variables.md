@@ -1,4 +1,4 @@
-some variables cant be created in the init call, the must be created later in the procedure chain.  
+some variables can't be created in the init call, the must be created later in the procedure chain.  
 Delaying the creation can be done with Lazy Initialization<!--more--> :
  
 ```swift
