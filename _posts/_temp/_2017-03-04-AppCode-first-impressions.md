@@ -27,4 +27,4 @@ My preliminary notes on AppCode<!--more-->
 - CMD + SHIFT + O: Same as XCode. open file
 
 ## AppCode concierge 💁
-- select in project view 👉 shows you the active file in the file-tree-view
+- "select in project" view 👉 shows you the active file in the file-tree-view (rather cumbersome shortcut combo: alt + f1 then enter)
