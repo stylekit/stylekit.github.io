@@ -12,7 +12,7 @@ I have two rules: Wear Noice cancelling headphones.🎧
 Create a nice diagram with emojis that symbolize flow peaks decorated w/ football, pizza, fruits etc...maybe. My flow chart..pun intended 🤣
 
 ### A random day: 
-- 09:00 wakeup ⏰
+- 09:00 Rise n Shine ⏰
 - 09:10 Enter flow 💯 . Mind is peak
 - 10:30 Shower - energize ⚡
 - 10:45 Enter flow 💯-  Mind is glowing
