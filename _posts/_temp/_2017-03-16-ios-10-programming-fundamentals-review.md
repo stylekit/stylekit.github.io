@@ -650,4 +650,8 @@ Quit Xcode. Open your user Library/Developer/Xcode/DerivedData folder and move a
 
 ### App submission instructions
 
-- The book has an indepth walkthrough of how to get ios apps on the app store. P400 and onwards. This + medium articles + stackoverflow should cover every corner when this is needed. 
+- The book has an indepth walkthrough of how to get ios apps on the app store. P400 and onwards. This + medium articles + stackoverflow should cover every corner when this is needed.
+
+
+coomenting
+Comments really help, and I strongly advise you, as you develop any iOS app, to comment every method, quite heavily if need be, saying what that method does and under what circumstances you expect it to be called — especially if it is an entry point, where it is Cocoa itself that will do the calling.
