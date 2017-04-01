@@ -5,20 +5,21 @@ Notes on GestureHUD<!--more-->. Great for debugging gestures in macOS
 
 ```swift
 class TestView:NSView(){
-    var gestureHUD:GestureHUD?
+    lazy var gestureHUD:GestureHUD  =  GestureHUD(self)
     init(){
-        gestureHUD = GestureHUD(self)
         self.acceptsTouchEvents = true/*Enables gestures*/
         self.wantsRestingTouches = true/*Makes sure all touches are registered. Doesn't register when used in playground*/
     }
+}
+extension TestView{
     override func touchesBegan(with event:NSEvent) {
-        gestureHUD!.touchesBegan(event)
+        gestureHUD.touchesBegan(event)
     }
     override func touchesMoved(with event:NSEvent) {
-        gestureHUD!.touchesMoved(event)
+        gestureHUD.touchesMoved(event)
     }
     override func touchesEnded(with event:NSEvent) {
-        gestureHUD!.touchesEnded(event)
+        gestureHUD.touchesEnded(event)
     }
 }
 ```
