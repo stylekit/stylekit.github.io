@@ -1,4 +1,4 @@
-<!--more--> 
+<!--more--> [ios 10 fundamentals book](http://shop.oreilly.com/product/0636920055211.do) 
 
 
 ### Pro
