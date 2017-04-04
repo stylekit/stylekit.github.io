@@ -18,7 +18,7 @@ class View {
     }
     func handleSelector(sender: AnyObject?,type:String) {
         switch type{
-            case "click": Swift.print("View.handleSelector() sender: " + String(sender!.dynamicType) + ", title: " + String((sender as! Button).title) + ", type: " + type)
+            case "click": Swift.print("View.handleSelector() sender: " + String(sender!.dynamicType) + ", title: " +    String((sender as! Button).title) + ", type: " + type)
             case "hover": Swift.print("View.handleSelector() sender: " + String(sender!.dynamicType) + ", title: " + String((sender as! Button).title) + ", type: " + type)
             default:break;
         }
