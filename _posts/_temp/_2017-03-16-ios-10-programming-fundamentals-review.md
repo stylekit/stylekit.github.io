@@ -655,3 +655,11 @@ Quit Xcode. Open your user Library/Developer/Xcode/DerivedData folder and move a
 
 coomenting
 Comments really help, and I strongly advise you, as you develop any iOS app, to comment every method, quite heavily if need be, saying what that method does and under what circumstances you expect it to be called — especially if it is an entry point, where it is Cocoa itself that will do the calling.
+
+# memory
+
+weak
+A weak reference takes advantage of a powerful ARC feature. When a reference is weak, ARC does not retain the object assigned to it. This seems dangerous, because it means that the object might go out of existence behind our backs, leav‐ ing us with a dangling pointer and leading to a potential crash later on. But ARC is very clever about this. It keeps track of all weak references and all objects assigned to them. When such an object’s retain count drops to zero and the object is about to be destroyed, ARC sneaks in and assigns nil to the reference — that’s why a weak reference in Swift must be an Optional declared with var, so that ARC can do that. Thus, provided you handle the Optional coherently, noth‐ ing bad can happen.
+
+unowned
+An unowned reference is a different kettle of fish. When you mark a reference as unowned, you’re telling ARC to take its hands off completely: it does no memory management at all when something is assigned to this reference. This really is dangerous — if the object referred to goes out of existence, you really can be left with a dangling pointer and you really can crash. That is why you must never use unowned unless you know that the object referred to will not go out of existence: unowned is safe, provided the object referred to will outlive the object that refers to it. That is why an unowned object should be some single object, assigned only once, without which the referrer cannot exist at all.
