@@ -1,4 +1,5 @@
-My notes on Infinite tree list<!--more--> 
+My notes on Infinite tree list<!--more-->  This could be rather simple actually. 
+
 ```swift
 //Then you start designing Infinite treeList
     //differentiate indentation via css-classifier
@@ -12,3 +13,5 @@ My notes on Infinite tree list<!--more-->
     //if you click on an item open/close icon, you change the dp. and the dp changes FastList 👍
     //The TreeListDP will set the indentation by changing the css-selector 👍
 ```
+
+You also need to implement The side scroller. And make a sensible solution for Views that can scroll both ways. 
