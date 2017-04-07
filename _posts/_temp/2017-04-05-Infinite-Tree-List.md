@@ -22,7 +22,7 @@ My notes on Infinite tree list<!--more-->  This could be rather simple actually.
 
 ```swift
 //Tasks:
-	//Make ElasticView again with v2 scrolling code
+	//Make ElasticView again with v2 scrolling code 👈
 	//Make List that can scroll both ways. 
 	//Make fastList that can scroll both ways
 	//Maybe all lists and all views need x/y sliders, you just disable them when there is enough views
