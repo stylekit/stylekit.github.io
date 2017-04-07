@@ -28,6 +28,7 @@ My notes on Infinite tree list<!--more-->  This could be rather simple actually.
 	//Make List that can scroll both ways. 
 	//Make fastList that can scroll both ways
 		//the problem occurs when you want a sideScrolling list. I guess this can be toggled via bool flag.
+			//The Container view doesnt need dir, only list needs dir. as containerview is x/y directional
 	//Maybe all lists and all views need x/y sliders, you just disable them when there is enough views
 		//Make the code foot print as small as possible
 ```
