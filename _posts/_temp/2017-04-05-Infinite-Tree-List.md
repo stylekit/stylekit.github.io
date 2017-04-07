@@ -22,7 +22,9 @@ My notes on Infinite tree list<!--more-->  This could be rather simple actually.
 
 ```swift
 //Tasks:
-	//Make ElasticView again with v2 scrolling code 👈
+	//Make ElasticView again with v2 scrolling code 
+		//test ScrollView2 ✅
+		//test ElasticView2 👈
 		//make the ElasticView as small as possible
 		//make call everything ...2 to differentiate (duplicate utils code if needed) 
 	//Make List that can scroll both ways. 
