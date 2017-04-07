@@ -16,3 +16,15 @@ My notes on Infinite tree list<!--more-->  This could be rather simple actually.
 
 - You also need to implement The side scroller. And make a sensible solution for Views that can scroll both ways. 
 - Thinking about it, this will easily enable filtering the TreeList through search 👌
+
+- FastList that can scroll x/y. basically you just scroll the contentContainer and render takes care of placing items in y
+- You could also just move the items.x when x scroll is detected
+
+```swift
+//Tasks:
+	//Make ElasticView again with v2 scrolling code
+	//Make List that can scroll both ways. 
+	//Make fastList that can scroll both ways
+	//Maybe all lists and all views need x/y sliders, you just disable them when there is enough views
+		//Make the code foot print as small as possible
+```
