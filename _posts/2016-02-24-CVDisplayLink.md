@@ -37,7 +37,7 @@ Pop is the framework that Facebook uses to power the animations in their app Pap
 - This convo is important: http://chat.stackoverflow.com/rooms/104337/opengl-on-macos-x-and-threading Thanks again Mecki for your guidance. 
 - Swift 3 CVDisplayLink: [here](https://3d.bk.tudelft.nl/ken/en/2016/11/05/swift-3-and-opengl.html) 
 ##CADisplayLink (IOS)
-
+- https://www.objc.io/issues/5-ios7/view-controller-transitions/ (some insights here)
 
 ## Core animation (IOS): 
 - This article describes why anim + interaction doesnt work if you just use Core animation (great read): http://initwithfunk.com/blog/2014/05/22/interactive-animated-transitions-on-ios/
