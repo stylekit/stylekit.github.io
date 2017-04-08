@@ -62,7 +62,6 @@ c.scroll()//c , b , a
 
 ## An alternative is to : 
 
-
 ```swift
 protocol X{}
 protocol Y{}
