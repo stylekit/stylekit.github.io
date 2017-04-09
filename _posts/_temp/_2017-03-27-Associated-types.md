@@ -17,7 +17,7 @@ func doThing<A:Thing>(thing:A, val:A.argType) -> A.argType {
     return thing.doit(val)
 }
 
-doThing(IntThing(), 2)
+doThing(IntThing(), 2)//3
 ```
 
 See your mosby example. 
