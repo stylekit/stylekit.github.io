@@ -1,11 +1,10 @@
-Notes on Tree List v2 <!--more--> 
+My notes on Infinite tree list <!--more--> 
 
-### Unidirectional Elastic List:
+### Uni-Directional Elastic List:
 
 <img width="154" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/UniElasticList.mov.gif">
 
-
-My notes on Infinite tree list<!--more-->  This could be rather simple actually. 
+The above Gif anim shows A FastList that that can be scrolled in x and y dir. this is imp with treeLists as you need to scroll in the x-axis if the items becomes too wide. The deeper you go the more you need to scroll in the x-axis etc. 
 
 ```swift
 //Then you start designing Infinite treeList 
