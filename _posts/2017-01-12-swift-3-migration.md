@@ -21,7 +21,7 @@ Apples motivation for separating these types was:
 The one c-style for-loop to rule them all is gone, now we have 9 different to take its place: 
 
 - ``for i in 0..4{}`` 👈 regular forward looping
-- ``for (i,obj) in arr.enumerate(){print(i);print(obj)}`` 👈 access to i and obj
+- ``for (i,obj) in arr.enumerated(){print(i);print(obj)}`` 👈 access to i and obj
 - ``for obj in arr{}`` 👈 iterate over objects (no access to original array)
 - ``for i in (0..<4).reversed(){}`` 👈 backward looping
 - ``var i = 0;while(i<4){print(i);i+=1}`` 👈 If you want to manipulate i while looping
