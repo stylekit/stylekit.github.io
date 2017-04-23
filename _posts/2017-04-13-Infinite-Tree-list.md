@@ -4,6 +4,8 @@ My notes on Infinite tree list <!--more-->
 
 <img width="174" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/infinite_tree_liste.mov.gif">
 
+- Bigger tree list with Speedier scrolling is coming in a few days. Need to make SVG Asset reload lazy. And Add rotation to the CSS lib. To make everything fast. 
+
 ### Uni-Directional Elastic List:
 
 <img width="154" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/UniElasticList.mov.gif">
