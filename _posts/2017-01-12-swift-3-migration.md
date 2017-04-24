@@ -18,7 +18,7 @@ Apples motivation for separating these types was:
 
 ## For-loop:
 
-The one c-style for-loop to rule them all is gone, now we have 9 different to take its place: 
+The one c-style for-loop to rule them all is gone, now we have 10 different to take it's place: 
 
 - ``for i in 0..4{}`` 👈 regular forward looping
 - ``for (i,obj) in arr.enumerated(){print(i);print(obj)}`` 👈 access to i and obj
@@ -29,7 +29,9 @@ The one c-style for-loop to rule them all is gone, now we have 9 different to ta
 - ``arr.forEach{$0}`` 👈 Easiest for-loop but only if you don't need to exit early
 - ``for i in arr.indices {print(i)}`` 👈 Access to i
 - ``for _ in 0..<arr.count`` 👈 If you just wan't to loop something and not use any value
-
+- ``arr.reversed.forEach{$0}`` 👈 reversed forEach, more functional 🤖 .map also works
+    
+    
 ## NSView:
 
 ``drawLayer(layer:CALayer, inContext ctx: CGContext)`` 👈 This has vanished with out a trace to work around build it your self or? 
