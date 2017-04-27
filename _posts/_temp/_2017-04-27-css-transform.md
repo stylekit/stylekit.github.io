@@ -1,4 +1,4 @@
-The official CSS transform param is now supported in Element.  <!--more--> 
+The CSS transform param is now supported in Element.  <!--more--> 
 
 <img width="172" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/css_transform.mov.gif">
 
@@ -18,4 +18,4 @@ _ = btn
 
 **Only supports rotation for now**  
 
-But the rest of the translates are trivial to implement, even 3dTransform 😻
+But the rest of the transforms are trivial to implement, even Transform3D 😻
