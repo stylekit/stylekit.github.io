@@ -1,5 +1,10 @@
 My notes on Infinite tree list <!--more--> 
 
+### All together now 🎉: 
+
+<img width="180" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/elastic_fast_tree_list.mov.gif">
+
+
 ### Uni-Directional Elastic Tree-List:
 
 <img width="174" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/infinite_tree_liste.mov.gif">
