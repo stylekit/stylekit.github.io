@@ -92,7 +92,7 @@ enum Filter : String, CustomStringConvertible {
     case playlists = "Playlists"
     case podcasts = "Podcasts"
     case books = "Audiobooks"
-    var description : String { return self.rawValue }
+    var description : String { return self.rawValue } /*👈 now can be logged in print👌*/
 }
 ```
 We have now made Filter formally adopt the CustomStringConvertible protocol. The CustomStringConvertible protocol requires that we implement a description String property; we do implement a description String property, so our code compiles. Now we can hand a Filter to print, or interpolate it into a string, and its description will appear automatically:
@@ -167,7 +167,7 @@ But you can do it with a generic protocol, so the trick is to extend a generic p
 }
 ```
 
-### Array tricks tricks
+### Array tricks 
 
 An array also has an initializer whose parameter is a sequence. This means that if a type is a sequence, you can split an instance of it into the elements of an array. For example:
 • Array(1...3) generates the array of Int [1,2,3].
