@@ -201,7 +201,7 @@ let slice3 = arr.prefix(through:1) // [1,2]
 
 ```
     
-### array idx
+### Array idx
 
 The index(of:) method reports the index of the first occurrence of an element in an array, but it is wrapped in an Optional so that nil can be returned if the element doesn’t appear in the array. If the array consists of Equatables, the comparison uses == behind the scenes to identify the element being sought:
 ```swift
@@ -306,7 +306,7 @@ A pattern can include an underscore (\_) to absorb all values without using them
     }
     
     
-    switch i {
+switch i {
     case 1?:
         print("You have 1 thingy!")
     case let n?:
@@ -316,7 +316,7 @@ A pattern can include an underscore (\_) to absorb all values without using them
 
 
  switch i {
-    case let j where j < 0:
+    case let j where j < 0:/*<-- 👌*/
         print("i is negative")
     case let j where j > 0:
         print("i is positive")
@@ -333,11 +333,12 @@ switch d {
     }
     
     
-    switch d {
+switch d {
     case let nd as NoisyDog:
         nd.beQuiet()
     case let d:
-d.bark() }
+        d.bark() 
+}
 
 switch (d["size"], d["desc"]) {
     case let (size as Int, desc as String):
