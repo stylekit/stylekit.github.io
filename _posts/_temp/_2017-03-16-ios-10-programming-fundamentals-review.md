@@ -535,22 +535,26 @@ Here we cycle through the whole array, extracting just the .number associated va
 
 Similarly, here’s how to work safely with an array each of whose elements might or might not be castable to a certain type:
 
+```swift
 let arr : [Any] = ["hey", 1, "ho"]
-    for case let s as String in arr {
-        print(s) // hey, ho
-    }
+for case let s as String in arr {
+    print(s) // hey, ho
+}
+```
     
     
 ### For-loop lables:
 
 if you wanted to abort the entire nested construct? The solution is a label:
 
+```swift
 outer: for i in 1...5 {
         for j in 1...5 {
             print("\(i), \(j);")
 break outer }
 }
 // 1, 1;
+```
 
 ### throws:
 
