@@ -4,6 +4,8 @@ My notes on Infinite tree list <!--more-->
 
 <img width="180" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/elastic_fast_tree_list.mov.gif">
 
+It's fast and smooth now. Next is to add some utility methods. explodeAt, collapseAt etc
+
 ### Uni-Directional Elastic Tree-List:
 
 <img width="174" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/infinite_tree_liste.mov.gif">
