@@ -1,4 +1,4 @@
-My preliminary notes on AppCode<!--more--> 
+ My preliminary notes on AppCode<!--more--> 
 
 ## Pros: ✅
 - AppCode can rename symbolically 🏆. Meaning it can rename a function or class and globally change every reference in your entire codebase to the new name. This is worth the price of admission alone
