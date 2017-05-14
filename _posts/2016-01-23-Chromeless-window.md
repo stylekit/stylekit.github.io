@@ -115,7 +115,7 @@ If you dont want the titlebar background design but still want its functionality
 ## General findings:  
 - If NSTextField becomes buggy when using a chrome-less window: take a look at this article for ideas: [here](http://www.cocoabuilder.com/archive/cocoa/207749-nstextfield-will-not-become-editable-in-borderless-window.html) 
 - Custom dragging the window code:  [Dragging code link] and from the apple examples: [Dragging code link 2]
-- Custom Shadows on Custom Windows isnt that straight forward: this link may provide some insight: [here](http://stackoverflow.com/questions/19940019/nswindow-with-round-corners-and-shadow) 
+- Custom Shadows on Custom Windows isn't that straight forward: this link may provide some insight: [here](http://stackoverflow.com/questions/19940019/nswindow-with-round-corners-and-shadow) 
 - You may need to call the invalidateShadow() method to update shadow on resize.  It invalidates the shadow then ==recreates it based on the window's shape.==
 - Complete open-source chrom-less project: [here](https://github.com/indragiek/INAppStoreWindow) 
 - In depth walk through of translucency: wwdc 2014 session 220 [here](http://asciiwwdc.com/2014/sessions/220) the video is online somewhere if you look
@@ -170,18 +170,18 @@ window.setFrame(NSScreen.mainScreen()!.visibleFrame, display: true, animate: tru
 - [x] add round corners
 - [x] search for Translucency windows on github, and do another sweep on google. Write a compendium on the atter before you test any code
 - [x] Translucent background (You might need to make the (TranclucentSkin for this, try the regular option first though)
-- [x] ==Add a TitleBar== element to the Window with Close,Minimize,Mazimize buttonSection
+- [x] ==Add a TitleBar== element to the Window with Close, Minimize, Mazimize buttonSection
 - [x] Figure out how to close, minimize and maximize through method calls
-- [x] Hook up the click events of the titlebar buttons to their close,minimize and maximize method calls
+- [x] Hook up the click events of the titlebar buttons to their close, minimize and maximize method calls
 - [x] Implement SetResize on the Element and the Skin classes
 - [x] ==Make the background graphics== follow the size of the window, (aka onResize() -> setStyle())
-- [ ] Find vector graphics for the close button (if you cant find this, take alook at the yosemite intro video, it has close ups)
+- [ ] Find vector graphics for the close button (if you cant find this, take a look at the Yosemite intro video, it has close ups)
 - [ ] Add vector iconography to the titleBar buttons
 - [ ] Complete the WindowsModifier, WindowsParser, and WindowsAsserter classes
 - [ ] Do another sweep on google if there is any way you could set the shadow parameters of a window. 
 - [ ] More research is needed on how to separate Translucency areas. The apple docs on this can bring some light in to it.
 - [ ] Pursue the idea that you can make methods in an extension and have them called from methods in normal methods in a class. This complicates the code but you avoid code duplication. Why not use extensions altogether? Extension methods cant be extended.
-- [ ] Find vector graphics for the close button (if you cant find this, take alook at the yosemite intro video, it has close ups)
+- [ ] Find vector graphics for the close button (if you cant find this, take a look at the Yosemite intro video, it has close ups)
 - [ ] Add vector iconography to the titleBar buttons
 <!--reusable links--> 
 [Dragging code link]: https://github.com/HBehrens/CamHolderApp/blob/master/CamHolderApp/CHDraggableWindow.m
