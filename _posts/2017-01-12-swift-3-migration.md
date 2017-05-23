@@ -1,6 +1,5 @@
 After manually migrating 35.000 lines of swift 2.2 into swift 3.0 code. <!--more--> Here are some insights:  
 
-
 ## Range:
 Range in swift 3 has been totally re-designed. 🙈   
 We now have 2 Main Range types: Range and CountableRange.   
