@@ -66,6 +66,9 @@ This is just 1 event Handler for the entire App to test it quickly. This isn't s
 				TextButton:{id:cancel}
 			}
 		}
+		View:{
+				
+		}
 	}
 }
 ```
