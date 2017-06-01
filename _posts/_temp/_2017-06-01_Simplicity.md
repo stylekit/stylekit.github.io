@@ -1,4 +1,4 @@
-The phrase: Build something simple. You can always customize and add features later. That got me thinking 🤔. What if we combine JSON and FlexBox with Element. Here is my idea:
+Build something simple. You can always customize and add features later. What if we combine JSON and FlexBox with Element? Here is my idea:
 
 1. You write the app structure in JSON. 
 2. Then you add some CSS that use flexbox to position the layout. 
