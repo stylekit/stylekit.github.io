@@ -10,10 +10,10 @@ Test your app: Does it resize correctly, how does it look in fullscreen, dark mo
 ```swift
 
 self.onEvent{ event in
-	if event.type == .buttonClick && event.origin.id == "ok" {
+	if event.type == .buttonClick && event.immediate == "commitPrompt" && event.origin.id == "ok" {
 		/*Add commit logic here*/
 		Nav.view = Nav.previous/*transition back after commit completes*/
-	}else if event.type == .select && event.immediate(where:{$0.id == "repoList"}) {
+	}else if event.type == .select && event.immediate == "repo" {
 		Nav.view = Nav.getView("repoDetail")
 		let idx:[Int] = event.index
 		/*Call a method that sets the UI components to the data at idx in repos.JSON*/
