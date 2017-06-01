@@ -23,7 +23,7 @@ self.onEvent{ event in
 	}
 }
 
-This is just 1 event Handler for the entire App to test it quickly. This isn't sustainable in the long run as you build out the app. You can extract the event Logic into other methods. Or subclass the Views. I.e: `RepoView` you then specify to use this class in the JSON.
+This is just 1 event Handler for the entire App to test it quickly. This isn't sustainable in the long run as you build out the app. You can extract the event Logic into other methods. Or subclass the Views. I.e: `RepoView` you then specify to use this class in the JSON. 
 
 ```
 #### CSS:
@@ -66,15 +66,22 @@ This is just 1 event Handler for the entire App to test it quickly. This isn't s
 			}
 		}
 		View:{
-			id:ErrorPromt,
+			id:errorPromt,
 			content:[
-				
+				Text:{id:title,text:"There was an error"}
+				Container:{
+					id:"confirm",
+					content:{
+						TextButton:{id:ok},
+						TextButton:{id:cancel}
+					}
+				}
 			]
 		}
 		View:{
 			id:commitPrompt,
 			content:[
-				Text:{id:title},
+				Text:{id:title,text:"Commit changes"},
 				TextArea:{id:msg},
 				Container:{
 					id:"confirm",
