@@ -30,6 +30,7 @@ This is just 1 event Handler for the entire App to test it quickly. This isn't s
 ```
 
 ```
+//add json for the Menu system as well. and add some basic events for it in swift. Fullscreen, darkmode
 #### JSON:
 ```
 {
@@ -116,4 +117,4 @@ This is just 1 event Handler for the entire App to test it quickly. This isn't s
 
 
 **End-note:**
-Customization is key to creating an artisan experience. But customization should not get in the way of DRY: Don't repeat your self. If you have too much customization you can really iterate on the underlying code. Abstraction allows you to only focus on the logic of the app. 
+Customization is key to creating an artisan experience. But customization should not get in the way of DRY: Don't repeat your self. If you have too much customization you can't easily iterate on the underlying code. Abstraction allows you to only focus on the logic of the app. 
