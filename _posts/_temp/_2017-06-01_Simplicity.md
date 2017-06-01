@@ -40,12 +40,12 @@ This is just 1 event Handler for the entire App to test it quickly. This isn't s
 	pages:{
 		View:{
 			id:repo,
-			content:{
+			content:[
 				RepoList:{
 					id:repoList,
 					itemHeight:24
 				}
-			}
+			]
 		},
 		View:{
 			id:repoDetail,
@@ -58,16 +58,50 @@ This is just 1 event Handler for the entire App to test it quickly. This isn't s
 			}
 		},
 		View:{
-			id:commitPrompt,
+			id:"prefs",
 			content:{
-				Text:{id:title},
-				TextArea:{id:msg},
-				TextButton:{id:ok},
-				TextButton:{id:cancel}
+				TextInput:{id:login,text:"github-user"}
+				TextInput:{id:pass,text:"github-password"}
+				CheckBoxTextButton:{id:dark,text:"Dark-mode",checked:false}
 			}
 		}
 		View:{
+			id:ErrorPromt,
+			content:[
 				
+			]
+		}
+		View:{
+			id:commitPrompt,
+			content:[
+				Text:{id:title},
+				TextArea:{id:msg},
+				Container:{
+					id:"confirm",
+					content:{
+						TextButton:{id:ok},
+						TextButton:{id:cancel}
+					}
+				}
+			]
+		}
+		View:{
+			id:MergeConflicPrompt,
+			content:[
+				Text:{id:desc},
+				RadioGroup:[
+					RadioButtonButton:{id:local,title:"Use local file"},
+					RadioButtonButton:{id:remote,title:"Use remote file"},
+					RadioButtonButton:{id:remote,title:"Use mix of both"}
+				],
+				Container:{
+					id:"confirm",
+					content:{
+						TextButton:{id:ok},
+						TextButton:{id:cancel}
+					}
+				}
+			]
 		}
 	}
 }
