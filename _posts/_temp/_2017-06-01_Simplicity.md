@@ -30,7 +30,16 @@ self.onEvent{ event in
 
 #### CSS:
 ```
-
+Window{
+	min-height:300;
+	min-width:300;
+	max-height:600;
+	max-width:1000;
+}
+#repoDetail,#prefs,#commitMsg,#mergePrompt,#errorPrompt{
+	display:flex;
+	flex-dir:collumn;
+}
 ```
 #### App menu:
 ```
@@ -64,9 +73,6 @@ self.onEvent{ event in
 ```
 {
 	title:GitSync,
-	size:{w:400,h:600},
-	min-size:{w:300,h:300},
-	max-size:{w:600,h:1000},
 	pages:{
 		View:{
 			id:repo,
