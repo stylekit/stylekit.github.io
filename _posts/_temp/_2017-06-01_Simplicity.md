@@ -7,6 +7,7 @@ Build something simple. You can always customize and add features later. What if
 Test your app: Does it resize correctly, how does it look in fullscreen, dark mode look good? 👌
 
 #### SWIFT:
+This is just 1 event Handler for the entire App to test it quickly. This isn't sustainable in the long run as you build out the app. You can extract the event Logic into other methods. Or subclass the Views. I.e: `RepoView` you then specify to use this class in the JSON. 
 ```swift
 
 self.onEvent{ event in
@@ -20,11 +21,13 @@ self.onEvent{ event in
 	}else if event.type == .swipeRight && event.immediate.id == "repoDetail"{
 		/*Call method that collects data from UI and overrides the JSON element*/
 		Nav.view = Nav.getView("repo")/*Transition back to repo*/
+	}else if event.type == .rightDown && event.immediate.id == repo{
+		NSMenu.popUpContextMenu(Logic.contextMenu["repo"], with: (event as! ButtonEvent).event!, for: self)
 	}
 }
 
 ```
-This is just 1 event Handler for the entire App to test it quickly. This isn't sustainable in the long run as you build out the app. You can extract the event Logic into other methods. Or subclass the Views. I.e: `RepoView` you then specify to use this class in the JSON. 
+
 #### CSS:
 ```
 
