@@ -1,4 +1,4 @@
-Build something simple. You can always customize and add features later. What if we combine JSON and FlexBox with Element? Here is my idea:
+Getting a working prototype up and running is vital to the progress of any project. Preferably within 1 day of work. To achieve this I want to use JSON to automate and abstract away the UI code. But at the same time not closing the door on  customization. Here is my Idea:
 
 1. You write the app structure in JSON. 
 2. Then you add some CSS that use flexbox to position the layout. 
