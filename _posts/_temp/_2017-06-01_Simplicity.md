@@ -78,7 +78,7 @@ Window{
 			content:{
 				TextInput:{id:login,text:"github-user"}
 				TextInput:{id:pass,text:"github-password"}
-				CheckBoxTextButton:{id:dark,text:"Dark-mode",checked:false}
+				CheckBoxTextButton:{id:auto,text:Auto,checked:false}
 			}
 		}
 		View:{
