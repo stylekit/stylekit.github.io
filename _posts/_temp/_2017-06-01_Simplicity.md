@@ -4,7 +4,7 @@ Build something simple. You can always customize and add features later. What if
 2. Then you add some CSS that use flexbox to position the layout. 
 3. Then you add some event handling swift code that reacts to interaction
 
-Test your app: Does it resize correctly, how does it look in fullscreen, dark mode look good? 👌
+Test your app: Does it resize correctly, does the page transitions work?
 
 #### SWIFT:
 This is just 1 event Handler for the entire App to test it quickly. This isn't sustainable in the long run as you build out the app. You can extract the event Logic into other methods. Or subclass the Views. I.e: `RepoView` you then specify to use this class in the JSON. 
@@ -40,32 +40,10 @@ Window{
 	display:flex;
 	flex-dir:collumn;
 }
-```
-#### App menu:
-```
-[
-	GitSync:{
-		content:[
-			Prefs:{
-				action:"prefs"
-			},
-			Close:{
-				action:"close"
-			}
-		]
-	}
-]
-```
-
-#### Right click context menu:
-```
-[
-	"New group":{action:"newGroup"}
-	"New repo":{action:"newRepo"}
-	"Cut":{action:"cut"}
-	"Paste":{action:"paste"}
-	
-]
+.confirm{
+	display:flex;
+	flex-dir:row;
+}
 ```
 
 
@@ -108,7 +86,7 @@ Window{
 			content:[
 				Text:{id:title,text:"There was an error"}
 				Container:{
-					id:"confirm",
+					class:"confirm",
 					content:{
 						TextButton:{id:ok},
 						TextButton:{id:cancel}
@@ -122,7 +100,7 @@ Window{
 				Text:{id:title,text:"Commit changes"},
 				TextArea:{id:msg},
 				Container:{
-					id:"confirm",
+					class:"confirm",
 					content:{
 						TextButton:{id:ok},
 						TextButton:{id:cancel}
@@ -140,7 +118,7 @@ Window{
 					RadioButtonButton:{id:remote,title:"Use mix of both"}
 				],
 				Container:{
-					id:"confirm",
+					class:"confirm",
 					content:{
 						TextButton:{id:ok},
 						TextButton:{id:cancel}
@@ -152,9 +130,35 @@ Window{
 }
 ```
 
-#### Unwrapping JSON data
-By using subScripts you can create unboxing methods that work automatically. No custom setup required. 
+#### App menu:
+```
+[
+	GitSync:{
+		content:[
+			Prefs:{
+				action:"prefs"
+			},
+			Close:{
+				action:"close"
+			}
+		]
+	}
+]
+```
+
+#### Right click context menu:
+```
+[
+	"New group":{action:"newGroup"}
+	"New repo":{action:"newRepo"}
+	"Cut":{action:"cut"}
+	"Paste":{action:"paste"}
+	
+]
+```
 
 
-**End-note:**
+
+#### End-note:
+
 Customization is key to creating an artisan experience. But customization should not get in the way of DRY: Don't repeat your self. If you have too much customization you can't easily pivot your product. Abstraction allows you to only focus on what is core in your app. 
