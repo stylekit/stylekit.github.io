@@ -29,7 +29,34 @@ This is just 1 event Handler for the entire App to test it quickly. This isn't s
 ```
 
 ```
-//add json for the Menu system as well. and add some basic events for it in swift. Fullscreen, darkmode
+#### App menu:
+```
+[
+	GitSync:{
+		content:[
+			Prefs:{
+				action:"prefs"
+			},
+			Close:{
+				action:"close"
+			}
+		]
+	}
+]
+```
+
+#### Right click context menu:
+```
+[
+	"New group":{action:"newGroup"}
+	"New repo":{action:"newRepo"}
+	"Cut":{action:"cut"}
+	"Paste":{action:"paste"}
+	
+]
+```
+
+
 #### JSON:
 ```
 {
@@ -44,6 +71,7 @@ This is just 1 event Handler for the entire App to test it quickly. This isn't s
 				RepoList:{
 					id:repoList,
 					itemHeight:24
+					url:"~/Desktop/repo.xml"
 				}
 			]
 		},
@@ -116,4 +144,4 @@ This is just 1 event Handler for the entire App to test it quickly. This isn't s
 
 
 **End-note:**
-Customization is key to creating an artisan experience. But customization should not get in the way of DRY: Don't repeat your self. If you have too much customization you can't easily iterate on the underlying code. Abstraction allows you to only focus on the logic of the app. 
+Customization is key to creating an artisan experience. But customization should not get in the way of DRY: Don't repeat your self. If you have too much customization you can't easily pivot your product. Abstraction allows you to only focus on what is core in your app. 
