@@ -29,7 +29,7 @@ self.onEvent{ event in
 ```
 
 #### CSS:
-```
+```css
 Window{
 	min-height:300;
 	min-width:300;
@@ -48,7 +48,7 @@ Window{
 
 
 #### JSON:
-```
+```json
 {
 	title:GitSync,
 	size:{w:400,h:600},
@@ -131,7 +131,7 @@ Window{
 ```
 
 #### App menu:
-```
+```json
 [
 	GitSync:{
 		content:[
@@ -147,7 +147,7 @@ Window{
 ```
 
 #### Right click context menu:
-```
+```json
 [
 	"New group":{action:"newGroup"}
 	"New repo":{action:"newRepo"}
