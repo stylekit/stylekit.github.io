@@ -73,6 +73,7 @@ Window{
 ```
 {
 	title:GitSync,
+	size:{w:400,h:600},
 	pages:{
 		View:{
 			id:repo,
