@@ -31,16 +31,26 @@ self.onEvent{ event in
 #### CSS:
 ```css
 Window{
-	min-height:300;
+	min-height:400;
 	min-width:300;
-	max-height:600;
-	max-width:1000;
+	max-height:800;
+	max-width:600;
+}
+#main{
+	display:flex;
+	flex-dir:row;/*Aligns the UI horizontally*/
+}
+#sideMenu{
+	width:100px;
+	display:flex;
+	flex-dir:column;/*Aligns the UI vertically*/
+	align-items:center;/*Centers the Elements in the column*/
 }
 #repoDetail,#prefs,#commitMsg,#mergePrompt,#errorPrompt{
 	display:flex;
 	flex-dir:collumn;
 }
-.confirm{
+#confirm{/*OK,cancel button*/
 	display:flex;
 	flex-dir:row;
 }
@@ -130,23 +140,8 @@ Window{
 }
 ```
 
-#### App menu:
-```json
-[
-	"GitSync":{
-		"content":[
-			"Prefs":{
-				"action":"prefs"
-			},
-			"Close":{
-				"action":"close"
-			}
-		]
-	}
-]
-```
 
-#### Right click context menu:
+#### Right click context menu for RepoView:
 ```json
 [
 	"New group":{"action":"newGroup"}
