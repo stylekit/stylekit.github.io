@@ -48,12 +48,12 @@ Window{
 
 
 #### JSON:
-```json
+```
 {
-	title:GitSync,
-	size:{w:400,h:600},
-	pages:{
-		View:{
+	"title":"GitSync",
+	"size":{w:400,h:600},
+	"pages":{
+		"View":{
 			id:repo,
 			content:[
 				RepoList:{
@@ -133,13 +133,13 @@ Window{
 #### App menu:
 ```json
 [
-	GitSync:{
-		content:[
-			Prefs:{
-				action:"prefs"
+	"GitSync":{
+		"content":[
+			"Prefs":{
+				"action":"prefs"
 			},
-			Close:{
-				action:"close"
+			"Close":{
+				"action":"close"
 			}
 		]
 	}
@@ -149,10 +149,10 @@ Window{
 #### Right click context menu:
 ```json
 [
-	"New group":{action:"newGroup"}
-	"New repo":{action:"newRepo"}
-	"Cut":{action:"cut"}
-	"Paste":{action:"paste"}
+	"New group":{"action":"newGroup"}
+	"New repo":{"action":"newRepo"}
+	"Cut":{"action":"cut"}
+	"Paste":{"action":"paste"}
 	
 ]
 ```
