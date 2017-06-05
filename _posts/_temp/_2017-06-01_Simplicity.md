@@ -13,14 +13,20 @@ This is just 1 event Handler for the entire App to test it quickly. This isn't s
 self.onEvent{ event in
 	if event.type == .buttonClick && event.immediate == "commitPrompt" && event.origin.id == "ok" {
 		/*Add commit logic here*/
-		Nav.view = Nav.previous/*transition back after commit completes*/
+		Nav.setView(.previous)
 	}else if event.type == .select && event.immediate == "repo" {
 		Nav.view = Nav.getView("repoDetail")
 		let idx:[Int] = event.index
-		/*Call a method that sets the UI components to the data at idx in repos.JSON*/
-	}else if event.type == .swipeRight && event.immediate.id == "repoDetail"{
-		/*Call method that collects data from UI and overrides the JSON element*/
-		Nav.view = Nav.getView("repo")/*Transition back to repo*/
+		if isGroup(idx,json) {
+			 Nav.setView("repo")
+			 /*populate list with new idx level*/
+		}else {
+			 Nav.setView("repoDetail")
+		}
+	}else if event.type == .swipeRight{
+		Nav.back()
+	}else if event.type == .swipeLeft{
+		Nav.forward()
 	}else if event.type == .rightDown && event.immediate.id == repo{
 		NSMenu.popUpContextMenu(Logic.contextMenu["repo"], with: (event as! ButtonEvent).event!, for: self)
 	}
@@ -39,6 +45,7 @@ Window{
 #main{
 	display:flex;
 	flex-dir:row;/*Aligns the UI horizontally*/
+	flex-grow:1;/*Fill the remainder hor space*/
 }
 #sideMenu{
 	width:100px;
@@ -49,6 +56,8 @@ Window{
 #repoDetail,#prefs,#commitMsg,#mergePrompt,#errorPrompt{
 	display:flex;
 	flex-dir:collumn;
+	width:100%;
+	height:100%;
 }
 #confirm{/*OK,cancel button*/
 	display:flex;
