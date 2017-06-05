@@ -23,11 +23,10 @@ self.onEvent{ event in
 		}else {
 			 Nav.setView("repoDetail")
 		}
-	}else if event.type == .swipeRight{
-		Nav.back()
-	}else if event.type == .swipeLeft{
-		Nav.forward()
-	}else if event.type == .rightDown && event.immediate.id == repo{
+	}
+	else if event.type == .swipeRight{Nav.back()}
+	else if event.type == .swipeLeft{Nav.forward()}
+	else if event.type == .rightDown && event.immediate.id == repo{
 		NSMenu.popUpContextMenu(Logic.contextMenu["repo"], with: (event as! ButtonEvent).event!, for: self)
 	}
 }
