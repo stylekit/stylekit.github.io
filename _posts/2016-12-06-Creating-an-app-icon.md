@@ -2,11 +2,11 @@ Creating an app icon that can be use for macOS apps<!--more--> It also supports 
 
 ### .png 👉 .icns
 1. Download [IconMaker.app](https://raw.githubusercontent.com/stylekit/img/master/iconmaker.app.zip) 👈 (It's just an .applescript won't bite)   
-2. Drag and drop your .png onto the IconMaker.app
+2. Drag and drop your .png onto the IconMaker.app and your done 👍
 
 ### Example:
 
-here is an app icon i created in Illustrator:  
+here is an app icon I created in Illustrator:  
 
 <img width="314" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/gitsync_logo_2016_blue.png">
 
