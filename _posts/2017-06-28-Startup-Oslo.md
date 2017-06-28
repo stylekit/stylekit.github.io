@@ -48,5 +48,5 @@ Psst the wifi pass is: "haenfindag" roughly translated: Have a nice day.
 
 ### Video:
 
-<iframe src="https://player.vimeo.com/video/https://vimeo.com/223491750" width="600" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/https://vimeo.com/223491750">snap to position</a> from <a href="https://vimeo.com/gitsync">GitSync</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<iframe src="https://player.vimeo.com/video/223491750" width="640" height="1138" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/223491750">kulturhuset</a> from <a href="https://vimeo.com/gitsync">GitSync</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
