@@ -1,4 +1,4 @@
-<!--more--> "Kulturhuset" is a new place in the startup scene in Oslo. It's "free" and can be used by anyone to collaborate or work on different projects. Wifi, seating and water is free. There is also a paid tier. Such as Coffee, beer, pingpong. It's smack in the center of Oslo and a short stroll from Grunerløkka or St.haugen. It's perfect for meetings with clients or hanging out on weekends. You can work there until 3AM but its pretty packed on Weekends. This is the place to go to if you want to meet other like-minded designers/writers/developers/creatives etc. Its 23 years age cap after 19:00 but 20year olds can access if they are in a good state of mind 😉. 
+<!--more--> "Kulturhuset" is a new place in the startup scene in Oslo. It's "free" and can be used by anyone to collaborate or work on different projects. Wifi, seating and water is free. There is also a paid tier. Such as Coffee, beer, pingpong. It's smack in the center of Oslo and a short stroll from Grunerløkka or St.haugen. It's perfect for meetings with clients or hanging out on weekends. You can work there until 3AM but its pretty packed on Weekends. This is the place to go to if you want to meet other like-minded designers/writers/developers/creatives etc. Its 23 years age cap after 19:00 but 20year olds can access if they are in a solid state of mind 😉. 
 
 <img width="800" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Photo 28-06-2017, 18 19 45.jpg">
 
@@ -29,9 +29,9 @@ There is another bar in the 1-floor
 <img width="800" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Photo 28-06-2017, 18 13 44.jpg">
 
 
-### Table tennis / concert area
+### Ping-pong / concert area
 
-There is also another concert area in the first floor.
+There is also another concert area in the first floor. Ping pong is 10$ for half an hour. They time you in the bar so blitz Ping-pong it is.
 
 <img width="800" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Photo 28-06-2017, 18 16 19.jpg">
 
