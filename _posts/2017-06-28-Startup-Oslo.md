@@ -36,8 +36,10 @@ There is also another concert area in the first floor.
 
 <img width="800" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Photo 28-06-2017, 18 16 19.jpg">
 
+### Conference:
+<img width="800" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Photo 28-06-2017, 18 06 59.jpg">
 
-### Free water
+### Free water:
 
 <img width="800" alt="img" src="https://raw.githubusercontent.com/stylekit/img/master/Photo 28-06-2017, 18 20 30 (1).jpg">
 
