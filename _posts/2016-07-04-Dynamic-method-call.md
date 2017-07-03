@@ -20,7 +20,7 @@ class Brick{
     }
 }
 private class Utils{
-    static func performAction(bricks:Array<Brick>, _ action:(Brick)->Bool)->Brick?{
+    static func performAction(bricks:[Brick], _ action:(Brick)->Bool)->Brick?{//TODO: the brick bool part you should make into a typealias
         for brick in bricks{
             if(action(brick)){
             	return brick
