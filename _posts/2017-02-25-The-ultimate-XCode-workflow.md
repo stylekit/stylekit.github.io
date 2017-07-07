@@ -11,9 +11,6 @@ Spend zero time managing dependencies<!--more-->. Build speed is almost down to 
   
 **To achieve this:** Read my series on SPM (Swift package manager) and use [gitsync.io](http://www.gitsync.io)   
 
-
-
-
 ## SPM Series:  
 - [Faster xcode with spm](http://stylekit.org/blog/2017/02/10/Faster-XCode-with-SPM/) 
 - [Spm and ci travis](http://stylekit.org/blog/2017/02/07/SPM-and-CI-travis/) 
