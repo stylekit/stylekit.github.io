@@ -43,3 +43,5 @@ print(Utils.performAction(bricks, action2)!.name)//b
 ```
 
 Drop the above code snippet into XCode playground and test it for your self. 
+
+
