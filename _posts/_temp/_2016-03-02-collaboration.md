@@ -11,3 +11,6 @@ Slack should implement a stackoverflow like rating system for answers. Think mea
 
 ## A new idea that i've been thinking about
 A-sync collaboration. Similar to how a Threading in cpu works. The way most teams work today is more like a single core cpu works with only one thread. Every thing has to sync or it all falls apart. Which leads to discouraging taking chances and following rabits down rabit holes. Which is what drives innovation. 
+
+## My current thinking:
+Use anonymity
