@@ -1,7 +1,7 @@
 Explains how one could do **"upstream-event-propagation"** and **"downstream-state-distribution"**:<!--more--> 
 Explains how one could do **"upstream-event-propagation"** and **"downstream-state-distribution"**:
 
-<img width="680" alt="img" src="https://rawgit.com/stylekit/img/master/event_and_state_diagram.svg">
+<img width="680" alt="img" src="https://cdn.jsdelivr.net/gh/stylekit/img/event_and_state_diagram.svg">
 
 **In Element we don't distribute state**. State is derived by asking up hierarchy about the entire "hierarchy-state" and then calculating final state for the descendants.  We still have to distribute the state call to call the render() recursively to each descendant. But we don't pass an externalState down hierarchy. "The-passing-of-externalState-down-hierarchy-example" described in the diagram above is to enable state change in AppKit since AppKit doesn't do the whole CSS thing that Element does and can't look up hierarchy to derive its design.
 

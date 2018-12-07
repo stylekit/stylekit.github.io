@@ -1,6 +1,6 @@
 My notes on Swift PM + CI Travis<!--more--> 
 
-<img width="600" alt="img" src="https://rawgit.com/stylekit/img/master/TravisCI-Full-Color.eps.svg">
+<img width="600" alt="img" src="https://cdn.jsdelivr.net/gh/stylekit/img/TravisCI-Full-Color.eps.svg">
 
 ## Workflow:
 
